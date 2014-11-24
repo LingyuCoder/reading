@@ -1,5 +1,10 @@
 # 目录
 
+* [产品设计七日修行](7-day-product-design/README.md)
+* [HTML5应用开发实践指南](programming-html5-applications/README.md)
+* [HTML5 Canvas核心技术](html5-canvas-core/README.md)
+    * [第一章：基础知识](html5-canvas-core/1.md)
+    * [第二章：绘制](html5-canvas-core/2.md)
 * [高性能HTML5](pro-html5-performance/README.md)
     * [第一章~第三章](pro-html5-performance/1-3.md)
     * [第四章~第十章](pro-html5-performance/4-10.md)
