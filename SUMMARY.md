@@ -1,5 +1,12 @@
 # 目录
 
+* [软件开发者路线图：从学徒到高手](apprenticeship-patterns/README.md)
+    * [绪论](apprenticeship-patterns/1.md)
+    * [空杯心态](apprenticeship-patterns/2.md)
+    * [走过漫漫长路](apprenticeship-patterns/3.md)
+    * [准确的自我评估](apprenticeship-patterns/4.md)
+    * [恒久学习](apprenticeship-patterns/5.md)
+    * [安排你的课程](apprenticeship-patterns/6.md)
 * [移动设计](mobile-design/README.md)
     * [概述](mobile-design/1.md)
     * [特征](mobile-design/2.md)
