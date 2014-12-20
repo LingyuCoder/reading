@@ -1,5 +1,14 @@
 # 目录
 
+* [AngularJS权威指南](the-complete-book-on-angularjs/README.md)
+    * [第二章：数据绑定](the-complete-book-on-angularjs/data-binding.md)
+    * [第三章：模块](the-complete-book-on-angularjs/module.md)
+    * [第四章：作用域](the-complete-book-on-angularjs/scope.md)
+    * [第五章：控制器](the-complete-book-on-angularjs/controller.md)
+    * [第六章：表达式](the-complete-book-on-angularjs/expression.md)
+    * [第七章：过滤器](the-complete-book-on-angularjs/filter.md)
+    * [第八章：指令简介](the-complete-book-on-angularjs/directive-intro.md)
+    * [第九章：内置指令](the-complete-book-on-angularjs/build-in-directive.md)
 * [软件开发者路线图：从学徒到高手](apprenticeship-patterns/README.md)
     * [绪论](apprenticeship-patterns/1.md)
     * [空杯心态](apprenticeship-patterns/2.md)
