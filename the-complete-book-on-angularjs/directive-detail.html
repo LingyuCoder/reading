@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>指导原则 | Reading</title>
+        <title>第十章：指令详解 | Reading</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../dontmakemethink/thingsmustbedone.html" />
+        <link rel="next" href="../apprenticeship-patterns/README.html" />
         
         
-        <link rel="prev" href="../dontmakemethink/README.html" />
+        <link rel="prev" href="../the-complete-book-on-angularjs/build-in-directive.html" />
         
 
-        <meta property="og:title" content="指导原则 | Reading">
+        <meta property="og:title" content="第十章：指令详解 | Reading">
         <meta property="og:site_name" content="Reading">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="LingyuCoder/reading" data-level="10.1" data-basepath=".." data-revision="1419169552836">
+<div class="book" data-github="LingyuCoder/reading" data-level="1.9" data-basepath=".." data-revision="1419169552836">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/LingyuCoder/reading" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -72,7 +72,7 @@
             <a href="https://github.com/LingyuCoder/reading/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/LingyuCoder/reading/edit/master/dontmakemethink/principle.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/LingyuCoder/reading/edit/master/the-complete-book-on-angularjs/directive-detail.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         <li data-level="0" data-path="index.html">
@@ -662,7 +662,7 @@
             <div class="page-wrapper">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 18.181818181818183%;min-width: 16.666666666666668%;"></div>
+        <div class="inner" style="width: 15.151515151515152%;min-width: 13.636363636363637%;"></div>
     </div>
     <div class="chapters">
     
@@ -688,9 +688,9 @@
     
         <a href="../the-complete-book-on-angularjs/directive-detail.html" title="第十章：指令详解" class="chapter done " data-progress="1.9" style="left: 15.151515151515152%;"></a>
     
-        <a href="../dontmakemethink/README.html" title="Don&#39;t make me think" class="chapter done " data-progress="10" style="left: 16.666666666666668%;"></a>
+        <a href="../dontmakemethink/README.html" title="Don&#39;t make me think" class="chapter  " data-progress="10" style="left: 16.666666666666668%;"></a>
     
-        <a href="../dontmakemethink/principle.html" title="指导原则" class="chapter done " data-progress="10.1" style="left: 18.181818181818183%;"></a>
+        <a href="../dontmakemethink/principle.html" title="指导原则" class="chapter  " data-progress="10.1" style="left: 18.181818181818183%;"></a>
     
         <a href="../dontmakemethink/thingsmustbedone.html" title="必须正确处理的几个方面" class="chapter  " data-progress="10.2" style="left: 19.696969696969695%;"></a>
     
@@ -805,97 +805,182 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_15">
+                    <section class="normal" id="section-gitbook_55">
                     
-                        <h1 id="-">指导原则</h1>
-<h2 id="don-t-make-me-think">Don`t make me think</h2>
-<h3 id="-">不言而喻、一目了然</h3>
-<p>设计这应该尽量做到，当用户看到一个页面时，应该是不言而喻，一目了然，自我解释的。用户应该能明白它是什么、如何使用，而不需要花精力去思考。网页上每项内容都有可能迫使我们停下来思考，比如自以为很酷或自以为很聪明的名字、具体公司相关的名字，还有看起来不太明显的连接和按钮等等。在确定这些名字和按钮时，我们应该更倾向于显而易见，而不是需要额外的思考</p>
-<h3 id="-">用户的思考</h3>
-<p>在用户访问网站时，经常会陷入下列思考中：</p>
-<ul>
-<li>我在什么位置</li>
-<li>我该从哪儿开始</li>
-<li>他们把XX放在哪儿了</li>
-<li>这个页面上最重要的是什么</li>
-<li>为什么叫这个名字</li>
-<li>等等</li>
-</ul>
-<h3 id="-">网页设计的目标</h3>
-<p>网页最好是能达到一个目标，就是让普通用户只要看到它一眼，就知道是什么内容，如何使用它。因为大多数人会花比我们预计少的多的时间来浏览器网页</p>
-<h2 id="-web-">我们实际上是如何使用Web的</h2>
-<p>绝大部分用户，在大部分时间里，都只是在每个页面上行瞥一眼，扫过一些文字，点击第一个令他们感兴趣的或者大概符合他们寻找目标的链接。通常情况下，页面上有很多东西用户都不会去看，甚至当做从来没存在过。</p>
-<h3 id="-">不去阅读，而是扫描</h3>
-<p>用户浏览页面，不会去阅读，而是扫描，因为：</p>
+                        <h2 id="-">指令详解</h2>
+<p><code>directive()</code>用来定义指令的：</p>
+<pre><code class="lang-javascript">angular.module(<span class="hljs-string">'myApp'</span>, [])
+    .directive(<span class="hljs-string">'myDirective'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">($timeout, UserDefinedService)</span> {</span>
+        <span class="hljs-comment">// 指令定义放在这里</span>
+        <span class="hljs-keyword">return</span> {
+            <span class="hljs-comment">// 通过设置项来定义指令，在这里进行覆写</span>
+        };
+    });
+</code></pre>
+<p><code>directive()</code>方法可以接受两个参数：</p>
 <ol>
-<li>用户总是处于忙碌之中，他们使用Web是想节约时间，所以他们没有时间来阅读哪些不必要的内容</li>
-<li>用户知道自己不需要阅读所有信息，他们只会对其中一小部分感兴趣，而他们也只会寻找这一部分并阅读它，扫描就是用户找到这一小部分内容的方式</li>
-<li>在日常生活中，我们一直在扫描报纸、杂志、书籍，所以我们善于扫描</li>
+<li>name：指令的名称</li>
+<li>factory_function：返回一个定义指令的函数，<code>$compile</code>服务利用这个方法返回的对象来构造指令的行为</li>
 </ol>
-<h3 id="-">不是最佳，而是满意</h3>
-<p>用户不会做最佳的选择，而是满意即可。事实上，大多数时间用户都不会选择最佳选项，而是选择第一个合理的选项。因为:</p>
+<blockquote>
+<p>为了避免与未来的HTML标准冲突，给自定义的指令加入前缀来代表自定义的命名空间。AngularJS本身已经使用了<code>ng-</code>前缀，所以可以选择除此以外的名字。</p>
+</blockquote>
+<p>当AngularJS在DOM中遇到具名的指令时，会去匹配已经注册过的指令，并通过名字在注册过的对象中查找。此时，就开始了一个指令的生命周期，指令的生命周期开始于<code>$compile</code>方法并结束于link方法</p>
+<h3 id="restrict-string-">restrict（String）</h3>
+<p>个可选的参数。它告诉AngularJS这个指令在DOM中可以何种形式被声明。默认AngularJS认为restrict的值是A，即以属性的形式来进行声明:</p>
+<ul>
+<li>E（元素）：<code>&lt;my-directive&gt;&lt;/my-directive&gt;</code></li>
+<li>A（属性，默认值）：<code>&lt;div my-directive=&quot;expression&quot;&gt;&lt;/div&gt;</code></li>
+<li>C（类名）：<code>&lt;div class=&quot;my-directive:expression;&quot;&gt;&lt;/div&gt;</code></li>
+<li>M（注释）：<code>&lt;--directive:my-directive expression--&gt;</code></li>
+</ul>
+<p>属性是用来声明指令最常用的方式，因为它能在包括老版本的IE浏览器在内的所有浏览器中正常工作，并且不需要在文档头部注册新的标签。</p>
+<p>包含某个组件的核心行为时使用元素型。用额外的行为、状态或者其他内容进行修饰或扩展时使用属性型</p>
+<h3 id="priority-number-">priority（Number）</h3>
+<p>如果一个元素上具有两个优先级相同的指令，声明在前面的那个会被优先调用。如果其中一个的优先级更高，则不管声明的顺序如何都会被优先调用：具有更高优先级的指令总是优先运行。</p>
+<p>默认为0，ngRepeat为1000，是所有内置属性中最高的</p>
+<h3 id="terminal-boolean-">terminal（Boolean）</h3>
+<p>告诉AngularJS停止运行当前元素上比本指令优先级低的指令。但同当前指令优先级相同的指令还是会被执行</p>
+<h3 id="template-string-function-">template（String | Function）</h3>
+<p>template参数是可选的，必须被设置为以下两种形式之一:</p>
+<ul>
+<li>一段HTML文本</li>
+<li>一个可以接受两个参数的函数，参数为<code>tElement</code>和<code>tAttrs</code>，并返回一个代表模板的字符串</li>
+</ul>
+<p>在实际生产中，更好的选择是使用templateUrl参数引用外部模板，因为多行文本阅读和维护起来都是一场噩梦。</p>
+<h3 id="templateurl-string-function-">templateUrl（String | Function）</h3>
+<p>可选的参数，可以是以下类型：</p>
+<ul>
+<li>一个代表外部HTML文件路径的字符串</li>
+<li>一个可以接受两个参数的函数，参数为tElement和tAttrs，并返回一个外部HTML文件路径的字符串</li>
+</ul>
+<p>模板的URL都将通过AngularJS内置的安全层， 特别是<code>$getTrustedResourceUrl</code>，这样可以保护模板不会被不信任的源加载</p>
+<p>调用指令时会在后台通过Ajax来请求HTML模板文件，也就是说：</p>
+<ul>
+<li>需要防止CORS错误</li>
+<li>编译和链接要暂停，等待模板加载完成</li>
+</ul>
+<p>模板加载后，AngularJS会将它默认缓存到<code>$templateCache</code>服务中，，可以提前将模板缓存到一个定义模板的JavaScript文件中，这样就不需要通过XHR来加载模板了</p>
+<h3 id="replace-boolean-">replace（Boolean）</h3>
+<p>可选，默认为false，默认值意味着模板会被当作子元素插入到调用此指令的元素内部</p>
+<h3 id="scope-boolean-object-">scope（Boolean | Object）</h3>
+<p>scope参数是可选的，默认为false：</p>
+<ul>
+<li>false：直接调用相同的作用域对象；</li>
+<li>true：从当前作用域对象继承一个新的作用域对象；</li>
+<li>对象：创建一个同当前作用域相隔离的作用域对象。</li>
+</ul>
+<p>使用隔离作用域时，可以将指令内部的隔离作用
+域，同指令外部的作用域进行数据绑定：</p>
+<ul>
+<li>本地作用域属性：使用<code>@</code>符号将本地作用域同DOM属性的值进行绑定</li>
+<li>双向绑定：通过<code>=</code>可以将本地作用域上的属性同父级作用域上的属性进行双向的数据绑定</li>
+<li>父级作用域绑定：通过<code>&amp;</code>符号可以对父级作用域进行绑定，以便在其中运行函数</li>
+</ul>
+<h3 id="transclude-boolean-">transclude（Boolean）</h3>
+<p>可选，默认为false</p>
+<p>可以将整个模板，包括其中的指令通过嵌入全部传入一个指令中。这样做可以将任意内容和作用域传递给指令。transclude参数就是用来实现这个目的的，指令的内部可以访问外部指令的作用域，并且模板也可以访问外部的作用域对象</p>
+<blockquote>
+<p>只有当你希望创建一个可以包含任意内容的指令时，才使用transclude: true</p>
+</blockquote>
+<h3 id="controller-string-function-">controller（String | Function）</h3>
+<p>可选：</p>
+<ul>
+<li>字符串：以字符串的值为名字，查找注册在应用中的控制器的构造函数</li>
+<li>函数：直接定义内联的控制器</li>
+</ul>
+<p>可以向控制器中注入如下服务：</p>
+<ul>
+<li>$scope: 与指令元素相关联的当前作用域</li>
+<li>$element: 当前指令对应的元素</li>
+<li>$attrs: 由当前元素的属性组成的对象</li>
+<li>$transclude: 嵌入链接函数会与对应的嵌入作用域进行预绑定。transclude链接函数是实际被执行用来克隆元素和操作DOM的函数。</li>
+</ul>
+<h3 id="controlleras-string-">controllerAs （String）</h3>
+<p>用来设置控制器的别名，可以以此为名来发布控制器，并且作用域可以访问controllerAs。这样就可以在视图中引用控制器，甚至无需注入$scope。</p>
+<h3 id="require-string-array-">require（String | Array）</h3>
+<p>符串或数组元素的值是会在当前指令的作用域中使用的指令名称。require会将控制器注入到其值所指定的指令中，并作为当前指令的链接函数的第四个参数。</p>
+<p>默认情况下，指令只会在自身的元素上查找控制器。可以用下面的前缀进行修饰，改变查找控制器时的行为：</p>
+<ul>
+<li><code>?</code>: 如果在当前指令中没有找到所需要的控制器，会将null作为传给link函数的第四个参数</li>
+<li><code>^</code>: 如果添加了^前缀，指令会在上游的指令链中查找require参数所指定的控制器</li>
+<li><code>?^</code>: 将前面两个选项的行为组合起来，可选择地加载需要的指令并在父指令链中进行查找</li>
+<li>没有前缀: ，指令将会在自身所提供的控制器中进行查找，如果没有找到任何控制器（或具有指定名字的指令）就抛出一个错误</li>
+</ul>
+<h3 id="compile-object-function-">compile（Object | Function）</h3>
+<p>在compile函数内部，只对DOM进行操作，返回函数等效于使用link配置，返回对象的话包含两个函数：</p>
 <ol>
-<li>用户很忙，寻找最佳策略很难，需要很长时间，只是寻找满意策略效率要高得多</li>
-<li>如果猜错了，不会有什么严重后果。网站上一次错误的选择，换来的不过是几次后退按钮罢了</li>
-<li>对选择进行权衡并不会改善我们的机会</li>
-<li>猜测更有意思，猜测不会像仔细衡量那么累，如果猜对了，速度会更快</li>
+<li>preLink会在编译阶段之后、指令连接到子元素之前运行</li>
+<li>postLink会在所有子元素指令都链接之后才运行</li>
 </ol>
-<h3 id="-">不问原理，只要能用</h3>
-<p>用户不会追根究底，而是勉强应付。在很大程度上，人们在使用一些东西时，不会去理解他们的运作原理，甚至对他们的运作原理完全是错误的理解。在网页上也是一样，很多人完全不是以设计师设想的方式使用网络和软件，但是他们用得很好。因为：</p>
+<pre><code class="lang-javascript">compile: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(tElement, tAttrs, transclude)</span> {</span>
+    <span class="hljs-comment">// 一些DOM操作</span>
+    <span class="hljs-keyword">return</span> {
+        pre: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">preLink</span><span class="hljs-params">(scope, iElement, iAttrs, controller)</span> {</span>},
+        post: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">postLink</span><span class="hljs-params">(scope, iElement, iAttrs, controller)</span> {</span>}
+    };
+}
+</code></pre>
+<h3 id="link-function-">link（Function）</h3>
+<p>link函数会访问scope对象，其返回一个postLink函数。如果在compile中返回了post，那么link选项就会被忽略</p>
+<pre><code class="lang-javascript">link: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">postLink</span><span class="hljs-params">(scope, iElement, iAttrs)</span>{</span>}
+</code></pre>
+<h3 id="compile-link">compile和link</h3>
+<p>compile和link有许多异同：</p>
 <ul>
-<li>事物背后的工作机制往往对用户来说不中用，只要能正常使用它就行了</li>
-<li>如果发现某个事物能用，用户就会一直用它，无论它有多难用，除非偶然发现一种更好地方法。用户不太会自己去找一种更好的方法</li>
+<li>compile函数只会被调用一次，而link函数的调用次数可能会很多。</li>
+<li>compile用于对模板自身的转换，而link负责模型和视图之间进行动态关联</li>
+<li>link函数能够访问scope作用域对象，而compile不会，因为在编译阶段，scope对象还不存在。</li>
+<li>link和compile都会接收指令声明的DOM元素以及属性列表</li>
+<li>compile可以返回preLink和postLink函数，而link只能返回postLink函数</li>
 </ul>
-<p>所以，如果用户能很快的明白这个页面，那么：</p>
-<ul>
-<li>他们更容易找到自己所需要的东西</li>
-<li>他们更容易理解网站提供哪些服务</li>
-<li>你更可能引导他们去你所希望他们看到的地方</li>
-<li>他们会觉得，在你的网站上，他们更能把握全局，这会让他们成为老用户</li>
-</ul>
-<h2 id="-">为扫描设计，不为阅读设计</h2>
-<h3 id="-">视觉层次</h3>
-<p>让页面在瞬间明白易懂的一个好办法是确保页面上所有内容的外观--所有的可视线索--清除，而且能偶准确的表达页面上内容之间的关系，也就是有清楚的视觉层次</p>
-<p>视觉层次清楚的特点有：</p>
-<ul>
-<li>越重要的部分越突出</li>
-<li>逻辑上相关的部分在视觉上也应当相关</li>
-<li>逻辑上包含的部分，在视觉上应该进行嵌套</li>
-</ul>
-<p>用户每天都会对视觉层次进行分解，好的视觉层次通过预先处理页面，用一种我们能快速理解的方式对页面的内容进行组织并却分优先级，减少用户的对页面的思考，加快浏览页面找到所需内容的时间。如果页面没有清楚的视觉层次，用户将会被迫降低扫描页面的速度，寻找关键的文字和短语，然后拼凑出我们感觉重要的内容和内容的组织方式，加大了用户的思考内容</p>
-<h3 id="-">习惯用法</h3>
-<p>由于文化的关系，用户从小会养成一种习惯用法，比如很大的短语它通常是标题，一张照片下面的文字要么是对照片的说明，要么是照片的拍摄者署名，等等。这些习惯用法根植在用户的脑海中，通过常年累月积累而来</p>
-<p>关于Web上的习惯用法，有两点很重要：</p>
+<h2 id="angularjs-">AngularJS的生命周期</h2>
+<p>AngularJS应用启动后会进行编译和链接，作用域会同HTML进行绑定，应用可以对用户在HTML中进行的操作进行实时响应。</p>
+<h3 id="-">编译三个阶段</h3>
 <ol>
-<li>这些习惯用法非常有用，我们需要知道，习惯用法之所以会成为习惯，就是因为他们有用</li>
-<li>设计师通常不愿意利用他们，设计师总是希望能做出一些崭新的，与众不同的设计，而不是使用那些原有的东西</li>
+<li>首先浏览器会用它的标准API将HTML解析成DOM。模板必须是可被解析的HTML。这是AngularJS和那些“以字符串为基础而非以DOM元素为基础的”模板系统的区别之处。</li>
+<li>DOM的编译是有<code>$compile</code>方法来执行的。这个方法会遍历DOM并找到匹配的指令。一旦找到一个，它就会被加入一个指令列表中，这个列表是用来记录所有和当前DOM相关的指令的。 一旦所有的指令都被确定了，会按照优先级被排序，并且他们的compile方法会被调用。指令的<code>$compile()</code>函数能修改DOM结构，并且要负责生成一个link函数（后面会提到）。<code>$compile</code>方法最后返回一个合并起来的链接函数，这是链接函数是每一个指令的compile函数返回的链接函数的集合。</li>
+<li>通过调用一步所说的链接函数来将模板与作用域链接起来。这会轮流调用每一个指令的链接函数，让每一个指令都能对DOM注册监听事件，和建立对作用域的的监听。这样最后就形成了作用域的DOM的动态绑定。任何一个作用域的改变都会在DOM上体现出来。</li>
 </ol>
-<p>如果不打算使用一种已有的习惯用法，那也必须使用一种清楚地，能带来很大价值的习惯用法。所以，在清楚自己有个更好地想法时进行创新，否则尽量使用习惯用法</p>
-<h3 id="-">划分页面</h3>
-<p>把页面划分成明确定义的区域很重要，因为这可以让用户很快的决定关注页面的哪些区域，或者放心的跳过哪些区域</p>
-<h3 id="-">明显标识可以点击的地方</h3>
-<p>人们在网页上所做的大多数申请就是找到下一个地方点击，那么明确地标注哪些地方可以点击，哪些地方不能点击，这很重要</p>
-<h3 id="-">降低视觉噪声</h3>
-<p>让页面不易理解的一个最大原因，就是视觉噪声，它分为两种：</p>
-<ul>
-<li>眼花缭乱</li>
-<li>背景噪声</li>
-</ul>
-<p>在设计页面的时候，可以先假定所有内容都是视觉噪声，除非得到证明它们不是</p>
-<h2 id="-">为什么用户喜欢无需思考的选择</h2>
-<p>一些站点规定，到达网页的任何页面需要点击的次数永远不能超过指定的次数（3、4、5）。但真正的问题不是到达目标之前要的点击次数（当然这里也要有个限度），而是每次点击需要多少思考。用户不介意有多少次点击，只要每次点击都毫不费力，并且能让用户坚信自己的选择正确。“三次无需思考、明确无误的点击相当于一次需要思考的点击”</p>
-<h2 id="-">省略不必要的文字</h2>
-<h3 id="-">页面到处是多余</h3>
-<p>有力的文字都很简练。句子里不应该有多余的文字，段落里不应该有多余的句子。同样，画上不应该有多余的线条，机器上不应该有多余的零件。网页上大部分文字斗不过实在占地方，因为没有人打算读他们。去掉没有人看的文字，有三个好处：</p>
+<p>大致过程如下：</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> $compile = ...; <span class="hljs-comment">// injected into your code</span>
+<span class="hljs-keyword">var</span> scope = ...;
+
+<span class="hljs-keyword">var</span> html = <span class="hljs-string">'&lt;div ng-bind='</span>exp<span class="hljs-string">'&gt;&lt;/div&gt;'</span>;
+
+<span class="hljs-comment">// Step 1: parse HTML into DOM element</span>
+<span class="hljs-keyword">var</span> template = angular.element(html);
+
+<span class="hljs-comment">// Step 2: compile the template</span>
+<span class="hljs-keyword">var</span> linkFn = $compile(template);
+
+<span class="hljs-comment">// Step 3: link the compiled template with the scope.</span>
+linkFn(scope);
+</code></pre>
+<blockquote>
+<p>模板之中可能含有指令，指令之中可能又含有模板，模板之中又含有指令，由此形成一棵模板树。只有具有最高优先级的指令中的模板会被编译。如果一个元素已经有一个含有模板的指令了，永远不要对其用另一个指令进行修饰。一个指令会将内部子指令的模板合并在一起成为一个模板函数并返回，它无法查找父指令，只能通过模板函数访问内部子指令</p>
+</blockquote>
+<h2 id="ngmodel">ngModel</h2>
+<p>ngModel提供更底层的API来处理控制器内的数据。</p>
 <ol>
-<li>可以降低页面的噪声</li>
-<li>让有用的内容更加突出</li>
-<li>让页面更简短，用户一眼能看到更多的信息，而不用滚动屏幕</li>
+<li>为了设置作用域中的视图值，需要调用<code>ngModel.$setViewValue()</code>函数，接受一个字符串参数value，表示想要赋予的实际值，然后：</li>
+<li><code>ngModel.$setViewValue()</code>方法会更新控制器本地的<code>$viewValue</code>，然后将值传递给每一个<code>$parser</code>函数</li>
+<li>值被解析且<code>$parser</code>所有函数都完成后，值会赋给<code>$modeValue</code>属性，并且传递给指令中<code>ng-model</code>属性提供的表达式</li>
+<li>所有步骤都完成后，<code>$viewChangeListeners</code>中所有的监听器都会被调用</li>
 </ol>
-<h3 id="-">去掉欢迎词</h3>
-<p>欢迎词是一段引导性的文字，可能是欢迎我们来到这个站点，告诉这个网站有多棒，或者告诉我们在刚进入这个版面将会看到什么内容。很多欢迎词没有包括有用的信息，而是在一个劲的说自己有多好，而不是描述什么东西能让用户感觉更好。欢迎词就像闲聊，内容无所谓，主要是一种社交手段，但大部分Web用户没有时间闲聊，他们喜欢直截了当，所以尽量减少欢迎词，能减多少减多少</p>
-<h3 id="-">去掉指示说明</h3>
-<p>多余文字的另一个主要来源就是指示说明，关于指示说明，没有人会细读他们，如果只是说明非常长，用户发现他们所需信息的机会就越小。我们应当让每项内容不言而喻来消除指示说明</p>
+<blockquote>
+<p>单独调用<code>$setViewValue()</code>不会唤起一个新的digest循环，因此如果想更新指令，需要在设置<code>$viewValue</code>后手动触发digest</p>
+</blockquote>
+<p>ngModel的<code>$render</code>方法可以定义视图具体的渲染方式，它在<code>$parser</code>完成后被调用</p>
+<p>ngModelController中有几个属性可用来检查甚至修改视图：</p>
+<ol>
+<li>$viewValue： 保存着更新视图所需的实际字符串。</li>
+<li>$modelValue：由数据模型持有。$modelValue和$viewValue可能是不同的，取决于$parser流水线是否对其进行了操作。</li>
+<li>$parsers：$parsers的值是一个由函数组成的数组，其中的函数会以流水线的形式被逐一调用。ngModel从DOM中读取的值会被传入$parsers中的函数，并依次被其中的解析器处理。</li>
+<li>$formatters：$formatters的值是一个由函数组成的数组，其中的函数会以流水线的形式在数据模型的值
+发生变化时被逐一调用。它和$parser流水线互不影响，用来对值进行格式化和转换，以便在绑定了这个值的控件中显示。</li>
+<li>$viewChangeListeners：$viewChangeListeners的值是一个由函数组成的数组，其中的函数会以流水线的形式在视图中的值发生变化时被逐一调用。通过$viewChangeListeners，可以在无需使用$watch的情况下实现类似的行为。由于返回值会被忽略，因此这些函数不需要返回值。</li>
+</ol>
 
                     
                     </section>
@@ -905,10 +990,10 @@
         </div>
 
         
-        <a href="../dontmakemethink/README.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../the-complete-book-on-angularjs/build-in-directive.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../dontmakemethink/thingsmustbedone.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../apprenticeship-patterns/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
