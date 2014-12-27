@@ -1,5 +1,8 @@
 # 目录
-
+* [编写可读代码的艺术](the-art-of-readable-code/README.md)
+    * [表面层次的改进](the-art-of-readable-code/1.md)
+    * [简化循环和逻辑](the-art-of-readable-code/2.md)
+    * [重新组织代码](the-art-of-readable-code/3.md)
 * [AngularJS权威指南](the-complete-book-on-angularjs/README.md)
     * [第二章：数据绑定](the-complete-book-on-angularjs/data-binding.md)
     * [第三章：模块](the-complete-book-on-angularjs/module.md)
