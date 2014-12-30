@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>抽象装饰者模式 | Reading</title>
+        <title>第十一章：模块加载 | Reading</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../jsDesignPatterns/Flyweight.html" />
+        <link rel="next" href="../the-complete-book-on-angularjs/router.html" />
         
         
-        <link rel="prev" href="../jsDesignPatterns/Decorator.html" />
+        <link rel="prev" href="../the-complete-book-on-angularjs/directive-detail.html" />
         
 
-        <meta property="og:title" content="抽象装饰者模式 | Reading">
+        <meta property="og:title" content="第十一章：模块加载 | Reading">
         <meta property="og:site_name" content="Reading">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="LingyuCoder/reading" data-level="11.15" data-basepath=".." data-revision="1419956588898">
+<div class="book" data-github="LingyuCoder/reading" data-level="3.10" data-basepath=".." data-revision="1419956588898">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="http://lingyu.wang" target="_blank" class="btn pull-left" style="background-image: url(/gitbook/images/favicon.ico);background-repeat: no-repeat; background-size: 100% 100%; border: none; width: 40px;"></a>
@@ -61,7 +61,7 @@
     <a href="#" id="weibo_share" target="_blank" class="btn pull-right"><i class="fa fa-weibo"></i></a>
 
     <script type="text/javascript">
-    document.getElementById('weibo_share').setAttribute('href', 'http://service.weibo.com/share/share.php?url=' + encodeURIComponent(window.location.href) + '&type=button&ralateUid=1162383197&language=zh_cn&appkey=1yj5nG&title=' + encodeURIComponent('抽象装饰者模式 | 天镶的读书笔记') + '&pic=http%3A%2F%2Flingyu.wang%2Fimages%2Favatar.jpg&searchPic=true&style=simple');
+    document.getElementById('weibo_share').setAttribute('href', 'http://service.weibo.com/share/share.php?url=' + encodeURIComponent(window.location.href) + '&type=button&ralateUid=1162383197&language=zh_cn&appkey=1yj5nG&title=' + encodeURIComponent('第十一章：模块加载 | 天镶的读书笔记') + '&pic=http%3A%2F%2Flingyu.wang%2Fimages%2Favatar.jpg&searchPic=true&style=simple');
     </script>
 
     <script>
@@ -94,7 +94,7 @@
             <a href="https://github.com/LingyuCoder/reading/issues" target="blank">提出建议</a>
         </li>
         <li>
-            <a href="https://github.com/LingyuCoder/reading/edit/master/jsDesignPatterns/AbstractDecorator.md" target="blank">编辑贡献</a>
+            <a href="https://github.com/LingyuCoder/reading/edit/master/the-complete-book-on-angularjs/load-module.md" target="blank">编辑贡献</a>
         </li>
         <li>
             <a href="http://lingyu.wang" target="blank">返回博客</a>
@@ -785,7 +785,7 @@
             <div class="page-wrapper">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 19.48051948051948%;min-width: 18.181818181818183%;"></div>
+        <div class="inner" style="width: 54.54545454545455%;min-width: 53.246753246753244%;"></div>
     </div>
     <div class="chapters">
     
@@ -821,59 +821,59 @@
     
         <a href="../jsDesignPatterns/AbstractDecorator.html" title="抽象装饰者模式" class="chapter done " data-progress="11.15" style="left: 19.48051948051948%;"></a>
     
-        <a href="../jsDesignPatterns/Flyweight.html" title="享元模式" class="chapter  " data-progress="11.16" style="left: 20.77922077922078%;"></a>
+        <a href="../jsDesignPatterns/Flyweight.html" title="享元模式" class="chapter done " data-progress="11.16" style="left: 20.77922077922078%;"></a>
     
-        <a href="../jsDesignPatterns/Module.html" title="模块模式" class="chapter  " data-progress="11.2" style="left: 22.07792207792208%;"></a>
+        <a href="../jsDesignPatterns/Module.html" title="模块模式" class="chapter done " data-progress="11.2" style="left: 22.07792207792208%;"></a>
     
-        <a href="../jsDesignPatterns/RevealingModule.html" title="揭示模块模式" class="chapter  " data-progress="11.3" style="left: 23.376623376623378%;"></a>
+        <a href="../jsDesignPatterns/RevealingModule.html" title="揭示模块模式" class="chapter done " data-progress="11.3" style="left: 23.376623376623378%;"></a>
     
-        <a href="../jsDesignPatterns/Singleton.html" title="单例模式" class="chapter  " data-progress="11.4" style="left: 24.675324675324674%;"></a>
+        <a href="../jsDesignPatterns/Singleton.html" title="单例模式" class="chapter done " data-progress="11.4" style="left: 24.675324675324674%;"></a>
     
-        <a href="../jsDesignPatterns/Observer.html" title="观察者模式" class="chapter  " data-progress="11.5" style="left: 25.974025974025974%;"></a>
+        <a href="../jsDesignPatterns/Observer.html" title="观察者模式" class="chapter done " data-progress="11.5" style="left: 25.974025974025974%;"></a>
     
-        <a href="../jsDesignPatterns/Pubsub.html" title="发布/订阅模式" class="chapter  " data-progress="11.6" style="left: 27.272727272727273%;"></a>
+        <a href="../jsDesignPatterns/Pubsub.html" title="发布/订阅模式" class="chapter done " data-progress="11.6" style="left: 27.272727272727273%;"></a>
     
-        <a href="../jsDesignPatterns/Mediator.html" title="中介者模式" class="chapter  " data-progress="11.7" style="left: 28.571428571428573%;"></a>
+        <a href="../jsDesignPatterns/Mediator.html" title="中介者模式" class="chapter done " data-progress="11.7" style="left: 28.571428571428573%;"></a>
     
-        <a href="../jsDesignPatterns/Prototype.html" title="原型模式" class="chapter  " data-progress="11.8" style="left: 29.87012987012987%;"></a>
+        <a href="../jsDesignPatterns/Prototype.html" title="原型模式" class="chapter done " data-progress="11.8" style="left: 29.87012987012987%;"></a>
     
-        <a href="../jsDesignPatterns/Command.html" title="命令模式" class="chapter  " data-progress="11.9" style="left: 31.16883116883117%;"></a>
+        <a href="../jsDesignPatterns/Command.html" title="命令模式" class="chapter done " data-progress="11.9" style="left: 31.16883116883117%;"></a>
     
-        <a href="../dontmakemethink/README.html" title="Don&#39;t make me think" class="chapter  " data-progress="12" style="left: 32.467532467532465%;"></a>
+        <a href="../dontmakemethink/README.html" title="Don&#39;t make me think" class="chapter done " data-progress="12" style="left: 32.467532467532465%;"></a>
     
-        <a href="../dontmakemethink/principle.html" title="指导原则" class="chapter  " data-progress="12.1" style="left: 33.76623376623377%;"></a>
+        <a href="../dontmakemethink/principle.html" title="指导原则" class="chapter done " data-progress="12.1" style="left: 33.76623376623377%;"></a>
     
-        <a href="../dontmakemethink/thingsmustbedone.html" title="必须正确处理的几个方面" class="chapter  " data-progress="12.2" style="left: 35.064935064935064%;"></a>
+        <a href="../dontmakemethink/thingsmustbedone.html" title="必须正确处理的几个方面" class="chapter done " data-progress="12.2" style="left: 35.064935064935064%;"></a>
     
-        <a href="../dontmakemethink/thingsshouldbechecked.html" title="确定你没有做错的几件事" class="chapter  " data-progress="12.3" style="left: 36.36363636363637%;"></a>
+        <a href="../dontmakemethink/thingsshouldbechecked.html" title="确定你没有做错的几件事" class="chapter done " data-progress="12.3" style="left: 36.36363636363637%;"></a>
     
-        <a href="../dontmakemethink/aspect.html" title="大的方面和外界影响" class="chapter  " data-progress="12.4" style="left: 37.66233766233766%;"></a>
+        <a href="../dontmakemethink/aspect.html" title="大的方面和外界影响" class="chapter done " data-progress="12.4" style="left: 37.66233766233766%;"></a>
     
-        <a href="../zengarden/README.html" title="CSS禅意花园" class="chapter  " data-progress="13" style="left: 38.96103896103896%;"></a>
+        <a href="../zengarden/README.html" title="CSS禅意花园" class="chapter done " data-progress="13" style="left: 38.96103896103896%;"></a>
     
-        <a href="../zengarden/design.html" title="设计" class="chapter  " data-progress="13.1" style="left: 40.25974025974026%;"></a>
+        <a href="../zengarden/design.html" title="设计" class="chapter done " data-progress="13.1" style="left: 40.25974025974026%;"></a>
     
-        <a href="../zengarden/layout.html" title="正文布局" class="chapter  " data-progress="13.2" style="left: 41.55844155844156%;"></a>
+        <a href="../zengarden/layout.html" title="正文布局" class="chapter done " data-progress="13.2" style="left: 41.55844155844156%;"></a>
     
-        <a href="../zengarden/text-layout.html" title="文字排布" class="chapter  " data-progress="13.3" style="left: 42.857142857142854%;"></a>
+        <a href="../zengarden/text-layout.html" title="文字排布" class="chapter done " data-progress="13.3" style="left: 42.857142857142854%;"></a>
     
-        <a href="../zengarden/image.html" title="图像" class="chapter  " data-progress="13.4" style="left: 44.15584415584416%;"></a>
+        <a href="../zengarden/image.html" title="图像" class="chapter done " data-progress="13.4" style="left: 44.15584415584416%;"></a>
     
-        <a href="../zengarden/practice.html" title="最佳实践" class="chapter  " data-progress="13.5" style="left: 45.45454545454545%;"></a>
+        <a href="../zengarden/practice.html" title="最佳实践" class="chapter done " data-progress="13.5" style="left: 45.45454545454545%;"></a>
     
-        <a href="../the-art-of-readable-code/README.html" title="编写可读代码的艺术" class="chapter  new-chapter" data-progress="2" style="left: 46.753246753246756%;"></a>
+        <a href="../the-art-of-readable-code/README.html" title="编写可读代码的艺术" class="chapter done new-chapter" data-progress="2" style="left: 46.753246753246756%;"></a>
     
-        <a href="../the-art-of-readable-code/1.html" title="表面层次的改进" class="chapter  " data-progress="2.1" style="left: 48.05194805194805%;"></a>
+        <a href="../the-art-of-readable-code/1.html" title="表面层次的改进" class="chapter done " data-progress="2.1" style="left: 48.05194805194805%;"></a>
     
-        <a href="../the-art-of-readable-code/2.html" title="简化循环和逻辑" class="chapter  " data-progress="2.2" style="left: 49.35064935064935%;"></a>
+        <a href="../the-art-of-readable-code/2.html" title="简化循环和逻辑" class="chapter done " data-progress="2.2" style="left: 49.35064935064935%;"></a>
     
-        <a href="../the-art-of-readable-code/3.html" title="重新组织代码" class="chapter  " data-progress="2.3" style="left: 50.64935064935065%;"></a>
+        <a href="../the-art-of-readable-code/3.html" title="重新组织代码" class="chapter done " data-progress="2.3" style="left: 50.64935064935065%;"></a>
     
-        <a href="../the-complete-book-on-angularjs/README.html" title="AngularJS权威指南" class="chapter  new-chapter" data-progress="3" style="left: 51.94805194805195%;"></a>
+        <a href="../the-complete-book-on-angularjs/README.html" title="AngularJS权威指南" class="chapter done new-chapter" data-progress="3" style="left: 51.94805194805195%;"></a>
     
-        <a href="../the-complete-book-on-angularjs/data-binding.html" title="第二章：数据绑定" class="chapter  " data-progress="3.1" style="left: 53.246753246753244%;"></a>
+        <a href="../the-complete-book-on-angularjs/data-binding.html" title="第二章：数据绑定" class="chapter done " data-progress="3.1" style="left: 53.246753246753244%;"></a>
     
-        <a href="../the-complete-book-on-angularjs/load-module.html" title="第十一章：模块加载" class="chapter  " data-progress="3.10" style="left: 54.54545454545455%;"></a>
+        <a href="../the-complete-book-on-angularjs/load-module.html" title="第十一章：模块加载" class="chapter done " data-progress="3.10" style="left: 54.54545454545455%;"></a>
     
         <a href="../the-complete-book-on-angularjs/router.html" title="第十二章：视图和路由" class="chapter  " data-progress="3.11" style="left: 55.84415584415584%;"></a>
     
@@ -950,95 +950,51 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_22">
+                    <section class="normal" id="section-gitbook_65">
                     
-                        <h1 id="abstract-decorator-">Abstract Decorator——抽象装饰者</h1>
-<p>事实上，我们可以为将每个装饰者实现成一个装饰者类</p>
-<h2 id="-">定义原始类</h2>
-<p>首先我们定义一个接口，里面包含了必须实现的方法：</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> StudentInterface = <span class="hljs-keyword">new</span> Interface(<span class="hljs-string">"StudentInterface"</span>, [<span class="hljs-string">"getCost"</span>, <span class="hljs-string">"getName"</span>]);
+                        <h1 id="angularjs-">AngularJS模块加载</h1>
+<h2 id="-">配置</h2>
+<p>在模块的加载阶段，AngularJS会在提供者注册和配置的过程中对模块进行配置。</p>
+<p>这个阶段是唯一能够在应用启动前进行修改的部分</p>
+<pre><code class="lang-javascript">angular.module(<span class="hljs-string">'myApp'</span>, [])
+    .config(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">($provide)</span> {</span>
+
+    });
 </code></pre>
-<p>然后根据这个接口，定义一个需要装饰的原始类：</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> Student = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(name)</span> {</span>
-    Interface.checkImplements(<span class="hljs-keyword">this</span>, StudentInterface);
-    <span class="hljs-keyword">this</span>.name = name;
-};
-
-Student.prototype.getName = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name;
-};
-
-Student.prototype.getCost = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
-    <span class="hljs-keyword">return</span> <span class="hljs-number">5500</span>;
-};
+<p><code>.factory()</code>、<code>.directive()</code>等都是<code>.config()</code>的语法糖，如下面这段代码：</p>
+<pre><code class="lang-javascript">angular.module(<span class="hljs-string">'myApp'</span>, [])
+    .factory(<span class="hljs-string">'myFactory'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+        <span class="hljs-keyword">var</span> service = {};
+        <span class="hljs-keyword">return</span> service;
+    })
+    .directive(<span class="hljs-string">'myDirective'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+        <span class="hljs-keyword">return</span> {
+            template: <span class="hljs-string">'&lt;button&gt;Click me&lt;/button&gt;'</span>
+        }
+    });
 </code></pre>
-<h2 id="-">定义装饰器基类</h2>
-<p>然后定义一个装饰器基类，所有的装饰器都继承这个装饰器基类，它也需要实现这些上面的接口，但由于不需要做修改，这些接口直接调用原始类的方法就好：</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> StudentDecorator = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(student)</span> {</span>
-    Interface.checkImplements(student, StudentInterface);
-    <span class="hljs-keyword">this</span>.student = student;
-};
-
-StudentDecorator.prototype.getName = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.student.getName();
-};
-
-StudentDecorator.prototype.getCost = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.student.getCost();
-};
+<p>等同于：</p>
+<pre><code class="lang-javascript">angular.module(<span class="hljs-string">'myApp'</span>, [])
+    .config(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">($provide, $compileProvider)</span> {</span>
+        $provide.factory(<span class="hljs-string">'myFactory'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+            <span class="hljs-keyword">var</span> service = {};
+            <span class="hljs-keyword">return</span> service;
+        });
+        $compileProvider.directive(<span class="hljs-string">'myDirective'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+            <span class="hljs-keyword">return</span> {
+                template: <span class="hljs-string">'&lt;button&gt;Click me&lt;/button&gt;'</span>
+            };
+        });
+    });
 </code></pre>
-<h2 id="-">创建装饰器</h2>
-<p>接着就可以定义继承装饰器基类的装饰器了，比如定义一个学生需要宿舍，那么装饰器应该这么定义：</p>
-<pre><code class="lang-javascript"><span class="hljs-comment">//宿舍装饰器</span>
-<span class="hljs-keyword">var</span> DormitoryDecorator = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(student)</span> {</span>
-    StudentDecorator.call(<span class="hljs-keyword">this</span>, student);
-};
-
-extend(DormitoryDecorator.prototype, StudentDecorator.prototype);
-
-DormitoryDecorator.prototype.getCost = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.student.getCost() + <span class="hljs-number">550</span>;
-};
-</code></pre>
-<p>这里通过extend和调用装饰器基类的构造函数来将基类的属性和方法复制给装饰器类，同理构建两个新的装饰器，书本装饰器和把妹装饰器：</p>
-<pre><code class="lang-javascript"><span class="hljs-comment">//书本装饰器</span>
-<span class="hljs-keyword">var</span> BooksDecorator = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(student)</span> {</span>
-    StudentDecorator.call(<span class="hljs-keyword">this</span>, student);
-};
-
-extend(BooksDecorator.prototype, StudentDecorator.prototype);
-
-BooksDecorator.prototype.getCost = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.student.getCost() + <span class="hljs-number">400</span>;
-};
-
-<span class="hljs-comment">//把妹装饰器</span>
-<span class="hljs-keyword">var</span> GirlfriendDecorator = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(student)</span> {</span>
-    StudentDecorator.call(<span class="hljs-keyword">this</span>, student);
-};
-
-extend(GirlfriendDecorator.prototype, StudentDecorator.prototype);
-
-GirlfriendDecorator.prototype.getCost = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.student.getCost() + <span class="hljs-number">99999</span>;
-};
-</code></pre>
-<p>这样对装饰器的定义就完成了</p>
-<h2 id="-">例子</h2>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> student = <span class="hljs-keyword">new</span> Student(<span class="hljs-string">"天镶"</span>);
-console.log(student.getCost());
-student = <span class="hljs-keyword">new</span> DormitoryDecorator(student);
-console.log(student.getCost());
-student = <span class="hljs-keyword">new</span> GirlfriendDecorator(student);
-console.log(student.getCost());
-student = <span class="hljs-keyword">new</span> BooksDecorator(student);
-console.log(student.getCost());
-</code></pre>
-<p>查看输出结果：</p>
-<p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/11.png" alt="输出天镶需要5500,6050，16049,16449"></p>
-<p>如果查看student对象，可以看到它是如下结构的：</p>
-<p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/12.png" alt="student对象结构"></p>
-<p>这就是抽象装饰器模式了。抽象装饰者模式可以动态的修改对象，因此更加完美，但内存消耗也要大得多</p>
+<blockquote>
+<p>唯一例外的是constant()方法，这个方法总会在所有配置块之前被执行</p>
+</blockquote>
+<p>只有少数几种类型的对象可以被注入到<code>config()</code>函数中：提供者和常量。只能注入用<code>provider()</code>语法构建的服务，其他的则不行。</p>
+<p><code>config()</code>函数接受一个参数-configFunction: （函数）：AngularJS在模块加载时会执行这个函数</p>
+<h2 id="-">运行块</h2>
+<p>运行块在注入器创建之后被执行，它是所有AngularJS应用中第一个被执行的方法。运行块通常用来注册全局的事件监听器。这就是<code>run()</code>方法</p>
+<p><code>run()</code>接受个参数- initializeFn（函数）: AngularJS在注入器创建后会执行这个函数。</p>
 
                     
                     </section>
@@ -1048,10 +1004,10 @@ console.log(student.getCost());
         </div>
 
         
-        <a href="../jsDesignPatterns/Decorator.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../the-complete-book-on-angularjs/directive-detail.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../jsDesignPatterns/Flyweight.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../the-complete-book-on-angularjs/router.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
