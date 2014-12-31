@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>第三章：模块 | Reading</title>
+        <title>第十五章：XHR和服务器通信——Restangular | Reading</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../the-complete-book-on-angularjs/scope.html" />
+        <link rel="next" href="../the-complete-book-on-angularjs/xhr-practice.html" />
         
         
-        <link rel="prev" href="../the-complete-book-on-angularjs/data-binding.html" />
+        <link rel="prev" href="../the-complete-book-on-angularjs/xhr-resource.html" />
         
 
-        <meta property="og:title" content="第三章：模块 | Reading">
+        <meta property="og:title" content="第十五章：XHR和服务器通信——Restangular | Reading">
         <meta property="og:site_name" content="Reading">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="LingyuCoder/reading" data-level="3.2" data-basepath=".." data-revision="1420021248991">
+<div class="book" data-github="LingyuCoder/reading" data-level="3.16" data-basepath=".." data-revision="1420021248991">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="http://lingyu.wang" target="_blank" class="btn pull-left" style="background-image: url(/gitbook/images/favicon.ico);background-repeat: no-repeat; background-size: 100% 100%; border: none; width: 40px;"></a>
@@ -61,7 +61,7 @@
     <a href="#" id="weibo_share" target="_blank" class="btn pull-right"><i class="fa fa-weibo"></i></a>
 
     <script type="text/javascript">
-    document.getElementById('weibo_share').setAttribute('href', 'http://service.weibo.com/share/share.php?url=' + encodeURIComponent(window.location.href) + '&type=button&ralateUid=1162383197&language=zh_cn&appkey=1yj5nG&title=' + encodeURIComponent('第三章：模块 | 天镶的读书笔记') + '&pic=http%3A%2F%2Flingyu.wang%2Fimages%2Favatar.jpg&searchPic=true&style=simple');
+    document.getElementById('weibo_share').setAttribute('href', 'http://service.weibo.com/share/share.php?url=' + encodeURIComponent(window.location.href) + '&type=button&ralateUid=1162383197&language=zh_cn&appkey=1yj5nG&title=' + encodeURIComponent('第十五章：XHR和服务器通信——Restangular | 天镶的读书笔记') + '&pic=http%3A%2F%2Flingyu.wang%2Fimages%2Favatar.jpg&searchPic=true&style=simple');
     </script>
 
     <script>
@@ -94,7 +94,7 @@
             <a href="https://github.com/LingyuCoder/reading/issues" target="blank">提出建议</a>
         </li>
         <li>
-            <a href="https://github.com/LingyuCoder/reading/edit/master/the-complete-book-on-angularjs/module.md" target="blank">编辑贡献</a>
+            <a href="https://github.com/LingyuCoder/reading/edit/master/the-complete-book-on-angularjs/xhr-restangular.md" target="blank">编辑贡献</a>
         </li>
         <li>
             <a href="http://lingyu.wang" target="blank">返回博客</a>
@@ -825,7 +825,7 @@
             <div class="page-wrapper">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 60.97560975609756%;min-width: 59.75609756097561%;"></div>
+        <div class="inner" style="width: 58.53658536585366%;min-width: 57.31707317073171%;"></div>
     </div>
     <div class="chapters">
     
@@ -927,9 +927,9 @@
     
         <a href="../the-complete-book-on-angularjs/xhr-restangular.html" title="第十五章：XHR和服务器通信——Restangular" class="chapter done " data-progress="3.16" style="left: 58.53658536585366%;"></a>
     
-        <a href="../the-complete-book-on-angularjs/xhr-practice.html" title="第十六章：XHR实践" class="chapter done " data-progress="3.17" style="left: 59.75609756097561%;"></a>
+        <a href="../the-complete-book-on-angularjs/xhr-practice.html" title="第十六章：XHR实践" class="chapter  " data-progress="3.17" style="left: 59.75609756097561%;"></a>
     
-        <a href="../the-complete-book-on-angularjs/module.html" title="第三章：模块" class="chapter done " data-progress="3.2" style="left: 60.97560975609756%;"></a>
+        <a href="../the-complete-book-on-angularjs/module.html" title="第三章：模块" class="chapter  " data-progress="3.2" style="left: 60.97560975609756%;"></a>
     
         <a href="../the-complete-book-on-angularjs/scope.html" title="第四章：作用域" class="chapter  " data-progress="3.3" style="left: 62.19512195121951%;"></a>
     
@@ -1001,48 +1001,180 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_65">
+                    <section class="normal" id="section-gitbook_73">
                     
-                        <h2 id="-">模块</h2>
-<h3 id="-">使用模块</h3>
-<p>通过<code>angular.module(&#39;myApp&#39;, [])</code>来声明模块，接受两个参数：</p>
-<ol>
-<li>name-字符串：模块的名称</li>
-<li>requires-字符串数组：模块的依赖列表</li>
-</ol>
-<p>而<code>angular.module(&#39;myApp&#39;)</code>则是引用模块</p>
-<h3 id="-">模块的好处</h3>
-<p>使用模块能给我们带来许多好处，比如：</p>
+                        <h1 id="-xhr-restangular">同外界通信：XHR和服务器通信——Restangular</h1>
+<h2 id="restangular-">Restangular简介</h2>
+<p>Restangular是一个专门用来从外部读取数据的AngularJS服务</p>
 <ul>
-<li>保持全局命名空间的清洁；</li>
-<li>编写测试代码更容易，并能保持其清洁，以便更容易找到互相隔离的功能；</li>
-<li>易于在不同应用间复用代码；</li>
-<li>使应用能够以任意顺序加载代码的各个部分；</li>
+<li>Restangular支持promise模式的异步调用</li>
+<li>Restangular支持所有的HTTP方法</li>
+<li>Restangular并不需要事先知道URL或提前指定它们（除基础URL外）</li>
+<li>Restangular可以直接处理嵌套的资源，无需创建新的Restangular实例</li>
+<li>使用过程中仅需要创建一个Restangular资源对象的实例</li>
 </ul>
-<h2 id="-">作用域</h2>
-<h3 id="-scope">作用域和$scope</h3>
-<p>应用的作用域是和应用的数据模型相关联的，同时作用域也是表达式执行的上下文。<code>$scope</code>对象是定义应用业务逻辑、控制器方法和视图属性的地方。</p>
-<p>作用域是应用状态的基础。基于动态绑定，我们可以依赖视图在修改数据时立刻更新<code>$scope</code>，也可以依赖<code>$scope</code>在其发生变化时立刻重新渲染视图。</p>
-<p><code>$scope</code>可以进行嵌套，嵌套通过原型继承实现，可以引用父级<code>$scope</code>中的属性，其就是一个普通的JavaScript对象，它的所有属性，都可以自动被视图访问到</p>
-<h3 id="-">创建作用域</h3>
-<p><code>ng-app</code>的元素会和<code>$rootScope</code>进行绑定，<code>$rootScope</code>是AngularJS中最接近全局作用域的对象，是所有<code>$scope</code>对象的最上层</p>
-<p><code>ng-controller</code>则会在其声明的元素上创建一个新的<code>$scope</code>对象，并进行嵌套</p>
-<h3 id="-">作用域的功能</h3>
-<p>作用域有以下的基本功能：</p>
+<h2 id="restangular-">Restangular对象简介</h2>
+<blockquote>
+<p>Restangular依赖Lo-Dash或Underscore，因此为了确保Restangular可以正常运行，需要引入这两个库中的一个</p>
+</blockquote>
+<p>可以为拉取数据的对象设置基础路由，会让所有的HTTP请求将该路径作为根路径来拉取数据:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> User = Restangular.all(<span class="hljs-string">'users'</span>);
+<span class="hljs-keyword">var</span> allUsers = User.getList(); <span class="hljs-comment">// GET /users</span>
+</code></pre>
+<p>也可以通过单个对象来发送嵌套的请求：</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> oneUser = Restangular.one(<span class="hljs-string">'users'</span>, <span class="hljs-string">'abc123'</span>);
+oneUser.get()<span class="hljs-comment">// GET /users/abc123</span>
+    .then(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(user)</span> {</span>
+        user.getList(<span class="hljs-string">'inboxes'</span>); <span class="hljs-comment">// GET /users/abc123/inboxes</span>
+    });
+</code></pre>
+<blockquote>
+<p>还可以通过<code>allUrl()</code>和<code>oneUrl()</code>指定请求的URL</p>
+</blockquote>
+<h2 id="-restangular">使用Restangular</h2>
+<p>可以使用<code>getList()</code>来获取所有信息，<code>getList()</code>方法返回了一个集合，其中包含了可以用来操作特定集合的方法</p>
+<p>Restangular返回增强过的promise对象，我们可以调用promise对象上的方法，还可以调用一些特殊的方法，比如<code>$object</code>。<code>$object</code>会立即返回一个空数组（或对象），在服务器返回信息后，数组会被用新的数据填充：</p>
+<pre><code class="lang-javascript">messages.post(newMessage).then(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(newMsg)</span> {</span>
+    $scope.messages = messages.getList().$object;
+}, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(errorReason)</span>
+    // 出现了一个错误
+});</span>
+</code></pre>
+<blockquote>
+<p>注意，在修改一个对象之前对其进行复制，然后对复制的对象进行修改和保存是一个好做法。Restangular有自己的复制版本，因此无需对一系列方法重新进行绑定。在更新对象时使用Restangular.copy()是一个比较好的实践。</p>
+</blockquote>
+<h3 id="-http-">支持所有HTTP方法</h3>
+<p>Restangular支持所有的HTTP方法：</p>
 <ul>
-<li>提供观察者以监视数据模型的变化；</li>
-<li>可以将数据模型的变化通知给整个应用，甚至是系统外的组件；</li>
-<li>可以进行嵌套，隔离业务功能和数据；</li>
-<li>给表达式提供运算时所需的执行环境。</li>
+<li>GET: <code>.get()</code>和<code>.getList(&#39;books&#39;)</code></li>
+<li>PUT: <code>.put()</code></li>
+<li>POST: <code>.post()</code></li>
+<li>DELETE: <code>.remove()</code></li>
+<li>HEAD: <code>.head()</code></li>
+<li>TRACE: <code>.trace()</code></li>
+<li>OPTIONS: <code>.options()</code></li>
+<li>PATCH: <code>.patch()</code></li>
 </ul>
-<p>作用域包含了渲染视图时所需的功能和数据，它是所有视图的唯一源头，可以将作用域理解成视图模型（view model）</p>
-<h3 id="-scope-">$scope生命周期</h3>
+<h3 id="-">自定义查询参数和头</h3>
+<p>可以传入参数和头对象:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> queryParamObj = {
+        role: <span class="hljs-string">'admin'</span>
+    },
+    headerObj = {
+        <span class="hljs-string">'x-user'</span>: <span class="hljs-string">'admin'</span>
+    };
+messages.getList(<span class="hljs-string">'accounts'</span>, queryParamObj, headerObj);
+</code></pre>
+<h2 id="-restangular">设置Restangular</h2>
+<p>将RestangularProvider注入到<code>.config()</code>函数中，或者将Restangular注入到一个<code>.run()</code>函数中，对Restangular进行设置</p>
+<h3 id="-baseurl">设置baseUrl</h3>
+<p>通过<code>.setBaseUrl()</code>方法给所有后端 API 请求设置 baseUrl</p>
+<pre><code class="lang-javascript">angular.module(<span class="hljs-string">'myApp'</span>, [<span class="hljs-string">'restangular'</span>])
+    .config(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(RestangularProvider)</span> {</span>
+        RestangularProvider.setBaseUrl(<span class="hljs-string">'/api/v1'</span>);
+    });
+</code></pre>
+<h3 id="-">添加元素转换</h3>
+<p>使用<code>elementTransformers</code>可以在Restangular对象被加载后为其添加自定义方法</p>
+<pre><code class="lang-javascript">angular.module(<span class="hljs-string">'myApp'</span>, [<span class="hljs-string">'restangular'</span>])
+    .config(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(RestangularProvider)</span> {</span>
+        RestangularProvider.addElementTransformer(<span class="hljs-string">'authors'</span>, <span class="hljs-literal">false</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(element)</span> {</span>
+            element.fetchedAt = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+            <span class="hljs-keyword">return</span> element;
+        });
+    });
+</code></pre>
+<p>还可以对已有数据模型或集合进行扩展：</p>
+<pre><code class="lang-javascript">angular.module(<span class="hljs-string">'myApp'</span>, [<span class="hljs-string">'restangular'</span>])
+    .config(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(RestangularProvider)</span> {</span>
+        RestangularProvider.extendModel(<span class="hljs-string">'authors'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(element)</span> {</span>
+            element.getFullName = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+                <span class="hljs-keyword">return</span> element.name + <span class="hljs-string">' '</span> + element.lastName;
+            };
+            <span class="hljs-keyword">return</span> element;
+        });
+    });
+</code></pre>
+<h3 id="-">设置响应拦截器</h3>
+<p>Restangular可以设置响应拦截器。<code>responseInterceptors</code>在每个响应从服务器返回时被调用。调用时会传入以下参数：</p>
 <ol>
-<li><strong>创建</strong>：在创建控制器或指令时，AngularJS会用<code>$injector</code>创建一个新的作用域，并在这个新建的控制器或指令运行时将作用域传递进去。</li>
-<li><strong>链接</strong>：当Angular开始运行时，所有的<code>$scope</code>对象都会附加或者链接到视图中。所有创建<code>$scope</code>对象的函数也会将自身附加到视图中。这些作用域将会注册当Angular应用上下文中发生变化时需要运行的函数。这些函数被称为<code>$watch</code>函数，Angular通过这些函数获知何时启动事件循环。</li>
-<li><strong>更新</strong>：当事件循环运行时，它通常执行在顶层<code>$scope</code>对象上（被称作<code>$rootScope</code>），每个子作用域都执行自己的脏值检测。每个监控函数都会检查变化。如果检测到任意变化，<code>$scope</code>对象就会触发指定的回调函数。</li>
-<li><strong>销毁</strong>：当一个<code>$scope</code>在视图中不再需要时，这个作用域将会清理和销毁自己。也可以使用这个<code>$scope</code>上叫做<code>$destory()</code>的方法来清理这个作用域。</li>
+<li>data：从服务器取回的数据。</li>
+<li>operation：使用的HTTP方法。</li>
+<li>what：所请求的数据模型。</li>
+<li>url：请求的相对URL。</li>
+<li>response：完整的服务器响应，包括响应头。</li>
+<li>deferred：请求的promise对象。</li>
 </ol>
+<pre><code class="lang-javascript">angular.module(<span class="hljs-string">'myApp'</span>, [<span class="hljs-string">'restangular'</span>])
+    .config(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(RestangularProvider)</span> {</span>
+        RestangularProvider.setResponseInterceptor(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(data, operation, what)</span> {</span>
+            <span class="hljs-comment">//getList方法应当始终返回数组</span>
+            <span class="hljs-keyword">if</span> (operation == <span class="hljs-string">'getList'</span>) {
+                <span class="hljs-keyword">var</span> list = data[what];
+                list.metadata = data.metadata;
+                <span class="hljs-keyword">return</span> list;
+            }
+            <span class="hljs-keyword">return</span> data;
+        });
+    });
+</code></pre>
+<blockquote>
+<p>getList方法应当始终返回数组</p>
+</blockquote>
+<h3 id="-">设置请求拦截器</h3>
+<p><code>requestInterceptors</code>在将数据实际发送给服务器之前对其进行操作。使用<code>setRequestInterceptor()</code>来设置requestInterceptor。这个方法可以接受下面四个参数:</p>
+<ol>
+<li>element: 发送给服务器的资源 </li>
+<li>operation: 所使用的HTTP方法</li>
+<li>what: 所请求的数据模型</li>
+<li>url: 所请求的相对URL</li>
+</ol>
+<pre><code class="lang-javascript">angular.module(<span class="hljs-string">'myApp'</span>, [<span class="hljs-string">'restangular'</span>])
+    .config(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(RestangularProvider)</span> {</span>
+        RestangularProvider.setRequestInterceptor(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(elem, operation, what)</span> {</span>
+            <span class="hljs-keyword">if</span> (operation === <span class="hljs-string">'put'</span>) {
+                elem._id = <span class="hljs-literal">undefined</span>;
+                <span class="hljs-keyword">return</span> elem;
+            }
+            <span class="hljs-keyword">return</span> elem;
+        });
+    });
+</code></pre>
+<h3 id="-">自定义字段</h3>
+<p>Restangular支持自定义字段，可以通过<code>.setRestangularFields()</code>方法来自定义：</p>
+<pre><code class="lang-javascript">angular.module(<span class="hljs-string">'myApp'</span>, [<span class="hljs-string">'restangular'</span>])
+    .config(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(RestangularProvider)</span> {</span>
+        RestangularProvider.setRestangularFields({
+            id: <span class="hljs-string">'_id.$oid'</span>
+        });
+    });
+</code></pre>
+<h3 id="-errorinterceptors-">通过errorInterceptors来捕获错误</h3>
+<p>通过设置错误拦截器可以捕获Restangular内的错误。通过<code>errorInterceptor</code>可以将错误信息在应用中进行传递</p>
+<pre><code class="lang-javascript">angular.module(<span class="hljs-string">'myApp'</span>, [<span class="hljs-string">'restangular'</span>])
+    .config(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(RestangularProvider)</span> {</span>
+        RestangularProvider.setErrorInterceptor(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(resp)</span> {</span>
+            displayError();
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>; <span class="hljs-comment">// 停止promise链</span>
+        });
+    });
+</code></pre>
+<h3 id="-">孤立资源设置</h3>
+<p>如果我们想加载一个没有嵌套在其他资源中的资源，可以使用<code>.setParentless()</code>设置告诉Restangular不要构造嵌套结构的URL</p>
+<pre><code class="lang-javascript">angular.module(<span class="hljs-string">'myApp'</span>, [<span class="hljs-string">'restangular'</span>])
+    .config(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(RestangularProvider)</span> {</span>
+        RestangularProvider.setParentless([<span class="hljs-string">'cars'</span>]);
+    });
+</code></pre>
+<p><code>.setParentless()</code>接受两种类型的参数：</p>
+<ul>
+<li>true：所有的资源都会被当作孤立资源处理，没有任何URL会进行嵌套</li>
+<li>数组：只有定义在这个数组中的资源会当作孤立资源处理，数组的元素是字符串，字符串的值是资源的标识</li>
+</ul>
+<h3 id="-">使用超媒体</h3>
+<p>在实践中，只通过一个切入点（主URL）来同后端服务器进行通信是非常好的做法，其他数据模型通过链接来指向相关联的资源。 Restangular通过<code>selfLink</code>、<code>oneUrl</code>和<code>allUrl</code>来支持这个有用的做法。</p>
+<h3 id="-restangular-">自定义Restangular服务</h3>
+<p>强烈建议将Restangular封装在一个自定义服务对象内</p>
 
                     
                     </section>
@@ -1052,10 +1184,10 @@
         </div>
 
         
-        <a href="../the-complete-book-on-angularjs/data-binding.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../the-complete-book-on-angularjs/xhr-resource.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../the-complete-book-on-angularjs/scope.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../the-complete-book-on-angularjs/xhr-practice.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
