@@ -26,6 +26,7 @@
     * [XHR和服务器通信——$resource](the-complete-book-on-angularjs/xhr-resource.md)
     * [XHR和服务器通信——Restangular](the-complete-book-on-angularjs/xhr-restangular.md)
     * [XHR实践](the-complete-book-on-angularjs/xhr-practice.md)
+    * [promise](the-complete-book-on-angularjs/promise.md)
     * [持续]()
 * [软件开发者路线图：从学徒到高手](apprenticeship-patterns/README.md)
     * [绪论](apprenticeship-patterns/1.md)
