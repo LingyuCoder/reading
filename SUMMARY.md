@@ -1,5 +1,6 @@
 # 目录
 
+* [人性的优点](how-to-stop-worrying-and-start-living/README.md)
 * [产品设计师技能书：知乎马力自选集](zhihu-product-design/README.md)
     * [产品设计&用户体验](zhihu-product-design/pd-and-ue.md)
     * [产品经理&设计师](zhihu-product-design/pm-and-pd.md)
