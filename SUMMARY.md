@@ -1,6 +1,5 @@
 # 目录
 
-* [人性的优点](how-to-stop-worrying-and-start-living/README.md)
 * [产品设计师技能书：知乎马力自选集](zhihu-product-design/README.md)
     * [产品设计&用户体验](zhihu-product-design/pd-and-ue.md)
     * [产品经理&设计师](zhihu-product-design/pm-and-pd.md)
@@ -28,6 +27,7 @@
     * [XHR和服务器通信——Restangular](the-complete-book-on-angularjs/xhr-restangular.md)
     * [XHR实践](the-complete-book-on-angularjs/xhr-practice.md)
     * [promise](the-complete-book-on-angularjs/promise.md)
+    * [事件](the-complete-book-on-angularjs/events.md)
     * [持续]()
 * [软件开发者路线图：从学徒到高手](apprenticeship-patterns/README.md)
     * [绪论](apprenticeship-patterns/1.md)
@@ -86,3 +86,5 @@
     * [文字排布](zengarden/text-layout.md)
     * [图像](zengarden/image.md)
     * [最佳实践](zengarden/practice.md)
+* [人性的弱点](how-to-win-friends-and-influence-people/README.md)
+* [人性的优点](how-to-stop-worrying-and-start-living/README.md)
