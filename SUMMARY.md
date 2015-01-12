@@ -28,6 +28,8 @@
     * [XHR实践](the-complete-book-on-angularjs/xhr-practice.md)
     * [promise](the-complete-book-on-angularjs/promise.md)
     * [事件](the-complete-book-on-angularjs/events.md)
+    * [digest和$apply](the-complete-book-on-angularjs/digest-and-apply.md)
+    * [揭秘Angular](the-complete-book-on-angularjs/secret-of-angular.md)
     * [持续]()
 * [软件开发者路线图：从学徒到高手](apprenticeship-patterns/README.md)
     * [绪论](apprenticeship-patterns/1.md)
