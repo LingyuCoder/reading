@@ -1,28 +1,23 @@
-                    
-
 # 绘制
-
 ## 坐标系统
-
 canvas的坐标系统以左上角为原点，X坐标向右增长，Y坐标向下增长，默认为300*150。基于坐标来做如下变换：
 
-*   平移
-*   旋转
-*   缩放
-*   自定义变换
+* 平移
+* 旋转
+* 缩放
+* 自定义变换
 
 ## 绘制模型
-
 要了解canvas如何绘制图形、图像和文本，需要了解阴影、alpha通道、剪辑区域和图像合成等内容。
 
 向canvas上绘制图像，浏览器需要经过如下步骤：
 
-1.  将图形或图像绘制到一个**无限大的透明位图**中，绘制时遵从当前的填充模式、描边模式及线条样式
-2.  将图形或图像的阴影会知道**另外一幅位图**中，在绘制时使用当前绘图环境的阴影设置
-3.  将阴影中的每一个像素的alpha值分量乘以绘图环境对象的globalAplha属性值
-4.  将绘有阴影的位图和经过剪辑区域剪切过的canvas图像进行合成。在合成时使用当前的合成模式参数
-5.  将图形或图像的每一个像素颜色分量，乘以绘图环境对象的globalAlpha属性值
-6.  将会有图形或图像的位图，合成到当前经过剪辑区域剪切过的canvas位图之上，使用当前的合成模式参数
+1. 将图形或图像绘制到一个**无限大的透明位图**中，绘制时遵从当前的填充模式、描边模式及线条样式
+2. 将图形或图像的阴影会知道**另外一幅位图**中，在绘制时使用当前绘图环境的阴影设置
+3. 将阴影中的每一个像素的alpha值分量乘以绘图环境对象的globalAplha属性值
+4. 将绘有阴影的位图和经过剪辑区域剪切过的canvas图像进行合成。在合成时使用当前的合成模式参数
+5. 将图形或图像的每一个像素颜色分量，乘以绘图环境对象的globalAlpha属性值
+6. 将会有图形或图像的位图，合成到当前经过剪辑区域剪切过的canvas位图之上，使用当前的合成模式参数
 
 只有启用阴影时，才会有2~4步
 
@@ -30,15 +25,13 @@ canvas的坐标系统以左上角为原点，X坐标向右增长，Y坐标向下
 
 三个方法：
 
-*   clearRect(x, y, w, h)：清除矩形区域
-*   strokeRect(x, y, w, h)：描边矩形区域，影响属性有：
-
-        *   strokeStyle
-    *   lineWidth
-    *   lineJoin
-    *   miterLimit
-
-*   fillRect(x, y, w, h)：填充矩形区域
+* clearRect(x, y, w, h)：清除矩形区域
+* strokeRect(x, y, w, h)：描边矩形区域，影响属性有：
+    * strokeStyle
+    * lineWidth
+    * lineJoin
+    * miterLimit
+* fillRect(x, y, w, h)：填充矩形区域
 
 可以通过lineJoin属性来绘制圆角矩形，但是如果想要控制如圆角半径之类的属性，就得自己绘制这些圆角了
 
@@ -48,8 +41,8 @@ canvas的坐标系统以左上角为原点，X坐标向右增长，Y坐标向下
 
 RGB方式指定颜色，有两个缺陷：
 
-1.  它是以硬件为导向的，它基于阴极射线管
-2.  它不直观
+1. 它是以硬件为导向的，它基于阴极射线管
+2. 它不直观
 
 HSL三个分量是色相、饱和度、亮度
 
@@ -67,9 +60,9 @@ canvas支持线性（linear）渐变和放射渐变（radial）。
 
 canvas也允许使用图案来对毒性或文本进行描边与填充。可以使用三种：
 
-*   image元素
-*   canvas元素
-*   video元素
+* image元素
+* canvas元素
+* video元素
 
 通过`createPattern()`创建图案，它接受两个参数，图案本身和重复规则，重复规则可以为：repeat、repeat-x、repeat-y、no-repeat
 
@@ -77,17 +70,17 @@ canvas也允许使用图案来对毒性或文本进行描边与填充。可以�
 
 通过四个值来指定阴影效果：
 
-*   shadowColor：阴影颜色
-*   shadowOffsetX：阴影X轴偏移
-*   shadowOffsetY：阴影Y轴偏移
-*   shadowBlur：高斯模糊方程中的参数，控制阴影模糊程度
+* shadowColor：阴影颜色
+* shadowOffsetX：阴影X轴偏移
+* shadowOffsetY：阴影Y轴偏移
+* shadowBlur：高斯模糊方程中的参数，控制阴影模糊程度
 
 通常来说都通过半透明来绘制阴影，这样就可以显示背景了
 
 根据canvas规范，只有符合如下情形时，才会绘制阴影：
 
-1.  指定了一个非完全透明的shadowColor值
-2.  在其余的三个属性至少有一个不是0
+1. 指定了一个非完全透明的shadowColor值
+2. 在其余的三个属性至少有一个不是0
 
 最简单的禁用阴影方式，就是将shadowColor设为undefined，但目前只有webkit能用
 
@@ -135,9 +128,9 @@ rect方法绘制的路径是封闭的，而arc方法若创建的不是圆形路�
 
 画图中的线段绘制实现：
 
-1.  mousedown时通过getImageData暂存当前数据，并记录当前点为起始点
-2.  mousemove的时候，先putImageData写入之前的数据，然后以起点和当前点绘制一条线段
-3.  mouseup的时候最后一次绘制
+1. mousedown时通过getImageData暂存当前数据，并记录当前点为起始点
+2. mousemove的时候，先putImageData写入之前的数据，然后以起点和当前点绘制一条线段
+3. mouseup的时候最后一次绘制
 
 ### 虚线
 
@@ -155,12 +148,12 @@ rect方法绘制的路径是封闭的，而arc方法若创建的不是圆形路�
 
 圆弧和圆形都用`arc()`方法绘制，有6个参数：
 
-1.  x
-2.  y
-3.  radius
-4.  startAngle
-5.  endAngle
-6.  counterClockwise
+1. x
+2. y
+3. radius
+4. startAngle
+5. endAngle
+6. counterClockwise
 
 arc方法的最后一个参数用来决定绘制方向是顺时针还是逆时针。它是可选的参数，但最好不要省略
 
@@ -170,11 +163,11 @@ arc方法会将上一条子路径的终点与圆弧路径的起点相连
 
 另外还可以使用`arcTo()`方法创建点到点之间的圆弧，有5个参数：
 
-1.  x1
-2.  y1
-3.  x2
-4.  y2
-5.  radius
+1. x1
+2. y1
+3. x2
+4. y2
+5. radius
 
 这个方法非常适合用来挥之矩形的圆角
 
@@ -200,9 +193,9 @@ canvas提供了一个`pointInPath()`的方法，如果某个点在当前路径�
 
 canvas提供了如下方法进行坐标变换：
 
-*   rotate(double angleInRadians)：旋转
-*   scale(double x, double y)：缩放
-*   translate(double x, double y)：平移
+* rotate(double angleInRadians)：旋转
+* scale(double x, double y)：缩放
+* translate(double x, double y)：平移
 
 scale(-1, 1)能够绘制水平镜像，scale(1, -1)能够绘制垂直镜像
 
@@ -216,89 +209,94 @@ scale(-1, 1)能够绘制水平镜像，scale(1, -1)能够绘制垂直镜像
 
 `translate(dx, dy)`平移后的新坐标等式：
 
-    x<span class="hljs-comment">' = x + dx</span>
-    y<span class="hljs-comment">' = x + dy</span>
-    `</pre>
+```javascript
+x = x + dx;
+y = x + dy;
+```
 
-    `scale(sx, sy)`缩放后的新坐标等式：
+`scale(sx, sy)`缩放后的新坐标等式：
 
-    <pre>`x<span class="hljs-comment">' = x * sx</span>
-    y<span class="hljs-comment">' = y * sy</span>
-    `</pre>
+```javascript
+x = x * sx;
+y = y * sy;
+```
+    
+`rotate(angle)`旋转后的新坐标等式：
 
-    `rotate(angle)`旋转后的新坐标等式：
+```javascript
+x = x * cos(angle) - y * sin(angle);
+y = y * cos(angle) + x * sin(angle);
+```
 
-    <pre>`<span class="hljs-transposed_variable">x'</span> = x * <span class="hljs-built_in">cos</span>(<span class="hljs-built_in">angle</span>) - (y * <span class="hljs-built_in">sin</span>(<span class="hljs-built_in">angle</span>))
-    <span class="hljs-transposed_variable">y'</span> = y * <span class="hljs-built_in">cos</span>(<span class="hljs-built_in">angle</span>) + (x * <span class="hljs-built_in">sin</span>(<span class="hljs-built_in">angle</span>))
-    `</pre>
+`transform(a, b, c, d, e, f)`和`setTransform(a, b, c, d, e, f)`变换后的新坐标等式：
 
-    `transform(a, b, c, d, e, f)`和`setTransform(a, b, c, d, e, f)`变换后的新坐标等式：
-
-    <pre>`x<span class="hljs-comment">' = ax + cy + e</span>
-    y<span class="hljs-comment">' = bx + dy + f</span>
+```javascript
+x = ax + cy + e;
+y = bx + dy + f;
+```
 
 通过transform实现平移：
 
-1.  a = 1
-2.  b = 0
-3.  c = 0
-4.  d = 1
-5.  e = dx
-6.  f = dy
+1. a = 1
+2. b = 0
+3. c = 0
+4. d = 1
+5. e = dx
+6. f = dy
 
 通过transform实现缩放：
 
-1.  a = sx
-2.  b = 0
-3.  c = 0
-4.  d = sy
-5.  e = 0
-6.  f = 0
+1. a = sx
+2. b = 0
+3. c = 0
+4. d = sy
+5. e = 0
+6. f = 0
 
 通过transform实现旋转：
 
-1.  a = cos(angle)
-2.  b = sin(angle)
-3.  c = -sin(angle)
-4.  d = cos(angle)
-5.  e = 0
-6.  f = 0
+1. a = cos(angle)
+2. b = sin(angle)
+3. c = -sin(angle)
+4. d = cos(angle)
+5. e = 0
+6. f = 0
 
 通过transform实现斜切：
 
 横向斜切：
 
-1.  a = 1
-2.  b = 0
-3.  c = k
-4.  d = 1
-5.  e = 0
-6.  f = 0
+1. a = 1
+2. b = 0
+3. c = k
+4. d = 1
+5. e = 0
+6. f = 0
 
 纵向斜切：
 
-1.  a = 0
-2.  b = 1
-3.  c = 1
-4.  d = k
-5.  e = 0
-6.  f = 0
+1. a = 0
+2. b = 1
+3. c = 1
+4. d = k
+5. e = 0
+6. f = 0
 
 ## 图像合成
 
 通过设置`globalCompositeOperation`属性，能够改变默认图像的合成行为，可以为如下几种值：
 
-*   source-atop
-*   source-in
-*   source-out
-*   source-over
-*   destination-atop
-*   destination-in
-*   destination-out
-*   destination-over
-*   lighter
-*   copy
-*   xor
+* source-atop
+* source-in
+* source-out
+* source-over
+* destination-atop
+* destination-in
+* destination-out
+* destination-over
+* lighter
+* copy
+* xor
 
 ## 剪辑区域
 
