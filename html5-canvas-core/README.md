@@ -1,4 +1,4 @@
-HTML5 Canvas核心技术 读书笔记
+《HTML5 Canvas核心技术》
 ===
 书名：《HTML5 Canvas核心技术》
 
