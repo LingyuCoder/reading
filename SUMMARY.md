@@ -1,6 +1,12 @@
 # 目录
 
 
+
+* [程序员的思维修炼-开发认知潜能的九堂课](pragmatic-thinking-and-learning/README.md)
+    * [绪论](pragmatic-thinking-and-learning/introduction.md)
+    * [从新手到专家的历程](pragmatic-thinking-and-learning/tiro-to-expert.md)
+    * [认识你的大脑](pragmatic-thinking-and-learning/understand-your-brain.md)
+    * [利用右脑](pragmatic-thinking-and-learning/use-right-brain.md)
 * [Pro Git](pro-git/README.md)
     * [起步](pro-git/start.md)
     * [Git基础](pro-git/base.md)
