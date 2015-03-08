@@ -1,4 +1,4 @@
-《JavaScript设计模式读书笔记》
+《JavaScript设计模式》
 ===
 
 ##模式

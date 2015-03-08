@@ -1,5 +1,6 @@
 # 目录
 
+* [程序员跳槽全攻略](programer-job-changing/README.md)
 * [程序员的思维修炼-开发认知潜能的九堂课](pragmatic-thinking-and-learning/README.md)
     * [绪论](pragmatic-thinking-and-learning/introduction.md)
     * [从新手到专家的历程](pragmatic-thinking-and-learning/tiro-to-expert.md)
