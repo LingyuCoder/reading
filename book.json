@@ -1,0 +1,26 @@
+{
+  "title": "天镶的读书笔记",
+  "description": "学海无涯，回头是岸",
+  "language": "zh-CN",
+  "gitbook": "2.x.x",
+  "plugins": ["duoshuo", "baidu", "anchors", "codepen"],
+  "links": {
+    "sidebar": {
+      "天镶博客": "http://lingyu.wang"
+    }
+  },
+  "pluginsConfig": {
+    "duoshuo": {
+      "short_name": "skyinlayer",
+      "theme": "default"
+    },
+    "baidu": {
+      "token": "a5aa4945a04cc5a5a4cd6835ccb7d419"
+    },
+    "codepen": {
+      "height": 400,
+      "theme": 14038
+    }
+  }
+}
+
