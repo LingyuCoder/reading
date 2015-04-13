@@ -1,1391 +1,1999 @@
 <!DOCTYPE HTML>
-<html lang="en-US">
-    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+<html lang="zh-tw" >
+    
+    <head>
         
         <meta charset="UTF-8">
-        <title>指令详解 | Reading</title>
-
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>指令详解 | 天镶的读书笔记</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="robots" content="index, follow">
-        <meta name="author" content="LingyuCoder">
-        <meta name="description" content="Book generated using GitBook">
-        <meta name="keywords" content="gitbook,github" >
-        <meta name="generator" content="www.gitbook.io">
-
-        
-        <link rel="next" href="../the-complete-book-on-angularjs/load-module.html" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
         
         
-        <link rel="prev" href="../the-complete-book-on-angularjs/build-in-directive.html" />
-        
-
-        <meta property="og:title" content="指令详解 | Reading">
-        <meta property="og:site_name" content="Reading">
-        <meta property="og:type" content="book">
-        <meta property="og:locale" content="en_US">
-
-        <meta property="book:author" content="https://github.com/LingyuCoder">
-        <meta property="book:tag" content="GitBook">
-
+        <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-        <link rel="shortcut icon" href="..\gitbook/images/favicon.ico" type="image/x-icon">
-
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
-        <link rel="stylesheet" href="..\gitbook/style.css">
-        
+    
+    
+    <link rel="next" href="../the-complete-book-on-angularjs/load-module.html" />
+    
+    
+    <link rel="prev" href="../the-complete-book-on-angularjs/build-in-directive.html" />
+    
+
         
     </head>
     <body>
         
-<div class="book" data-github="LingyuCoder/reading" data-level="7.9" data-basepath=".." data-revision="1426177879727">
-    <div class="book-header">
-    <!-- Actions Left -->
-    <a href="http://lingyu.wang" target="_blank" class="btn pull-left" style="background-image: url(/gitbook/images/favicon.ico);background-repeat: no-repeat; background-size: 100% 100%; border: none; width: 40px;"></a>
-
-    <a href="https://github.com/LingyuCoder/reading" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
-    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
-    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
-
-    <!-- Actions Right -->
-
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
     
- 
-
-    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
-    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
-    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+        
     
-    <a href="#" id="weibo_share" target="_blank" class="btn pull-right"><i class="fa fa-weibo"></i></a>
+    
 
-    <script type="text/javascript">
-    document.getElementById('weibo_share').setAttribute('href', 'http://service.weibo.com/share/share.php?url=' + encodeURIComponent(window.location.href) + '&type=button&ralateUid=1162383197&language=zh_cn&appkey=1yj5nG&title=' + encodeURIComponent('指令详解 | 天镶的读书笔记') + '&pic=http%3A%2F%2Flingyu.wang%2Fimages%2Favatar.jpg&searchPic=true&style=simple');
-    </script>
+        
+    <div class="book" data-level="7.9" data-basepath=".." data-revision="Mon Apr 13 2015 10:01:38 GMT+0800 (CST)">
+    
 
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?a5aa4945a04cc5a5a4cd6835ccb7d419";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
-
-    <a href="https://github.com/LingyuCoder/reading/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> 推荐 (<span>-</span>)</a>
-    <a href="https://github.com/LingyuCoder/reading/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> 订阅 (<span>-</span>)</a>
-
-
-    <!-- Title -->
-    <h1><a href="../" >天镶的读书笔记</a></h1>
-</div>
-
-    <div class="book-summary">
+<div class="book-summary">
     <div class="book-search">
-        <input type="text" placeholder="Search" class="form-control" />
+        <input type="text" placeholder="輸入並搜尋" class="form-control" />
     </div>
     <ul class="summary">
-        <li>
-            <a href="https://github.com/LingyuCoder" target="blank">关于作者</a>
-        </li>
-        <li>
-            <a href="https://github.com/LingyuCoder/reading/issues" target="blank">提出建议</a>
-        </li>
-        <li>
-            <a href="https://github.com/LingyuCoder/reading/edit/master/the-complete-book-on-angularjs/directive-detail.md" target="blank">编辑贡献</a>
-        </li>
-        <li>
-            <a href="http://lingyu.wang" target="blank">返回博客</a>
-        </li>
+        
+        
+        
+            
+            <li>
+                <a href="http://lingyu.wang" target="blank" class="custom-link">天镶博客</a>
+            </li>
+        
+        
+
+        
         <li class="divider"></li>
-        <li data-level="0" data-path="index.html">
-            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        介紹
+                    </a>
+                
+            
+            
         </li>
+    
+        <li class="chapter " data-level="1" data-path="programer-job-changing/index.html">
+            
+                
+                    <a href="../programer-job-changing/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        程序员跳槽全攻略
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="pragmatic-thinking-and-learning/index.html">
+            
+                
+                    <a href="../pragmatic-thinking-and-learning/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        程序员的思维修炼-开发认知潜能的九堂课
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="pragmatic-thinking-and-learning/introduction.html">
+            
+                
+                    <a href="../pragmatic-thinking-and-learning/introduction.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        绪论
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="pragmatic-thinking-and-learning/tiro-to-expert.html">
+            
+                
+                    <a href="../pragmatic-thinking-and-learning/tiro-to-expert.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        从新手到专家的历程
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="pragmatic-thinking-and-learning/understand-your-brain.html">
+            
+                
+                    <a href="../pragmatic-thinking-and-learning/understand-your-brain.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        认识你的大脑
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="pragmatic-thinking-and-learning/use-right-brain.html">
+            
+                
+                    <a href="../pragmatic-thinking-and-learning/use-right-brain.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        利用右脑
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="pragmatic-thinking-and-learning/debug-your-brain.html">
+            
+                
+                    <a href="../pragmatic-thinking-and-learning/debug-your-brain.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        调试你的大脑
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="pragmatic-thinking-and-learning/active-learning.html">
+            
+                
+                    <a href="../pragmatic-thinking-and-learning/active-learning.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        主动学习
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="pragmatic-thinking-and-learning/experience.html">
+            
+                
+                    <a href="../pragmatic-thinking-and-learning/experience.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        积累经验
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="pragmatic-thinking-and-learning/focus.html">
+            
+                
+                    <a href="../pragmatic-thinking-and-learning/focus.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        控制注意力
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="pragmatic-thinking-and-learning/beyond-expert.html">
+            
+                
+                    <a href="../pragmatic-thinking-and-learning/beyond-expert.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        超越专家
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="pro-git/index.html">
+            
+                
+                    <a href="../pro-git/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Pro Git
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="pro-git/start.html">
+            
+                
+                    <a href="../pro-git/start.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        起步
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="pro-git/base.html">
+            
+                
+                    <a href="../pro-git/base.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Git基础
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="pro-git/branch.html">
+            
+                
+                    <a href="../pro-git/branch.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Git分支
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+            <span><b>3.4.</b> 持续</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="taobao-product-10-year/index.html">
+            
+                
+                    <a href="../taobao-product-10-year/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        淘宝十年产品事
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="zhihu-product-design/index.html">
+            
+                
+                    <a href="../zhihu-product-design/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        产品设计师技能书：知乎马力自选集
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="zhihu-product-design/pd-and-ue.html">
+            
+                
+                    <a href="../zhihu-product-design/pd-and-ue.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        产品设计&amp;用户体验
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="zhihu-product-design/pm-and-pd.html">
+            
+                
+                    <a href="../zhihu-product-design/pm-and-pd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        产品经理&amp;设计师
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="zhihu-product-design/team.html">
+            
+                
+                    <a href="../zhihu-product-design/team.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        团队管理&amp;创业
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="the-art-of-readable-code/index.html">
+            
+                
+                    <a href="../the-art-of-readable-code/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        编写可读代码的艺术
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="the-art-of-readable-code/1.html">
+            
+                
+                    <a href="../the-art-of-readable-code/1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        表面层次的改进
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="the-art-of-readable-code/2.html">
+            
+                
+                    <a href="../the-art-of-readable-code/2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        简化循环和逻辑
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="the-art-of-readable-code/3.html">
+            
+                
+                    <a href="../the-art-of-readable-code/3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        重新组织代码
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="the-complete-book-on-angularjs/index.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        AngularJS权威指南
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="the-complete-book-on-angularjs/data-binding.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/data-binding.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        数据绑定
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="the-complete-book-on-angularjs/module.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/module.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="the-complete-book-on-angularjs/scope.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/scope.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        作用域
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="the-complete-book-on-angularjs/controller.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/controller.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        控制器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="the-complete-book-on-angularjs/expression.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/expression.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        表达式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="the-complete-book-on-angularjs/filter.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/filter.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        过滤器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="the-complete-book-on-angularjs/directive-intro.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/directive-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                        指令简介
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="the-complete-book-on-angularjs/build-in-directive.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/build-in-directive.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        内置指令
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.9" data-path="the-complete-book-on-angularjs/directive-detail.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/directive-detail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.9.</b>
+                        
+                        指令详解
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="the-complete-book-on-angularjs/load-module.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/load-module.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.10.</b>
+                        
+                        模块加载
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="the-complete-book-on-angularjs/router.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/router.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.11.</b>
+                        
+                        视图和路由
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" data-path="the-complete-book-on-angularjs/injector.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/injector.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.12.</b>
+                        
+                        依赖注入
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13" data-path="the-complete-book-on-angularjs/service.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/service.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.13.</b>
+                        
+                        服务
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.14" data-path="the-complete-book-on-angularjs/xhr-http.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/xhr-http.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.14.</b>
+                        
+                        XHR和服务器通信——$http
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.15" data-path="the-complete-book-on-angularjs/xhr-resource.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/xhr-resource.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.15.</b>
+                        
+                        XHR和服务器通信——$resource
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.16" data-path="the-complete-book-on-angularjs/xhr-restangular.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/xhr-restangular.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.16.</b>
+                        
+                        XHR和服务器通信——Restangular
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.17" data-path="the-complete-book-on-angularjs/xhr-practice.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/xhr-practice.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.17.</b>
+                        
+                        XHR实践
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.18" data-path="the-complete-book-on-angularjs/promise.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/promise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.18.</b>
+                        
+                        promise
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.19" data-path="the-complete-book-on-angularjs/events.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.19.</b>
+                        
+                        事件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.20" data-path="the-complete-book-on-angularjs/digest-and-apply.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/digest-and-apply.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.20.</b>
+                        
+                        digest和$apply
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.21" data-path="the-complete-book-on-angularjs/secret-of-angular.html">
+            
+                
+                    <a href="../the-complete-book-on-angularjs/secret-of-angular.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.21.</b>
+                        
+                        揭秘Angular
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.22" >
+            
+            <span><b>7.22.</b> 持续</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="apprenticeship-patterns/index.html">
+            
+                
+                    <a href="../apprenticeship-patterns/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        软件开发者路线图：从学徒到高手
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="apprenticeship-patterns/1.html">
+            
+                
+                    <a href="../apprenticeship-patterns/1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        绪论
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="apprenticeship-patterns/2.html">
+            
+                
+                    <a href="../apprenticeship-patterns/2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        空杯心态
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="apprenticeship-patterns/3.html">
+            
+                
+                    <a href="../apprenticeship-patterns/3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        走过漫漫长路
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="apprenticeship-patterns/4.html">
+            
+                
+                    <a href="../apprenticeship-patterns/4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        准确的自我评估
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="apprenticeship-patterns/5.html">
+            
+                
+                    <a href="../apprenticeship-patterns/5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                        恒久学习
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="apprenticeship-patterns/6.html">
+            
+                
+                    <a href="../apprenticeship-patterns/6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.6.</b>
+                        
+                        安排你的课程
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="mobile-design/index.html">
+            
+                
+                    <a href="../mobile-design/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        移动设计
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="mobile-design/1.html">
+            
+                
+                    <a href="../mobile-design/1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="mobile-design/2.html">
+            
+                
+                    <a href="../mobile-design/2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        特征
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="mobile-design/3.html">
+            
+                
+                    <a href="../mobile-design/3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        原则
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="mobile-design/4.html">
+            
+                
+                    <a href="../mobile-design/4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        框架
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="mobile-design/5.html">
+            
+                
+                    <a href="../mobile-design/5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                        细节
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6" data-path="mobile-design/6.html">
+            
+                
+                    <a href="../mobile-design/6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.6.</b>
+                        
+                        动效
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7" data-path="mobile-design/7.html">
+            
+                
+                    <a href="../mobile-design/7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.7.</b>
+                        
+                        适配
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8" data-path="mobile-design/8.html">
+            
+                
+                    <a href="../mobile-design/8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.8.</b>
+                        
+                        创新
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.9" data-path="mobile-design/9.html">
+            
+                
+                    <a href="../mobile-design/9.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.9.</b>
+                        
+                        流
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="7-day-product-design/index.html">
+            
+                
+                    <a href="../7-day-product-design/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        产品设计七日修行
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="programming-html5-applications/index.html">
+            
+                
+                    <a href="../programming-html5-applications/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        HTML5应用开发实践指南
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="html5-canvas-core/index.html">
+            
+                
+                    <a href="../html5-canvas-core/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        HTML5 Canvas核心技术
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="12.1" data-path="html5-canvas-core/basic.html">
+            
+                
+                    <a href="../html5-canvas-core/basic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.1.</b>
+                        
+                        基础知识
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" data-path="html5-canvas-core/draw.html">
+            
+                
+                    <a href="../html5-canvas-core/draw.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.2.</b>
+                        
+                        绘制
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.3" data-path="html5-canvas-core/text.html">
+            
+                
+                    <a href="../html5-canvas-core/text.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.3.</b>
+                        
+                        文本
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.4" >
+            
+            <span><b>12.4.</b> 持续</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="pro-html5-performance/index.html">
+            
+                
+                    <a href="../pro-html5-performance/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        高性能HTML5
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="13.1" data-path="pro-html5-performance/1-3.html">
+            
+                
+                    <a href="../pro-html5-performance/1-3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.1.</b>
+                        
+                        第一章~第三章
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.2" data-path="pro-html5-performance/4-10.html">
+            
+                
+                    <a href="../pro-html5-performance/4-10.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.2.</b>
+                        
+                        第四章~第十章
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="designing-web-and-mobile-graphics/index.html">
+            
+                
+                    <a href="../designing-web-and-mobile-graphics/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                        响应式图形设计
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="14.1" data-path="designing-web-and-mobile-graphics/first-half.html">
+            
+                
+                    <a href="../designing-web-and-mobile-graphics/first-half.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.1.</b>
+                        
+                        第一章~第六章
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14.2" data-path="designing-web-and-mobile-graphics/second-half.html">
+            
+                
+                    <a href="../designing-web-and-mobile-graphics/second-half.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.2.</b>
+                        
+                        第七章~第十四章
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="15" data-path="jsDesignPatterns/index.html">
+            
+                
+                    <a href="../jsDesignPatterns/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                        JavaScript设计模式
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="15.1" data-path="jsDesignPatterns/Constructor.html">
+            
+                
+                    <a href="../jsDesignPatterns/Constructor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.1.</b>
+                        
+                        构造器模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.2" data-path="jsDesignPatterns/Module.html">
+            
+                
+                    <a href="../jsDesignPatterns/Module.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.2.</b>
+                        
+                        模块模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.3" data-path="jsDesignPatterns/RevealingModule.html">
+            
+                
+                    <a href="../jsDesignPatterns/RevealingModule.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.3.</b>
+                        
+                        揭示模块模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.4" data-path="jsDesignPatterns/Singleton.html">
+            
+                
+                    <a href="../jsDesignPatterns/Singleton.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.4.</b>
+                        
+                        单例模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.5" data-path="jsDesignPatterns/Observer.html">
+            
+                
+                    <a href="../jsDesignPatterns/Observer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.5.</b>
+                        
+                        观察者模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.6" data-path="jsDesignPatterns/Pubsub.html">
+            
+                
+                    <a href="../jsDesignPatterns/Pubsub.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.6.</b>
+                        
+                        发布/订阅模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.7" data-path="jsDesignPatterns/Mediator.html">
+            
+                
+                    <a href="../jsDesignPatterns/Mediator.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.7.</b>
+                        
+                        中介者模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.8" data-path="jsDesignPatterns/Prototype.html">
+            
+                
+                    <a href="../jsDesignPatterns/Prototype.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.8.</b>
+                        
+                        原型模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.9" data-path="jsDesignPatterns/Command.html">
+            
+                
+                    <a href="../jsDesignPatterns/Command.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.9.</b>
+                        
+                        命令模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.10" data-path="jsDesignPatterns/Facade.html">
+            
+                
+                    <a href="../jsDesignPatterns/Facade.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.10.</b>
+                        
+                        外观模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.11" data-path="jsDesignPatterns/Factory.html">
+            
+                
+                    <a href="../jsDesignPatterns/Factory.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.11.</b>
+                        
+                        工厂模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.12" data-path="jsDesignPatterns/AbstractFactory.html">
+            
+                
+                    <a href="../jsDesignPatterns/AbstractFactory.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.12.</b>
+                        
+                        抽象工厂模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.13" data-path="jsDesignPatterns/Mixin.html">
+            
+                
+                    <a href="../jsDesignPatterns/Mixin.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.13.</b>
+                        
+                        混入模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.14" data-path="jsDesignPatterns/Decorator.html">
+            
+                
+                    <a href="../jsDesignPatterns/Decorator.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.14.</b>
+                        
+                        装饰者模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.15" data-path="jsDesignPatterns/AbstractDecorator.html">
+            
+                
+                    <a href="../jsDesignPatterns/AbstractDecorator.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.15.</b>
+                        
+                        抽象装饰者模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.16" data-path="jsDesignPatterns/Flyweight.html">
+            
+                
+                    <a href="../jsDesignPatterns/Flyweight.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.16.</b>
+                        
+                        享元模式
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="16" data-path="dontmakemethink/index.html">
+            
+                
+                    <a href="../dontmakemethink/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                        Don&#39;t make me think
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="16.1" data-path="dontmakemethink/principle.html">
+            
+                
+                    <a href="../dontmakemethink/principle.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.1.</b>
+                        
+                        指导原则
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="16.2" data-path="dontmakemethink/thingsmustbedone.html">
+            
+                
+                    <a href="../dontmakemethink/thingsmustbedone.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.2.</b>
+                        
+                        必须正确处理的几个方面
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="16.3" data-path="dontmakemethink/thingsshouldbechecked.html">
+            
+                
+                    <a href="../dontmakemethink/thingsshouldbechecked.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.3.</b>
+                        
+                        确定你没有做错的几件事
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="16.4" data-path="dontmakemethink/aspect.html">
+            
+                
+                    <a href="../dontmakemethink/aspect.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.4.</b>
+                        
+                        大的方面和外界影响
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="17" data-path="zengarden/index.html">
+            
+                
+                    <a href="../zengarden/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                        CSS禅意花园
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="17.1" data-path="zengarden/design.html">
+            
+                
+                    <a href="../zengarden/design.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.1.</b>
+                        
+                        设计
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="17.2" data-path="zengarden/layout.html">
+            
+                
+                    <a href="../zengarden/layout.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.2.</b>
+                        
+                        正文布局
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="17.3" data-path="zengarden/text-layout.html">
+            
+                
+                    <a href="../zengarden/text-layout.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.3.</b>
+                        
+                        文字排布
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="17.4" data-path="zengarden/image.html">
+            
+                
+                    <a href="../zengarden/image.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.4.</b>
+                        
+                        图像
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="17.5" data-path="zengarden/practice.html">
+            
+                
+                    <a href="../zengarden/practice.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.5.</b>
+                        
+                        最佳实践
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="18" data-path="how-to-win-friends-and-influence-people/index.html">
+            
+                
+                    <a href="../how-to-win-friends-and-influence-people/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                        人性的弱点
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="19" data-path="how-to-stop-worrying-and-start-living/index.html">
+            
+                
+                    <a href="../how-to-stop-worrying-and-start-living/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>19.</b>
+                        
+                        人性的优点
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
         
-            <li class="divider"></li>
-            <li  data-level="1" data-path="programer-job-changing/README.html">
-                
-                <a href="../programer-job-changing/README.html" title="程序员跳槽全攻略">
-                    <i class="fa fa-check"></i>《程序员跳槽全攻略》
-                </a>
-                
-                
-            </li>
-        
-            <li class="divider"></li>
-            <li  data-level="2" data-path="pragmatic-thinking-and-learning/README.html">
-                
-                <a href="../pragmatic-thinking-and-learning/README.html" title="程序员的思维修炼-开发认知潜能的九堂课">
-                    <i class="fa fa-check"></i>《程序员的思维修炼-开发认知潜能的九堂课》
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="2.1" data-path="pragmatic-thinking-and-learning/introduction.html">
-                            
-                            <a href="../pragmatic-thinking-and-learning/introduction.html" title="绪论">
-                                <i class="fa fa-check"></i> <b>1.</b> 绪论
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="2.2" data-path="pragmatic-thinking-and-learning/tiro-to-expert.html">
-                            
-                            <a href="../pragmatic-thinking-and-learning/tiro-to-expert.html" title="从新手到专家的历程">
-                                <i class="fa fa-check"></i> <b>2.</b> 从新手到专家的历程
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="2.3" data-path="pragmatic-thinking-and-learning/understand-your-brain.html">
-                            
-                            <a href="../pragmatic-thinking-and-learning/understand-your-brain.html" title="认识你的大脑">
-                                <i class="fa fa-check"></i> <b>3.</b> 认识你的大脑
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="2.4" data-path="pragmatic-thinking-and-learning/use-right-brain.html">
-                            
-                            <a href="../pragmatic-thinking-and-learning/use-right-brain.html" title="利用右脑">
-                                <i class="fa fa-check"></i> <b>4.</b> 利用右脑
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="2.5" data-path="pragmatic-thinking-and-learning/debug-your-brain.html">
-                            
-                            <a href="../pragmatic-thinking-and-learning/debug-your-brain.html" title="调试你的大脑">
-                                <i class="fa fa-check"></i> <b>5.</b> 调试你的大脑
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="2.6" data-path="pragmatic-thinking-and-learning/active-learning.html">
-                            
-                            <a href="../pragmatic-thinking-and-learning/active-learning.html" title="主动学习">
-                                <i class="fa fa-check"></i> <b>6.</b> 主动学习
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="2.7" data-path="pragmatic-thinking-and-learning/experience.html">
-                            
-                            <a href="../pragmatic-thinking-and-learning/experience.html" title="积累经验">
-                                <i class="fa fa-check"></i> <b>7.</b> 积累经验
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="2.8" data-path="pragmatic-thinking-and-learning/focus.html">
-                            
-                            <a href="../pragmatic-thinking-and-learning/focus.html" title="控制注意力">
-                                <i class="fa fa-check"></i> <b>8.</b> 控制注意力
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="2.9" data-path="pragmatic-thinking-and-learning/beyond-expert.html">
-                            
-                            <a href="../pragmatic-thinking-and-learning/beyond-expert.html" title="超越专家">
-                                <i class="fa fa-check"></i> <b>9.</b> 超越专家
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li class="divider"></li>
-            <li  data-level="3" data-path="pro-git/README.html">
-                
-                <a href="../pro-git/README.html" title="Pro Git">
-                    <i class="fa fa-check"></i>《Pro Git》
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="3.1" data-path="pro-git/start.html">
-                            
-                            <a href="../pro-git/start.html" title="起步">
-                                <i class="fa fa-check"></i> <b>1.</b> 起步
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="3.2" data-path="pro-git/base.html">
-                            
-                            <a href="../pro-git/base.html" title="Git基础">
-                                <i class="fa fa-check"></i> <b>2.</b> Git基础
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="3.3" data-path="pro-git/branch.html">
-                            
-                            <a href="../pro-git/branch.html" title="Git分支">
-                                <i class="fa fa-check"></i> <b>3.</b> Git分支
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="3.4" >
-                            
-                            <span><b>4.</b> 持续</span>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li class="divider"></li>
-            <li  data-level="4" data-path="taobao-product-10-year/README.html">
-                
-                <a href="../taobao-product-10-year/README.html" title="淘宝十年产品事">
-                    <i class="fa fa-check"></i>《淘宝十年产品事》
-                </a>
-                
-                
-            </li>
-        
-            <li class="divider"></li>
-            <li  data-level="5" data-path="zhihu-product-design/README.html">
-                
-                <a href="../zhihu-product-design/README.html" title="产品设计师技能书：知乎马力自选集">
-                    <i class="fa fa-check"></i>《产品设计师技能书：知乎马力自选集》
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="5.1" data-path="zhihu-product-design/pd-and-ue.html">
-                            
-                            <a href="../zhihu-product-design/pd-and-ue.html" title="产品设计&amp;用户体验">
-                                <i class="fa fa-check"></i> <b>1.</b> 产品设计&amp;用户体验
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="5.2" data-path="zhihu-product-design/pm-and-pd.html">
-                            
-                            <a href="../zhihu-product-design/pm-and-pd.html" title="产品经理&amp;设计师">
-                                <i class="fa fa-check"></i> <b>2.</b> 产品经理&amp;设计师
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="5.3" data-path="zhihu-product-design/team.html">
-                            
-                            <a href="../zhihu-product-design/team.html" title="团队管理&amp;创业">
-                                <i class="fa fa-check"></i> <b>3.</b> 团队管理&amp;创业
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li class="divider"></li>
-            <li  data-level="6" data-path="the-art-of-readable-code/README.html">
-                
-                <a href="../the-art-of-readable-code/README.html" title="编写可读代码的艺术">
-                    <i class="fa fa-check"></i>《编写可读代码的艺术》
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="6.1" data-path="the-art-of-readable-code/1.html">
-                            
-                            <a href="../the-art-of-readable-code/1.html" title="表面层次的改进">
-                                <i class="fa fa-check"></i> <b>1.</b> 表面层次的改进
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="6.2" data-path="the-art-of-readable-code/2.html">
-                            
-                            <a href="../the-art-of-readable-code/2.html" title="简化循环和逻辑">
-                                <i class="fa fa-check"></i> <b>2.</b> 简化循环和逻辑
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="6.3" data-path="the-art-of-readable-code/3.html">
-                            
-                            <a href="../the-art-of-readable-code/3.html" title="重新组织代码">
-                                <i class="fa fa-check"></i> <b>3.</b> 重新组织代码
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li class="divider"></li>
-            <li  data-level="7" data-path="the-complete-book-on-angularjs/README.html">
-                
-                <a href="../the-complete-book-on-angularjs/README.html" title="AngularJS权威指南">
-                    <i class="fa fa-check"></i>《AngularJS权威指南》
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="7.1" data-path="the-complete-book-on-angularjs/data-binding.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/data-binding.html" title="数据绑定">
-                                <i class="fa fa-check"></i> <b>1.</b> 数据绑定
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.2" data-path="the-complete-book-on-angularjs/module.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/module.html" title="模块">
-                                <i class="fa fa-check"></i> <b>2.</b> 模块
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.3" data-path="the-complete-book-on-angularjs/scope.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/scope.html" title="作用域">
-                                <i class="fa fa-check"></i> <b>3.</b> 作用域
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.4" data-path="the-complete-book-on-angularjs/controller.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/controller.html" title="控制器">
-                                <i class="fa fa-check"></i> <b>4.</b> 控制器
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.5" data-path="the-complete-book-on-angularjs/expression.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/expression.html" title="表达式">
-                                <i class="fa fa-check"></i> <b>5.</b> 表达式
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.6" data-path="the-complete-book-on-angularjs/filter.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/filter.html" title="过滤器">
-                                <i class="fa fa-check"></i> <b>6.</b> 过滤器
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.7" data-path="the-complete-book-on-angularjs/directive-intro.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/directive-intro.html" title="指令简介">
-                                <i class="fa fa-check"></i> <b>7.</b> 指令简介
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.8" data-path="the-complete-book-on-angularjs/build-in-directive.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/build-in-directive.html" title="内置指令">
-                                <i class="fa fa-check"></i> <b>8.</b> 内置指令
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.9" data-path="the-complete-book-on-angularjs/directive-detail.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/directive-detail.html" title="指令详解">
-                                <i class="fa fa-check"></i> <b>9.</b> 指令详解
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.10" data-path="the-complete-book-on-angularjs/load-module.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/load-module.html" title="模块加载">
-                                <i class="fa fa-check"></i> <b>10.</b> 模块加载
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.11" data-path="the-complete-book-on-angularjs/router.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/router.html" title="视图和路由">
-                                <i class="fa fa-check"></i> <b>11.</b> 视图和路由
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.12" data-path="the-complete-book-on-angularjs/injector.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/injector.html" title="依赖注入">
-                                <i class="fa fa-check"></i> <b>12.</b> 依赖注入
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.13" data-path="the-complete-book-on-angularjs/service.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/service.html" title="服务">
-                                <i class="fa fa-check"></i> <b>13.</b> 服务
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.14" data-path="the-complete-book-on-angularjs/xhr-http.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/xhr-http.html" title="XHR和服务器通信——$http">
-                                <i class="fa fa-check"></i> <b>14.</b> XHR和服务器通信——$http
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.15" data-path="the-complete-book-on-angularjs/xhr-resource.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/xhr-resource.html" title="XHR和服务器通信——$resource">
-                                <i class="fa fa-check"></i> <b>15.</b> XHR和服务器通信——$resource
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.16" data-path="the-complete-book-on-angularjs/xhr-restangular.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/xhr-restangular.html" title="XHR和服务器通信——Restangular">
-                                <i class="fa fa-check"></i> <b>16.</b> XHR和服务器通信——Restangular
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.17" data-path="the-complete-book-on-angularjs/xhr-practice.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/xhr-practice.html" title="XHR实践">
-                                <i class="fa fa-check"></i> <b>17.</b> XHR实践
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.18" data-path="the-complete-book-on-angularjs/promise.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/promise.html" title="promise">
-                                <i class="fa fa-check"></i> <b>18.</b> promise
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.19" data-path="the-complete-book-on-angularjs/events.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/events.html" title="事件">
-                                <i class="fa fa-check"></i> <b>19.</b> 事件
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.20" data-path="the-complete-book-on-angularjs/digest-and-apply.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/digest-and-apply.html" title="digest和$apply">
-                                <i class="fa fa-check"></i> <b>20.</b> digest和$apply
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.21" data-path="the-complete-book-on-angularjs/secret-of-angular.html">
-                            
-                            <a href="../the-complete-book-on-angularjs/secret-of-angular.html" title="揭秘Angular">
-                                <i class="fa fa-check"></i> <b>21.</b> 揭秘Angular
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.22" >
-                            
-                            <span><b>22.</b> 持续</span>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li class="divider"></li>
-            <li  data-level="8" data-path="apprenticeship-patterns/README.html">
-                
-                <a href="../apprenticeship-patterns/README.html" title="软件开发者路线图：从学徒到高手">
-                    <i class="fa fa-check"></i>《软件开发者路线图：从学徒到高手》
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="8.1" data-path="apprenticeship-patterns/1.html">
-                            
-                            <a href="../apprenticeship-patterns/1.html" title="绪论">
-                                <i class="fa fa-check"></i> <b>1.</b> 绪论
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="8.2" data-path="apprenticeship-patterns/2.html">
-                            
-                            <a href="../apprenticeship-patterns/2.html" title="空杯心态">
-                                <i class="fa fa-check"></i> <b>2.</b> 空杯心态
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="8.3" data-path="apprenticeship-patterns/3.html">
-                            
-                            <a href="../apprenticeship-patterns/3.html" title="走过漫漫长路">
-                                <i class="fa fa-check"></i> <b>3.</b> 走过漫漫长路
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="8.4" data-path="apprenticeship-patterns/4.html">
-                            
-                            <a href="../apprenticeship-patterns/4.html" title="准确的自我评估">
-                                <i class="fa fa-check"></i> <b>4.</b> 准确的自我评估
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="8.5" data-path="apprenticeship-patterns/5.html">
-                            
-                            <a href="../apprenticeship-patterns/5.html" title="恒久学习">
-                                <i class="fa fa-check"></i> <b>5.</b> 恒久学习
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="8.6" data-path="apprenticeship-patterns/6.html">
-                            
-                            <a href="../apprenticeship-patterns/6.html" title="安排你的课程">
-                                <i class="fa fa-check"></i> <b>6.</b> 安排你的课程
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li class="divider"></li>
-            <li  data-level="9" data-path="mobile-design/README.html">
-                
-                <a href="../mobile-design/README.html" title="移动设计">
-                    <i class="fa fa-check"></i>《移动设计》
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="9.1" data-path="mobile-design/1.html">
-                            
-                            <a href="../mobile-design/1.html" title="概述">
-                                <i class="fa fa-check"></i> <b>1.</b> 概述
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="9.2" data-path="mobile-design/2.html">
-                            
-                            <a href="../mobile-design/2.html" title="特征">
-                                <i class="fa fa-check"></i> <b>2.</b> 特征
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="9.3" data-path="mobile-design/3.html">
-                            
-                            <a href="../mobile-design/3.html" title="原则">
-                                <i class="fa fa-check"></i> <b>3.</b> 原则
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="9.4" data-path="mobile-design/4.html">
-                            
-                            <a href="../mobile-design/4.html" title="框架">
-                                <i class="fa fa-check"></i> <b>4.</b> 框架
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="9.5" data-path="mobile-design/5.html">
-                            
-                            <a href="../mobile-design/5.html" title="细节">
-                                <i class="fa fa-check"></i> <b>5.</b> 细节
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="9.6" data-path="mobile-design/6.html">
-                            
-                            <a href="../mobile-design/6.html" title="动效">
-                                <i class="fa fa-check"></i> <b>6.</b> 动效
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="9.7" data-path="mobile-design/7.html">
-                            
-                            <a href="../mobile-design/7.html" title="适配">
-                                <i class="fa fa-check"></i> <b>7.</b> 适配
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="9.8" data-path="mobile-design/8.html">
-                            
-                            <a href="../mobile-design/8.html" title="创新">
-                                <i class="fa fa-check"></i> <b>8.</b> 创新
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="9.9" data-path="mobile-design/9.html">
-                            
-                            <a href="../mobile-design/9.html" title="流">
-                                <i class="fa fa-check"></i> <b>9.</b> 流
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li class="divider"></li>
-            <li  data-level="10" data-path="7-day-product-design/README.html">
-                
-                <a href="../7-day-product-design/README.html" title="产品设计七日修行">
-                    <i class="fa fa-check"></i>《产品设计七日修行》
-                </a>
-                
-                
-            </li>
-        
-            <li class="divider"></li>
-            <li  data-level="11" data-path="programming-html5-applications/README.html">
-                
-                <a href="../programming-html5-applications/README.html" title="HTML5应用开发实践指南">
-                    <i class="fa fa-check"></i>《HTML5应用开发实践指南》
-                </a>
-                
-                
-            </li>
-        
-            <li class="divider"></li>
-            <li  data-level="12" data-path="html5-canvas-core/README.html">
-                
-                <a href="../html5-canvas-core/README.html" title="HTML5 Canvas核心技术">
-                    <i class="fa fa-check"></i>《HTML5 Canvas核心技术》
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="12.1" data-path="html5-canvas-core/basic.html">
-                            
-                            <a href="../html5-canvas-core/basic.html" title="基础知识">
-                                <i class="fa fa-check"></i> <b>1.</b> 基础知识
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="12.2" data-path="html5-canvas-core/draw.html">
-                            
-                            <a href="../html5-canvas-core/draw.html" title="绘制">
-                                <i class="fa fa-check"></i> <b>2.</b> 绘制
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="12.3" data-path="html5-canvas-core/text.html">
-                            
-                            <a href="../html5-canvas-core/text.html" title="文本">
-                                <i class="fa fa-check"></i> <b>3.</b> 文本
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="12.4" >
-                            
-                            <span><b>4.</b> 持续</span>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li class="divider"></li>
-            <li  data-level="13" data-path="pro-html5-performance/README.html">
-                
-                <a href="../pro-html5-performance/README.html" title="高性能HTML5">
-                    <i class="fa fa-check"></i>《高性能HTML5》
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="13.1" data-path="pro-html5-performance/1-3.html">
-                            
-                            <a href="../pro-html5-performance/1-3.html" title="第一章~第三章">
-                                <i class="fa fa-check"></i> <b>1.</b> 第一章~第三章
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="13.2" data-path="pro-html5-performance/4-10.html">
-                            
-                            <a href="../pro-html5-performance/4-10.html" title="第四章~第十章">
-                                <i class="fa fa-check"></i> <b>2.</b> 第四章~第十章
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li class="divider"></li>
-            <li  data-level="14" data-path="designing-web-and-mobile-graphics/README.html">
-                
-                <a href="../designing-web-and-mobile-graphics/README.html" title="响应式图形设计">
-                    <i class="fa fa-check"></i>《响应式图形设计》
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="14.1" data-path="designing-web-and-mobile-graphics/first-half.html">
-                            
-                            <a href="../designing-web-and-mobile-graphics/first-half.html" title="第一章~第六章">
-                                <i class="fa fa-check"></i> <b>1.</b> 第一章~第六章
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="14.2" data-path="designing-web-and-mobile-graphics/second-half.html">
-                            
-                            <a href="../designing-web-and-mobile-graphics/second-half.html" title="第七章~第十四章">
-                                <i class="fa fa-check"></i> <b>2.</b> 第七章~第十四章
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li class="divider"></li>
-            <li  data-level="15" data-path="jsDesignPatterns/README.html">
-                
-                <a href="../jsDesignPatterns/README.html" title="JavaScript设计模式">
-                    <i class="fa fa-check"></i>《JavaScript设计模式》
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="15.1" data-path="jsDesignPatterns/Constructor.html">
-                            
-                            <a href="../jsDesignPatterns/Constructor.html" title="构造器模式">
-                                <i class="fa fa-check"></i> <b>1.</b> 构造器模式
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="15.2" data-path="jsDesignPatterns/Module.html">
-                            
-                            <a href="../jsDesignPatterns/Module.html" title="模块模式">
-                                <i class="fa fa-check"></i> <b>2.</b> 模块模式
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="15.3" data-path="jsDesignPatterns/RevealingModule.html">
-                            
-                            <a href="../jsDesignPatterns/RevealingModule.html" title="揭示模块模式">
-                                <i class="fa fa-check"></i> <b>3.</b> 揭示模块模式
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="15.4" data-path="jsDesignPatterns/Singleton.html">
-                            
-                            <a href="../jsDesignPatterns/Singleton.html" title="单例模式">
-                                <i class="fa fa-check"></i> <b>4.</b> 单例模式
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="15.5" data-path="jsDesignPatterns/Observer.html">
-                            
-                            <a href="../jsDesignPatterns/Observer.html" title="观察者模式">
-                                <i class="fa fa-check"></i> <b>5.</b> 观察者模式
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="15.6" data-path="jsDesignPatterns/Pubsub.html">
-                            
-                            <a href="../jsDesignPatterns/Pubsub.html" title="发布/订阅模式">
-                                <i class="fa fa-check"></i> <b>6.</b> 发布/订阅模式
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="15.7" data-path="jsDesignPatterns/Mediator.html">
-                            
-                            <a href="../jsDesignPatterns/Mediator.html" title="中介者模式">
-                                <i class="fa fa-check"></i> <b>7.</b> 中介者模式
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="15.8" data-path="jsDesignPatterns/Prototype.html">
-                            
-                            <a href="../jsDesignPatterns/Prototype.html" title="原型模式">
-                                <i class="fa fa-check"></i> <b>8.</b> 原型模式
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="15.9" data-path="jsDesignPatterns/Command.html">
-                            
-                            <a href="../jsDesignPatterns/Command.html" title="命令模式">
-                                <i class="fa fa-check"></i> <b>9.</b> 命令模式
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="15.10" data-path="jsDesignPatterns/Facade.html">
-                            
-                            <a href="../jsDesignPatterns/Facade.html" title="外观模式">
-                                <i class="fa fa-check"></i> <b>10.</b> 外观模式
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="15.11" data-path="jsDesignPatterns/Factory.html">
-                            
-                            <a href="../jsDesignPatterns/Factory.html" title="工厂模式">
-                                <i class="fa fa-check"></i> <b>11.</b> 工厂模式
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="15.12" data-path="jsDesignPatterns/AbstractFactory.html">
-                            
-                            <a href="../jsDesignPatterns/AbstractFactory.html" title="抽象工厂模式">
-                                <i class="fa fa-check"></i> <b>12.</b> 抽象工厂模式
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="15.13" data-path="jsDesignPatterns/Mixin.html">
-                            
-                            <a href="../jsDesignPatterns/Mixin.html" title="混入模式">
-                                <i class="fa fa-check"></i> <b>13.</b> 混入模式
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="15.14" data-path="jsDesignPatterns/Decorator.html">
-                            
-                            <a href="../jsDesignPatterns/Decorator.html" title="装饰者模式">
-                                <i class="fa fa-check"></i> <b>14.</b> 装饰者模式
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="15.15" data-path="jsDesignPatterns/AbstractDecorator.html">
-                            
-                            <a href="../jsDesignPatterns/AbstractDecorator.html" title="抽象装饰者模式">
-                                <i class="fa fa-check"></i> <b>15.</b> 抽象装饰者模式
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="15.16" data-path="jsDesignPatterns/Flyweight.html">
-                            
-                            <a href="../jsDesignPatterns/Flyweight.html" title="享元模式">
-                                <i class="fa fa-check"></i> <b>16.</b> 享元模式
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li class="divider"></li>
-            <li  data-level="16" data-path="dontmakemethink/README.html">
-                
-                <a href="../dontmakemethink/README.html" title="Don&#39;t make me think">
-                    <i class="fa fa-check"></i>《Don&#39;t make me think》
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="16.1" data-path="dontmakemethink/principle.html">
-                            
-                            <a href="../dontmakemethink/principle.html" title="指导原则">
-                                <i class="fa fa-check"></i> <b>1.</b> 指导原则
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="16.2" data-path="dontmakemethink/thingsmustbedone.html">
-                            
-                            <a href="../dontmakemethink/thingsmustbedone.html" title="必须正确处理的几个方面">
-                                <i class="fa fa-check"></i> <b>2.</b> 必须正确处理的几个方面
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="16.3" data-path="dontmakemethink/thingsshouldbechecked.html">
-                            
-                            <a href="../dontmakemethink/thingsshouldbechecked.html" title="确定你没有做错的几件事">
-                                <i class="fa fa-check"></i> <b>3.</b> 确定你没有做错的几件事
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="16.4" data-path="dontmakemethink/aspect.html">
-                            
-                            <a href="../dontmakemethink/aspect.html" title="大的方面和外界影响">
-                                <i class="fa fa-check"></i> <b>4.</b> 大的方面和外界影响
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li class="divider"></li>
-            <li  data-level="17" data-path="zengarden/README.html">
-                
-                <a href="../zengarden/README.html" title="CSS禅意花园">
-                    <i class="fa fa-check"></i>《CSS禅意花园》
-                </a>
-                
-                
-                <ul class="articles">
-                    
-                        <li  data-level="17.1" data-path="zengarden/design.html">
-                            
-                            <a href="../zengarden/design.html" title="设计">
-                                <i class="fa fa-check"></i> <b>1.</b> 设计
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="17.2" data-path="zengarden/layout.html">
-                            
-                            <a href="../zengarden/layout.html" title="正文布局">
-                                <i class="fa fa-check"></i> <b>2.</b> 正文布局
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="17.3" data-path="zengarden/text-layout.html">
-                            
-                            <a href="../zengarden/text-layout.html" title="文字排布">
-                                <i class="fa fa-check"></i> <b>3.</b> 文字排布
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="17.4" data-path="zengarden/image.html">
-                            
-                            <a href="../zengarden/image.html" title="图像">
-                                <i class="fa fa-check"></i> <b>4.</b> 图像
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="17.5" data-path="zengarden/practice.html">
-                            
-                            <a href="../zengarden/practice.html" title="最佳实践">
-                                <i class="fa fa-check"></i> <b>5.</b> 最佳实践
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
-        
-            <li class="divider"></li>
-            <li  data-level="18" data-path="how-to-win-friends-and-influence-people/README.html">
-                
-                <a href="../how-to-win-friends-and-influence-people/README.html" title="人性的弱点">
-                    <i class="fa fa-check"></i>《人性的弱点》
-                </a>
-                
-                
-            </li>
-        
-            <li class="divider"></li>
-            <li  data-level="19" data-path="how-to-stop-worrying-and-start-living/README.html">
-                
-                <a href="../how-to-stop-worrying-and-start-living/README.html" title="人性的优点">
-                    <i class="fa fa-check"></i>《人性的优点》
-                </a>
-                
-                
-            </li>
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                本書使用 GitBook 釋出
+            </a>
+        </li>
         
     </ul>
 </div>
 
-    <div class="book-body" tabindex="-1">
+    <div class="book-body">
         <div class="body-inner">
-            <div class="page-wrapper">
-                <div class="book-progress">
-    <div class="bar">
-        <div class="inner" style="width: 83.80952380952381%;min-width: 82.85714285714286%;"></div>
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="目錄"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="搜尋"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="字型設定"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
     </div>
-    <div class="chapters">
-    
-        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
-    
-        <a href="../programer-job-changing/README.html" title="程序员跳槽全攻略" class="chapter done new-chapter" data-progress="1" style="left: 0.9523809523809523%;"></a>
-    
-        <a href="../7-day-product-design/README.html" title="产品设计七日修行" class="chapter done " data-progress="10" style="left: 1.9047619047619047%;"></a>
-    
-        <a href="../programming-html5-applications/README.html" title="HTML5应用开发实践指南" class="chapter done " data-progress="11" style="left: 2.857142857142857%;"></a>
-    
-        <a href="../html5-canvas-core/README.html" title="HTML5 Canvas核心技术" class="chapter done " data-progress="12" style="left: 3.8095238095238093%;"></a>
-    
-        <a href="../html5-canvas-core/basic.html" title="基础知识" class="chapter done " data-progress="12.1" style="left: 4.761904761904762%;"></a>
-    
-        <a href="../html5-canvas-core/draw.html" title="绘制" class="chapter done " data-progress="12.2" style="left: 5.714285714285714%;"></a>
-    
-        <a href="../html5-canvas-core/text.html" title="文本" class="chapter done " data-progress="12.3" style="left: 6.666666666666667%;"></a>
-    
-        <a href="../pro-html5-performance/README.html" title="高性能HTML5" class="chapter done " data-progress="13" style="left: 7.619047619047619%;"></a>
-    
-        <a href="../pro-html5-performance/1-3.html" title="第一章~第三章" class="chapter done " data-progress="13.1" style="left: 8.571428571428571%;"></a>
-    
-        <a href="../pro-html5-performance/4-10.html" title="第四章~第十章" class="chapter done " data-progress="13.2" style="left: 9.523809523809524%;"></a>
-    
-        <a href="../designing-web-and-mobile-graphics/README.html" title="响应式图形设计" class="chapter done " data-progress="14" style="left: 10.476190476190476%;"></a>
-    
-        <a href="../designing-web-and-mobile-graphics/first-half.html" title="第一章~第六章" class="chapter done " data-progress="14.1" style="left: 11.428571428571429%;"></a>
-    
-        <a href="../designing-web-and-mobile-graphics/second-half.html" title="第七章~第十四章" class="chapter done " data-progress="14.2" style="left: 12.380952380952381%;"></a>
-    
-        <a href="../jsDesignPatterns/README.html" title="JavaScript设计模式" class="chapter done " data-progress="15" style="left: 13.333333333333334%;"></a>
-    
-        <a href="../jsDesignPatterns/Constructor.html" title="构造器模式" class="chapter done " data-progress="15.1" style="left: 14.285714285714286%;"></a>
-    
-        <a href="../jsDesignPatterns/Facade.html" title="外观模式" class="chapter done " data-progress="15.10" style="left: 15.238095238095237%;"></a>
-    
-        <a href="../jsDesignPatterns/Factory.html" title="工厂模式" class="chapter done " data-progress="15.11" style="left: 16.19047619047619%;"></a>
-    
-        <a href="../jsDesignPatterns/AbstractFactory.html" title="抽象工厂模式" class="chapter done " data-progress="15.12" style="left: 17.142857142857142%;"></a>
-    
-        <a href="../jsDesignPatterns/Mixin.html" title="混入模式" class="chapter done " data-progress="15.13" style="left: 18.095238095238095%;"></a>
-    
-        <a href="../jsDesignPatterns/Decorator.html" title="装饰者模式" class="chapter done " data-progress="15.14" style="left: 19.047619047619047%;"></a>
-    
-        <a href="../jsDesignPatterns/AbstractDecorator.html" title="抽象装饰者模式" class="chapter done " data-progress="15.15" style="left: 20%;"></a>
-    
-        <a href="../jsDesignPatterns/Flyweight.html" title="享元模式" class="chapter done " data-progress="15.16" style="left: 20.952380952380953%;"></a>
-    
-        <a href="../jsDesignPatterns/Module.html" title="模块模式" class="chapter done " data-progress="15.2" style="left: 21.904761904761905%;"></a>
-    
-        <a href="../jsDesignPatterns/RevealingModule.html" title="揭示模块模式" class="chapter done " data-progress="15.3" style="left: 22.857142857142858%;"></a>
-    
-        <a href="../jsDesignPatterns/Singleton.html" title="单例模式" class="chapter done " data-progress="15.4" style="left: 23.80952380952381%;"></a>
-    
-        <a href="../jsDesignPatterns/Observer.html" title="观察者模式" class="chapter done " data-progress="15.5" style="left: 24.761904761904763%;"></a>
-    
-        <a href="../jsDesignPatterns/Pubsub.html" title="发布/订阅模式" class="chapter done " data-progress="15.6" style="left: 25.714285714285715%;"></a>
-    
-        <a href="../jsDesignPatterns/Mediator.html" title="中介者模式" class="chapter done " data-progress="15.7" style="left: 26.666666666666668%;"></a>
-    
-        <a href="../jsDesignPatterns/Prototype.html" title="原型模式" class="chapter done " data-progress="15.8" style="left: 27.61904761904762%;"></a>
-    
-        <a href="../jsDesignPatterns/Command.html" title="命令模式" class="chapter done " data-progress="15.9" style="left: 28.571428571428573%;"></a>
-    
-        <a href="../dontmakemethink/README.html" title="Don&#39;t make me think" class="chapter done " data-progress="16" style="left: 29.523809523809526%;"></a>
-    
-        <a href="../dontmakemethink/principle.html" title="指导原则" class="chapter done " data-progress="16.1" style="left: 30.476190476190474%;"></a>
-    
-        <a href="../dontmakemethink/thingsmustbedone.html" title="必须正确处理的几个方面" class="chapter done " data-progress="16.2" style="left: 31.428571428571427%;"></a>
-    
-        <a href="../dontmakemethink/thingsshouldbechecked.html" title="确定你没有做错的几件事" class="chapter done " data-progress="16.3" style="left: 32.38095238095238%;"></a>
-    
-        <a href="../dontmakemethink/aspect.html" title="大的方面和外界影响" class="chapter done " data-progress="16.4" style="left: 33.333333333333336%;"></a>
-    
-        <a href="../zengarden/README.html" title="CSS禅意花园" class="chapter done " data-progress="17" style="left: 34.285714285714285%;"></a>
-    
-        <a href="../zengarden/design.html" title="设计" class="chapter done " data-progress="17.1" style="left: 35.23809523809524%;"></a>
-    
-        <a href="../zengarden/layout.html" title="正文布局" class="chapter done " data-progress="17.2" style="left: 36.19047619047619%;"></a>
-    
-        <a href="../zengarden/text-layout.html" title="文字排布" class="chapter done " data-progress="17.3" style="left: 37.142857142857146%;"></a>
-    
-        <a href="../zengarden/image.html" title="图像" class="chapter done " data-progress="17.4" style="left: 38.095238095238095%;"></a>
-    
-        <a href="../zengarden/practice.html" title="最佳实践" class="chapter done " data-progress="17.5" style="left: 39.04761904761905%;"></a>
-    
-        <a href="../how-to-win-friends-and-influence-people/README.html" title="人性的弱点" class="chapter done " data-progress="18" style="left: 40%;"></a>
-    
-        <a href="../how-to-stop-worrying-and-start-living/README.html" title="人性的优点" class="chapter done " data-progress="19" style="left: 40.95238095238095%;"></a>
-    
-        <a href="../pragmatic-thinking-and-learning/README.html" title="程序员的思维修炼-开发认知潜能的九堂课" class="chapter done new-chapter" data-progress="2" style="left: 41.904761904761905%;"></a>
-    
-        <a href="../pragmatic-thinking-and-learning/introduction.html" title="绪论" class="chapter done " data-progress="2.1" style="left: 42.857142857142854%;"></a>
-    
-        <a href="../pragmatic-thinking-and-learning/tiro-to-expert.html" title="从新手到专家的历程" class="chapter done " data-progress="2.2" style="left: 43.80952380952381%;"></a>
-    
-        <a href="../pragmatic-thinking-and-learning/understand-your-brain.html" title="认识你的大脑" class="chapter done " data-progress="2.3" style="left: 44.76190476190476%;"></a>
-    
-        <a href="../pragmatic-thinking-and-learning/use-right-brain.html" title="利用右脑" class="chapter done " data-progress="2.4" style="left: 45.714285714285715%;"></a>
-    
-        <a href="../pragmatic-thinking-and-learning/debug-your-brain.html" title="调试你的大脑" class="chapter done " data-progress="2.5" style="left: 46.666666666666664%;"></a>
-    
-        <a href="../pragmatic-thinking-and-learning/active-learning.html" title="主动学习" class="chapter done " data-progress="2.6" style="left: 47.61904761904762%;"></a>
-    
-        <a href="../pragmatic-thinking-and-learning/experience.html" title="积累经验" class="chapter done " data-progress="2.7" style="left: 48.57142857142857%;"></a>
-    
-        <a href="../pragmatic-thinking-and-learning/focus.html" title="控制注意力" class="chapter done " data-progress="2.8" style="left: 49.523809523809526%;"></a>
-    
-        <a href="../pragmatic-thinking-and-learning/beyond-expert.html" title="超越专家" class="chapter done " data-progress="2.9" style="left: 50.476190476190474%;"></a>
-    
-        <a href="../pro-git/README.html" title="Pro Git" class="chapter done new-chapter" data-progress="3" style="left: 51.42857142857143%;"></a>
-    
-        <a href="../pro-git/start.html" title="起步" class="chapter done " data-progress="3.1" style="left: 52.38095238095238%;"></a>
-    
-        <a href="../pro-git/base.html" title="Git基础" class="chapter done " data-progress="3.2" style="left: 53.333333333333336%;"></a>
-    
-        <a href="../pro-git/branch.html" title="Git分支" class="chapter done " data-progress="3.3" style="left: 54.285714285714285%;"></a>
-    
-        <a href="../taobao-product-10-year/README.html" title="淘宝十年产品事" class="chapter done new-chapter" data-progress="4" style="left: 55.23809523809524%;"></a>
-    
-        <a href="../zhihu-product-design/README.html" title="产品设计师技能书：知乎马力自选集" class="chapter done new-chapter" data-progress="5" style="left: 56.19047619047619%;"></a>
-    
-        <a href="../zhihu-product-design/pd-and-ue.html" title="产品设计&amp;用户体验" class="chapter done " data-progress="5.1" style="left: 57.142857142857146%;"></a>
-    
-        <a href="../zhihu-product-design/pm-and-pd.html" title="产品经理&amp;设计师" class="chapter done " data-progress="5.2" style="left: 58.095238095238095%;"></a>
-    
-        <a href="../zhihu-product-design/team.html" title="团队管理&amp;创业" class="chapter done " data-progress="5.3" style="left: 59.04761904761905%;"></a>
-    
-        <a href="../the-art-of-readable-code/README.html" title="编写可读代码的艺术" class="chapter done new-chapter" data-progress="6" style="left: 60%;"></a>
-    
-        <a href="../the-art-of-readable-code/1.html" title="表面层次的改进" class="chapter done " data-progress="6.1" style="left: 60.95238095238095%;"></a>
-    
-        <a href="../the-art-of-readable-code/2.html" title="简化循环和逻辑" class="chapter done " data-progress="6.2" style="left: 61.904761904761905%;"></a>
-    
-        <a href="../the-art-of-readable-code/3.html" title="重新组织代码" class="chapter done " data-progress="6.3" style="left: 62.857142857142854%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/README.html" title="AngularJS权威指南" class="chapter done new-chapter" data-progress="7" style="left: 63.80952380952381%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/data-binding.html" title="数据绑定" class="chapter done " data-progress="7.1" style="left: 64.76190476190476%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/load-module.html" title="模块加载" class="chapter done " data-progress="7.10" style="left: 65.71428571428571%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/router.html" title="视图和路由" class="chapter done " data-progress="7.11" style="left: 66.66666666666667%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/injector.html" title="依赖注入" class="chapter done " data-progress="7.12" style="left: 67.61904761904762%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/service.html" title="服务" class="chapter done " data-progress="7.13" style="left: 68.57142857142857%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/xhr-http.html" title="XHR和服务器通信——$http" class="chapter done " data-progress="7.14" style="left: 69.52380952380952%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/xhr-resource.html" title="XHR和服务器通信——$resource" class="chapter done " data-progress="7.15" style="left: 70.47619047619048%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/xhr-restangular.html" title="XHR和服务器通信——Restangular" class="chapter done " data-progress="7.16" style="left: 71.42857142857143%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/xhr-practice.html" title="XHR实践" class="chapter done " data-progress="7.17" style="left: 72.38095238095238%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/promise.html" title="promise" class="chapter done " data-progress="7.18" style="left: 73.33333333333333%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/events.html" title="事件" class="chapter done " data-progress="7.19" style="left: 74.28571428571429%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/module.html" title="模块" class="chapter done " data-progress="7.2" style="left: 75.23809523809524%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/digest-and-apply.html" title="digest和$apply" class="chapter done " data-progress="7.20" style="left: 76.19047619047619%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/secret-of-angular.html" title="揭秘Angular" class="chapter done " data-progress="7.21" style="left: 77.14285714285714%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/scope.html" title="作用域" class="chapter done " data-progress="7.3" style="left: 78.0952380952381%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/controller.html" title="控制器" class="chapter done " data-progress="7.4" style="left: 79.04761904761905%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/expression.html" title="表达式" class="chapter done " data-progress="7.5" style="left: 80%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/filter.html" title="过滤器" class="chapter done " data-progress="7.6" style="left: 80.95238095238095%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/directive-intro.html" title="指令简介" class="chapter done " data-progress="7.7" style="left: 81.9047619047619%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/build-in-directive.html" title="内置指令" class="chapter done " data-progress="7.8" style="left: 82.85714285714286%;"></a>
-    
-        <a href="../the-complete-book-on-angularjs/directive-detail.html" title="指令详解" class="chapter done " data-progress="7.9" style="left: 83.80952380952381%;"></a>
-    
-        <a href="../apprenticeship-patterns/README.html" title="软件开发者路线图：从学徒到高手" class="chapter  new-chapter" data-progress="8" style="left: 84.76190476190476%;"></a>
-    
-        <a href="../apprenticeship-patterns/1.html" title="绪论" class="chapter  " data-progress="8.1" style="left: 85.71428571428571%;"></a>
-    
-        <a href="../apprenticeship-patterns/2.html" title="空杯心态" class="chapter  " data-progress="8.2" style="left: 86.66666666666667%;"></a>
-    
-        <a href="../apprenticeship-patterns/3.html" title="走过漫漫长路" class="chapter  " data-progress="8.3" style="left: 87.61904761904762%;"></a>
-    
-        <a href="../apprenticeship-patterns/4.html" title="准确的自我评估" class="chapter  " data-progress="8.4" style="left: 88.57142857142857%;"></a>
-    
-        <a href="../apprenticeship-patterns/5.html" title="恒久学习" class="chapter  " data-progress="8.5" style="left: 89.52380952380952%;"></a>
-    
-        <a href="../apprenticeship-patterns/6.html" title="安排你的课程" class="chapter  " data-progress="8.6" style="left: 90.47619047619048%;"></a>
-    
-        <a href="../mobile-design/README.html" title="移动设计" class="chapter  new-chapter" data-progress="9" style="left: 91.42857142857143%;"></a>
-    
-        <a href="../mobile-design/1.html" title="概述" class="chapter  " data-progress="9.1" style="left: 92.38095238095238%;"></a>
-    
-        <a href="../mobile-design/2.html" title="特征" class="chapter  " data-progress="9.2" style="left: 93.33333333333333%;"></a>
-    
-        <a href="../mobile-design/3.html" title="原则" class="chapter  " data-progress="9.3" style="left: 94.28571428571429%;"></a>
-    
-        <a href="../mobile-design/4.html" title="框架" class="chapter  " data-progress="9.4" style="left: 95.23809523809524%;"></a>
-    
-        <a href="../mobile-design/5.html" title="细节" class="chapter  " data-progress="9.5" style="left: 96.19047619047619%;"></a>
-    
-        <a href="../mobile-design/6.html" title="动效" class="chapter  " data-progress="9.6" style="left: 97.14285714285714%;"></a>
-    
-        <a href="../mobile-design/7.html" title="适配" class="chapter  " data-progress="9.7" style="left: 98.0952380952381%;"></a>
-    
-        <a href="../mobile-design/8.html" title="创新" class="chapter  " data-progress="9.8" style="left: 99.04761904761905%;"></a>
-    
-        <a href="../mobile-design/9.html" title="流" class="chapter  " data-progress="9.9" style="left: 100%;"></a>
-    
-    
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">襯線體</button>
+        <button type="button" data-font="1" class="button">無襯線體</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">白色</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">棕褐色</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">夜間</button>
     </div>
 </div>
 
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="分享"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    分享到 Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    分享到 Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    分享到 Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    分享到 Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    分享到 Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >天镶的读书笔记</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_82">
+                
+                    <section class="normal" id="section-">
                     
-                        <h2 id="-">指令详解</h2>
-<p><code>directive()</code>用来定义指令的：</p>
-<pre><code class="lang-javascript">angular.module(<span class="hljs-string">'myApp'</span>, [])
-    .directive(<span class="hljs-string">'myDirective'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">($timeout, UserDefinedService)</span> {</span>
-        <span class="hljs-comment">// 指令定义放在这里</span>
+                        <h2 id="%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3"><a name="%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3" class="plugin-anchor" href="#%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3"><span class="fa fa-link"></span></a>&#x6307;&#x4EE4;&#x8BE6;&#x89E3;</h2>
+<p><code>directive()</code>&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-javascript">angular.module(<span class="hljs-string">&apos;myApp&apos;</span>, [])
+    .directive(<span class="hljs-string">&apos;myDirective&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">($timeout, UserDefinedService)</span> </span>{
+        <span class="hljs-comment">// &#x6307;&#x4EE4;&#x5B9A;&#x4E49;&#x653E;&#x5728;&#x8FD9;&#x91CC;</span>
         <span class="hljs-keyword">return</span> {
-            <span class="hljs-comment">// 通过设置项来定义指令，在这里进行覆写</span>
+            <span class="hljs-comment">// &#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x9879;&#x6765;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x8FDB;&#x884C;&#x8986;&#x5199;</span>
         };
     });
 </code></pre>
-<p><code>directive()</code>方法可以接受两个参数：</p>
+<p><code>directive()</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;</p>
 <ol>
-<li>name：指令的名称</li><li>factory_function：返回一个定义指令的函数，<code>$compile</code>服务利用这个方法返回的对象来构造指令的行为</li></ol>
+<li>name&#xFF1A;&#x6307;&#x4EE4;&#x7684;&#x540D;&#x79F0;</li>
+<li>factory_function&#xFF1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;&#x7684;&#x51FD;&#x6570;&#xFF0C;<code>$compile</code>&#x670D;&#x52A1;&#x5229;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x5BF9;&#x8C61;&#x6765;&#x6784;&#x9020;&#x6307;&#x4EE4;&#x7684;&#x884C;&#x4E3A;</li>
+</ol>
 <blockquote>
-<p>为了避免与未来的HTML标准冲突，给自定义的指令加入前缀来代表自定义的命名空间。AngularJS本身已经使用了<code>ng-</code>前缀，所以可以选择除此以外的名字。</p>
+<p>&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x4E0E;&#x672A;&#x6765;&#x7684;HTML&#x6807;&#x51C6;&#x51B2;&#x7A81;&#xFF0C;&#x7ED9;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x6307;&#x4EE4;&#x52A0;&#x5165;&#x524D;&#x7F00;&#x6765;&#x4EE3;&#x8868;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x3002;AngularJS&#x672C;&#x8EAB;&#x5DF2;&#x7ECF;&#x4F7F;&#x7528;&#x4E86;<code>ng-</code>&#x524D;&#x7F00;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x9664;&#x6B64;&#x4EE5;&#x5916;&#x7684;&#x540D;&#x5B57;&#x3002;</p>
 </blockquote>
-<p>当AngularJS在DOM中遇到具名的指令时，会去匹配已经注册过的指令，并通过名字在注册过的对象中查找。此时，就开始了一个指令的生命周期，指令的生命周期开始于<code>$compile</code>方法并结束于link方法</p>
-<h3 id="restrict-string-">restrict（String）</h3>
-<p>个可选的参数。它告诉AngularJS这个指令在DOM中可以何种形式被声明。默认AngularJS认为restrict的值是A，即以属性的形式来进行声明:</p>
+<p>&#x5F53;AngularJS&#x5728;DOM&#x4E2D;&#x9047;&#x5230;&#x5177;&#x540D;&#x7684;&#x6307;&#x4EE4;&#x65F6;&#xFF0C;&#x4F1A;&#x53BB;&#x5339;&#x914D;&#x5DF2;&#x7ECF;&#x6CE8;&#x518C;&#x8FC7;&#x7684;&#x6307;&#x4EE4;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x540D;&#x5B57;&#x5728;&#x6CE8;&#x518C;&#x8FC7;&#x7684;&#x5BF9;&#x8C61;&#x4E2D;&#x67E5;&#x627E;&#x3002;&#x6B64;&#x65F6;&#xFF0C;&#x5C31;&#x5F00;&#x59CB;&#x4E86;&#x4E00;&#x4E2A;&#x6307;&#x4EE4;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#xFF0C;&#x6307;&#x4EE4;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x5F00;&#x59CB;&#x4E8E;<code>$compile</code>&#x65B9;&#x6CD5;&#x5E76;&#x7ED3;&#x675F;&#x4E8E;link&#x65B9;&#x6CD5;</p>
+<h3 id="restrict%EF%BC%88string%EF%BC%89"><a name="restrict%EF%BC%88string%EF%BC%89" class="plugin-anchor" href="#restrict%EF%BC%88string%EF%BC%89"><span class="fa fa-link"></span></a>restrict&#xFF08;String&#xFF09;</h3>
+<p>&#x4E2A;&#x53EF;&#x9009;&#x7684;&#x53C2;&#x6570;&#x3002;&#x5B83;&#x544A;&#x8BC9;AngularJS&#x8FD9;&#x4E2A;&#x6307;&#x4EE4;&#x5728;DOM&#x4E2D;&#x53EF;&#x4EE5;&#x4F55;&#x79CD;&#x5F62;&#x5F0F;&#x88AB;&#x58F0;&#x660E;&#x3002;&#x9ED8;&#x8BA4;AngularJS&#x8BA4;&#x4E3A;restrict&#x7684;&#x503C;&#x662F;A&#xFF0C;&#x5373;&#x4EE5;&#x5C5E;&#x6027;&#x7684;&#x5F62;&#x5F0F;&#x6765;&#x8FDB;&#x884C;&#x58F0;&#x660E;:</p>
 <ul>
-<li>E（元素）：<code>&lt;my-directive&gt;&lt;/my-directive&gt;</code></li><li>A（属性，默认值）：<code>&lt;div my-directive=&quot;expression&quot;&gt;&lt;/div&gt;</code></li><li>C（类名）：<code>&lt;div class=&quot;my-directive:expression;&quot;&gt;&lt;/div&gt;</code></li><li>M（注释）：<code>&lt;--directive:my-directive expression--&gt;</code></li></ul>
-<p>属性是用来声明指令最常用的方式，因为它能在包括老版本的IE浏览器在内的所有浏览器中正常工作，并且不需要在文档头部注册新的标签。</p>
-<p>包含某个组件的核心行为时使用元素型。用额外的行为、状态或者其他内容进行修饰或扩展时使用属性型</p>
-<h3 id="priority-number-">priority（Number）</h3>
-<p>如果一个元素上具有两个优先级相同的指令，声明在前面的那个会被优先调用。如果其中一个的优先级更高，则不管声明的顺序如何都会被优先调用：具有更高优先级的指令总是优先运行。</p>
-<p>默认为0，ngRepeat为1000，是所有内置属性中最高的</p>
-<h3 id="terminal-boolean-">terminal（Boolean）</h3>
-<p>告诉AngularJS停止运行当前元素上比本指令优先级低的指令。但同当前指令优先级相同的指令还是会被执行</p>
-<h3 id="template-string-function-">template（String | Function）</h3>
-<p>template参数是可选的，必须被设置为以下两种形式之一:</p>
+<li>E&#xFF08;&#x5143;&#x7D20;&#xFF09;&#xFF1A;<code>&lt;my-directive&gt;&lt;/my-directive&gt;</code></li>
+<li>A&#xFF08;&#x5C5E;&#x6027;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#xFF09;&#xFF1A;<code>&lt;div my-directive=&quot;expression&quot;&gt;&lt;/div&gt;</code></li>
+<li>C&#xFF08;&#x7C7B;&#x540D;&#xFF09;&#xFF1A;<code>&lt;div class=&quot;my-directive:expression;&quot;&gt;&lt;/div&gt;</code></li>
+<li>M&#xFF08;&#x6CE8;&#x91CA;&#xFF09;&#xFF1A;<code>&lt;--directive:my-directive expression--&gt;</code></li>
+</ul>
+<p>&#x5C5E;&#x6027;&#x662F;&#x7528;&#x6765;&#x58F0;&#x660E;&#x6307;&#x4EE4;&#x6700;&#x5E38;&#x7528;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x80FD;&#x5728;&#x5305;&#x62EC;&#x8001;&#x7248;&#x672C;&#x7684;IE&#x6D4F;&#x89C8;&#x5668;&#x5728;&#x5185;&#x7684;&#x6240;&#x6709;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x6587;&#x6863;&#x5934;&#x90E8;&#x6CE8;&#x518C;&#x65B0;&#x7684;&#x6807;&#x7B7E;&#x3002;</p>
+<p>&#x5305;&#x542B;&#x67D0;&#x4E2A;&#x7EC4;&#x4EF6;&#x7684;&#x6838;&#x5FC3;&#x884C;&#x4E3A;&#x65F6;&#x4F7F;&#x7528;&#x5143;&#x7D20;&#x578B;&#x3002;&#x7528;&#x989D;&#x5916;&#x7684;&#x884C;&#x4E3A;&#x3001;&#x72B6;&#x6001;&#x6216;&#x8005;&#x5176;&#x4ED6;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x4FEE;&#x9970;&#x6216;&#x6269;&#x5C55;&#x65F6;&#x4F7F;&#x7528;&#x5C5E;&#x6027;&#x578B;</p>
+<h3 id="priority%EF%BC%88number%EF%BC%89"><a name="priority%EF%BC%88number%EF%BC%89" class="plugin-anchor" href="#priority%EF%BC%88number%EF%BC%89"><span class="fa fa-link"></span></a>priority&#xFF08;Number&#xFF09;</h3>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x4E0A;&#x5177;&#x6709;&#x4E24;&#x4E2A;&#x4F18;&#x5148;&#x7EA7;&#x76F8;&#x540C;&#x7684;&#x6307;&#x4EE4;&#xFF0C;&#x58F0;&#x660E;&#x5728;&#x524D;&#x9762;&#x7684;&#x90A3;&#x4E2A;&#x4F1A;&#x88AB;&#x4F18;&#x5148;&#x8C03;&#x7528;&#x3002;&#x5982;&#x679C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#x66F4;&#x9AD8;&#xFF0C;&#x5219;&#x4E0D;&#x7BA1;&#x58F0;&#x660E;&#x7684;&#x987A;&#x5E8F;&#x5982;&#x4F55;&#x90FD;&#x4F1A;&#x88AB;&#x4F18;&#x5148;&#x8C03;&#x7528;&#xFF1A;&#x5177;&#x6709;&#x66F4;&#x9AD8;&#x4F18;&#x5148;&#x7EA7;&#x7684;&#x6307;&#x4EE4;&#x603B;&#x662F;&#x4F18;&#x5148;&#x8FD0;&#x884C;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x4E3A;0&#xFF0C;ngRepeat&#x4E3A;1000&#xFF0C;&#x662F;&#x6240;&#x6709;&#x5185;&#x7F6E;&#x5C5E;&#x6027;&#x4E2D;&#x6700;&#x9AD8;&#x7684;</p>
+<h3 id="terminal%EF%BC%88boolean%EF%BC%89"><a name="terminal%EF%BC%88boolean%EF%BC%89" class="plugin-anchor" href="#terminal%EF%BC%88boolean%EF%BC%89"><span class="fa fa-link"></span></a>terminal&#xFF08;Boolean&#xFF09;</h3>
+<p>&#x544A;&#x8BC9;AngularJS&#x505C;&#x6B62;&#x8FD0;&#x884C;&#x5F53;&#x524D;&#x5143;&#x7D20;&#x4E0A;&#x6BD4;&#x672C;&#x6307;&#x4EE4;&#x4F18;&#x5148;&#x7EA7;&#x4F4E;&#x7684;&#x6307;&#x4EE4;&#x3002;&#x4F46;&#x540C;&#x5F53;&#x524D;&#x6307;&#x4EE4;&#x4F18;&#x5148;&#x7EA7;&#x76F8;&#x540C;&#x7684;&#x6307;&#x4EE4;&#x8FD8;&#x662F;&#x4F1A;&#x88AB;&#x6267;&#x884C;</p>
+<h3 id="template%EF%BC%88string-function%EF%BC%89"><a name="template%EF%BC%88string-function%EF%BC%89" class="plugin-anchor" href="#template%EF%BC%88string-function%EF%BC%89"><span class="fa fa-link"></span></a>template&#xFF08;String | Function&#xFF09;</h3>
+<p>template&#x53C2;&#x6570;&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x5FC5;&#x987B;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;&#x4EE5;&#x4E0B;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;&#x4E4B;&#x4E00;:</p>
 <ul>
-<li>一段HTML文本</li><li>一个可以接受两个参数的函数，参数为<code>tElement</code>和<code>tAttrs</code>，并返回一个代表模板的字符串</li></ul>
-<p>在实际生产中，更好的选择是使用templateUrl参数引用外部模板，因为多行文本阅读和维护起来都是一场噩梦。</p>
-<h3 id="templateurl-string-function-">templateUrl（String | Function）</h3>
-<p>可选的参数，可以是以下类型：</p>
+<li>&#x4E00;&#x6BB5;HTML&#x6587;&#x672C;</li>
+<li>&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x53C2;&#x6570;&#x4E3A;<code>tElement</code>&#x548C;<code>tAttrs</code>&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4EE3;&#x8868;&#x6A21;&#x677F;&#x7684;&#x5B57;&#x7B26;&#x4E32;</li>
+</ul>
+<p>&#x5728;&#x5B9E;&#x9645;&#x751F;&#x4EA7;&#x4E2D;&#xFF0C;&#x66F4;&#x597D;&#x7684;&#x9009;&#x62E9;&#x662F;&#x4F7F;&#x7528;templateUrl&#x53C2;&#x6570;&#x5F15;&#x7528;&#x5916;&#x90E8;&#x6A21;&#x677F;&#xFF0C;&#x56E0;&#x4E3A;&#x591A;&#x884C;&#x6587;&#x672C;&#x9605;&#x8BFB;&#x548C;&#x7EF4;&#x62A4;&#x8D77;&#x6765;&#x90FD;&#x662F;&#x4E00;&#x573A;&#x5669;&#x68A6;&#x3002;</p>
+<h3 id="templateurl%EF%BC%88string-function%EF%BC%89"><a name="templateurl%EF%BC%88string-function%EF%BC%89" class="plugin-anchor" href="#templateurl%EF%BC%88string-function%EF%BC%89"><span class="fa fa-link"></span></a>templateUrl&#xFF08;String | Function&#xFF09;</h3>
+<p>&#x53EF;&#x9009;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x4EE5;&#x4E0B;&#x7C7B;&#x578B;&#xFF1A;</p>
 <ul>
-<li>一个代表外部HTML文件路径的字符串</li><li>一个可以接受两个参数的函数，参数为tElement和tAttrs，并返回一个外部HTML文件路径的字符串</li></ul>
-<p>模板的URL都将通过AngularJS内置的安全层， 特别是<code>$getTrustedResourceUrl</code>，这样可以保护模板不会被不信任的源加载</p>
-<p>调用指令时会在后台通过Ajax来请求HTML模板文件，也就是说：</p>
+<li>&#x4E00;&#x4E2A;&#x4EE3;&#x8868;&#x5916;&#x90E8;HTML&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x7684;&#x5B57;&#x7B26;&#x4E32;</li>
+<li>&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x53C2;&#x6570;&#x4E3A;tElement&#x548C;tAttrs&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5916;&#x90E8;HTML&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x7684;&#x5B57;&#x7B26;&#x4E32;</li>
+</ul>
+<p>&#x6A21;&#x677F;&#x7684;URL&#x90FD;&#x5C06;&#x901A;&#x8FC7;AngularJS&#x5185;&#x7F6E;&#x7684;&#x5B89;&#x5168;&#x5C42;&#xFF0C; &#x7279;&#x522B;&#x662F;<code>$getTrustedResourceUrl</code>&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x4FDD;&#x62A4;&#x6A21;&#x677F;&#x4E0D;&#x4F1A;&#x88AB;&#x4E0D;&#x4FE1;&#x4EFB;&#x7684;&#x6E90;&#x52A0;&#x8F7D;</p>
+<p>&#x8C03;&#x7528;&#x6307;&#x4EE4;&#x65F6;&#x4F1A;&#x5728;&#x540E;&#x53F0;&#x901A;&#x8FC7;Ajax&#x6765;&#x8BF7;&#x6C42;HTML&#x6A21;&#x677F;&#x6587;&#x4EF6;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF1A;</p>
 <ul>
-<li>需要防止CORS错误</li><li>编译和链接要暂停，等待模板加载完成</li></ul>
-<p>模板加载后，AngularJS会将它默认缓存到<code>$templateCache</code>服务中，，可以提前将模板缓存到一个定义模板的JavaScript文件中，这样就不需要通过XHR来加载模板了</p>
-<h3 id="replace-boolean-">replace（Boolean）</h3>
-<p>可选，默认为false，默认值意味着模板会被当作子元素插入到调用此指令的元素内部</p>
-<h3 id="scope-boolean-object-">scope（Boolean | Object）</h3>
-<p>scope参数是可选的，默认为false：</p>
+<li>&#x9700;&#x8981;&#x9632;&#x6B62;CORS&#x9519;&#x8BEF;</li>
+<li>&#x7F16;&#x8BD1;&#x548C;&#x94FE;&#x63A5;&#x8981;&#x6682;&#x505C;&#xFF0C;&#x7B49;&#x5F85;&#x6A21;&#x677F;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;</li>
+</ul>
+<p>&#x6A21;&#x677F;&#x52A0;&#x8F7D;&#x540E;&#xFF0C;AngularJS&#x4F1A;&#x5C06;&#x5B83;&#x9ED8;&#x8BA4;&#x7F13;&#x5B58;&#x5230;<code>$templateCache</code>&#x670D;&#x52A1;&#x4E2D;&#xFF0C;&#xFF0C;&#x53EF;&#x4EE5;&#x63D0;&#x524D;&#x5C06;&#x6A21;&#x677F;&#x7F13;&#x5B58;&#x5230;&#x4E00;&#x4E2A;&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#x7684;JavaScript&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x901A;&#x8FC7;XHR&#x6765;&#x52A0;&#x8F7D;&#x6A21;&#x677F;&#x4E86;</p>
+<h3 id="replace%EF%BC%88boolean%EF%BC%89"><a name="replace%EF%BC%88boolean%EF%BC%89" class="plugin-anchor" href="#replace%EF%BC%88boolean%EF%BC%89"><span class="fa fa-link"></span></a>replace&#xFF08;Boolean&#xFF09;</h3>
+<p>&#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;false&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x610F;&#x5473;&#x7740;&#x6A21;&#x677F;&#x4F1A;&#x88AB;&#x5F53;&#x4F5C;&#x5B50;&#x5143;&#x7D20;&#x63D2;&#x5165;&#x5230;&#x8C03;&#x7528;&#x6B64;&#x6307;&#x4EE4;&#x7684;&#x5143;&#x7D20;&#x5185;&#x90E8;</p>
+<h3 id="scope%EF%BC%88boolean-object%EF%BC%89"><a name="scope%EF%BC%88boolean-object%EF%BC%89" class="plugin-anchor" href="#scope%EF%BC%88boolean-object%EF%BC%89"><span class="fa fa-link"></span></a>scope&#xFF08;Boolean | Object&#xFF09;</h3>
+<p>scope&#x53C2;&#x6570;&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;false&#xFF1A;</p>
 <ul>
-<li>false：直接调用相同的作用域对象；</li><li>true：从当前作用域对象继承一个新的作用域对象；</li><li>对象：创建一个同当前作用域相隔离的作用域对象。</li></ul>
-<p>使用隔离作用域时，可以将指令内部的隔离作用
-域，同指令外部的作用域进行数据绑定：</p>
+<li>false&#xFF1A;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x76F8;&#x540C;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x5BF9;&#x8C61;&#xFF1B;</li>
+<li>true&#xFF1A;&#x4ECE;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;&#x5BF9;&#x8C61;&#x7EE7;&#x627F;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x5BF9;&#x8C61;&#xFF1B;</li>
+<li>&#x5BF9;&#x8C61;&#xFF1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540C;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;&#x76F8;&#x9694;&#x79BB;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x5BF9;&#x8C61;&#x3002;</li>
+</ul>
+<p>&#x4F7F;&#x7528;&#x9694;&#x79BB;&#x4F5C;&#x7528;&#x57DF;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x6307;&#x4EE4;&#x5185;&#x90E8;&#x7684;&#x9694;&#x79BB;&#x4F5C;&#x7528;
+&#x57DF;&#xFF0C;&#x540C;&#x6307;&#x4EE4;&#x5916;&#x90E8;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#xFF1A;</p>
 <ul>
-<li>本地作用域属性：使用<code>@</code>符号将本地作用域同DOM属性的值进行绑定</li><li>双向绑定：通过<code>=</code>可以将本地作用域上的属性同父级作用域上的属性进行双向的数据绑定</li><li>父级作用域绑定：通过<code>&amp;</code>符号可以对父级作用域进行绑定，以便在其中运行函数</li></ul>
-<h3 id="transclude-boolean-">transclude（Boolean）</h3>
-<p>可选，默认为false</p>
-<p>可以将整个模板，包括其中的指令通过嵌入全部传入一个指令中。这样做可以将任意内容和作用域传递给指令。transclude参数就是用来实现这个目的的，指令的内部可以访问外部指令的作用域，并且模板也可以访问外部的作用域对象</p>
+<li>&#x672C;&#x5730;&#x4F5C;&#x7528;&#x57DF;&#x5C5E;&#x6027;&#xFF1A;&#x4F7F;&#x7528;<code>@</code>&#x7B26;&#x53F7;&#x5C06;&#x672C;&#x5730;&#x4F5C;&#x7528;&#x57DF;&#x540C;DOM&#x5C5E;&#x6027;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x7ED1;&#x5B9A;</li>
+<li>&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&#xFF1A;&#x901A;&#x8FC7;<code>=</code>&#x53EF;&#x4EE5;&#x5C06;&#x672C;&#x5730;&#x4F5C;&#x7528;&#x57DF;&#x4E0A;&#x7684;&#x5C5E;&#x6027;&#x540C;&#x7236;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x4E0A;&#x7684;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x53CC;&#x5411;&#x7684;&#x6570;&#x636E;&#x7ED1;&#x5B9A;</li>
+<li>&#x7236;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x7ED1;&#x5B9A;&#xFF1A;&#x901A;&#x8FC7;<code>&amp;</code>&#x7B26;&#x53F7;&#x53EF;&#x4EE5;&#x5BF9;&#x7236;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x8FDB;&#x884C;&#x7ED1;&#x5B9A;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x5176;&#x4E2D;&#x8FD0;&#x884C;&#x51FD;&#x6570;</li>
+</ul>
+<h3 id="transclude%EF%BC%88boolean%EF%BC%89"><a name="transclude%EF%BC%88boolean%EF%BC%89" class="plugin-anchor" href="#transclude%EF%BC%88boolean%EF%BC%89"><span class="fa fa-link"></span></a>transclude&#xFF08;Boolean&#xFF09;</h3>
+<p>&#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;false</p>
+<p>&#x53EF;&#x4EE5;&#x5C06;&#x6574;&#x4E2A;&#x6A21;&#x677F;&#xFF0C;&#x5305;&#x62EC;&#x5176;&#x4E2D;&#x7684;&#x6307;&#x4EE4;&#x901A;&#x8FC7;&#x5D4C;&#x5165;&#x5168;&#x90E8;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x6307;&#x4EE4;&#x4E2D;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x53EF;&#x4EE5;&#x5C06;&#x4EFB;&#x610F;&#x5185;&#x5BB9;&#x548C;&#x4F5C;&#x7528;&#x57DF;&#x4F20;&#x9012;&#x7ED9;&#x6307;&#x4EE4;&#x3002;transclude&#x53C2;&#x6570;&#x5C31;&#x662F;&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x76EE;&#x7684;&#x7684;&#xFF0C;&#x6307;&#x4EE4;&#x7684;&#x5185;&#x90E8;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5916;&#x90E8;&#x6307;&#x4EE4;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x5E76;&#x4E14;&#x6A21;&#x677F;&#x4E5F;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5916;&#x90E8;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x5BF9;&#x8C61;</p>
 <blockquote>
-<p>只有当你希望创建一个可以包含任意内容的指令时，才使用transclude: true</p>
+<p>&#x53EA;&#x6709;&#x5F53;&#x4F60;&#x5E0C;&#x671B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x4EFB;&#x610F;&#x5185;&#x5BB9;&#x7684;&#x6307;&#x4EE4;&#x65F6;&#xFF0C;&#x624D;&#x4F7F;&#x7528;transclude: true</p>
 </blockquote>
-<h3 id="controller-string-function-">controller（String | Function）</h3>
-<p>可选：</p>
+<h3 id="controller%EF%BC%88string-function%EF%BC%89"><a name="controller%EF%BC%88string-function%EF%BC%89" class="plugin-anchor" href="#controller%EF%BC%88string-function%EF%BC%89"><span class="fa fa-link"></span></a>controller&#xFF08;String | Function&#xFF09;</h3>
+<p>&#x53EF;&#x9009;&#xFF1A;</p>
 <ul>
-<li>字符串：以字符串的值为名字，查找注册在应用中的控制器的构造函数</li><li>函数：直接定义内联的控制器</li></ul>
-<p>可以向控制器中注入如下服务：</p>
+<li>&#x5B57;&#x7B26;&#x4E32;&#xFF1A;&#x4EE5;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x503C;&#x4E3A;&#x540D;&#x5B57;&#xFF0C;&#x67E5;&#x627E;&#x6CE8;&#x518C;&#x5728;&#x5E94;&#x7528;&#x4E2D;&#x7684;&#x63A7;&#x5236;&#x5668;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;</li>
+<li>&#x51FD;&#x6570;&#xFF1A;&#x76F4;&#x63A5;&#x5B9A;&#x4E49;&#x5185;&#x8054;&#x7684;&#x63A7;&#x5236;&#x5668;</li>
+</ul>
+<p>&#x53EF;&#x4EE5;&#x5411;&#x63A7;&#x5236;&#x5668;&#x4E2D;&#x6CE8;&#x5165;&#x5982;&#x4E0B;&#x670D;&#x52A1;&#xFF1A;</p>
 <ul>
-<li>$scope: 与指令元素相关联的当前作用域</li><li>$element: 当前指令对应的元素</li><li>$attrs: 由当前元素的属性组成的对象</li><li>$transclude: 嵌入链接函数会与对应的嵌入作用域进行预绑定。transclude链接函数是实际被执行用来克隆元素和操作DOM的函数。</li></ul>
-<h3 id="controlleras-string-">controllerAs （String）</h3>
-<p>用来设置控制器的别名，可以以此为名来发布控制器，并且作用域可以访问controllerAs。这样就可以在视图中引用控制器，甚至无需注入$scope。</p>
-<h3 id="require-string-array-">require（String | Array）</h3>
-<p>符串或数组元素的值是会在当前指令的作用域中使用的指令名称。require会将控制器注入到其值所指定的指令中，并作为当前指令的链接函数的第四个参数。</p>
-<p>默认情况下，指令只会在自身的元素上查找控制器。可以用下面的前缀进行修饰，改变查找控制器时的行为：</p>
+<li>$scope: &#x4E0E;&#x6307;&#x4EE4;&#x5143;&#x7D20;&#x76F8;&#x5173;&#x8054;&#x7684;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;</li>
+<li>$element: &#x5F53;&#x524D;&#x6307;&#x4EE4;&#x5BF9;&#x5E94;&#x7684;&#x5143;&#x7D20;</li>
+<li>$attrs: &#x7531;&#x5F53;&#x524D;&#x5143;&#x7D20;&#x7684;&#x5C5E;&#x6027;&#x7EC4;&#x6210;&#x7684;&#x5BF9;&#x8C61;</li>
+<li>$transclude: &#x5D4C;&#x5165;&#x94FE;&#x63A5;&#x51FD;&#x6570;&#x4F1A;&#x4E0E;&#x5BF9;&#x5E94;&#x7684;&#x5D4C;&#x5165;&#x4F5C;&#x7528;&#x57DF;&#x8FDB;&#x884C;&#x9884;&#x7ED1;&#x5B9A;&#x3002;transclude&#x94FE;&#x63A5;&#x51FD;&#x6570;&#x662F;&#x5B9E;&#x9645;&#x88AB;&#x6267;&#x884C;&#x7528;&#x6765;&#x514B;&#x9686;&#x5143;&#x7D20;&#x548C;&#x64CD;&#x4F5C;DOM&#x7684;&#x51FD;&#x6570;&#x3002;</li>
+</ul>
+<h3 id="controlleras-%EF%BC%88string%EF%BC%89"><a name="controlleras-%EF%BC%88string%EF%BC%89" class="plugin-anchor" href="#controlleras-%EF%BC%88string%EF%BC%89"><span class="fa fa-link"></span></a>controllerAs &#xFF08;String&#xFF09;</h3>
+<p>&#x7528;&#x6765;&#x8BBE;&#x7F6E;&#x63A7;&#x5236;&#x5668;&#x7684;&#x522B;&#x540D;&#xFF0C;&#x53EF;&#x4EE5;&#x4EE5;&#x6B64;&#x4E3A;&#x540D;&#x6765;&#x53D1;&#x5E03;&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x5E76;&#x4E14;&#x4F5C;&#x7528;&#x57DF;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;controllerAs&#x3002;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x89C6;&#x56FE;&#x4E2D;&#x5F15;&#x7528;&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x751A;&#x81F3;&#x65E0;&#x9700;&#x6CE8;&#x5165;$scope&#x3002;</p>
+<h3 id="require%EF%BC%88string-array%EF%BC%89"><a name="require%EF%BC%88string-array%EF%BC%89" class="plugin-anchor" href="#require%EF%BC%88string-array%EF%BC%89"><span class="fa fa-link"></span></a>require&#xFF08;String | Array&#xFF09;</h3>
+<p>&#x7B26;&#x4E32;&#x6216;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x7684;&#x503C;&#x662F;&#x4F1A;&#x5728;&#x5F53;&#x524D;&#x6307;&#x4EE4;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x6307;&#x4EE4;&#x540D;&#x79F0;&#x3002;require&#x4F1A;&#x5C06;&#x63A7;&#x5236;&#x5668;&#x6CE8;&#x5165;&#x5230;&#x5176;&#x503C;&#x6240;&#x6307;&#x5B9A;&#x7684;&#x6307;&#x4EE4;&#x4E2D;&#xFF0C;&#x5E76;&#x4F5C;&#x4E3A;&#x5F53;&#x524D;&#x6307;&#x4EE4;&#x7684;&#x94FE;&#x63A5;&#x51FD;&#x6570;&#x7684;&#x7B2C;&#x56DB;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6307;&#x4EE4;&#x53EA;&#x4F1A;&#x5728;&#x81EA;&#x8EAB;&#x7684;&#x5143;&#x7D20;&#x4E0A;&#x67E5;&#x627E;&#x63A7;&#x5236;&#x5668;&#x3002;&#x53EF;&#x4EE5;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x524D;&#x7F00;&#x8FDB;&#x884C;&#x4FEE;&#x9970;&#xFF0C;&#x6539;&#x53D8;&#x67E5;&#x627E;&#x63A7;&#x5236;&#x5668;&#x65F6;&#x7684;&#x884C;&#x4E3A;&#xFF1A;</p>
 <ul>
-<li><code>?</code>: 如果在当前指令中没有找到所需要的控制器，会将null作为传给link函数的第四个参数</li><li><code>^</code>: 如果添加了^前缀，指令会在上游的指令链中查找require参数所指定的控制器</li><li><code>?^</code>: 将前面两个选项的行为组合起来，可选择地加载需要的指令并在父指令链中进行查找</li><li>没有前缀: ，指令将会在自身所提供的控制器中进行查找，如果没有找到任何控制器（或具有指定名字的指令）就抛出一个错误</li></ul>
-<h3 id="compile-object-function-">compile（Object | Function）</h3>
-<p>在compile函数内部，只对DOM进行操作，返回函数等效于使用link配置，返回对象的话包含两个函数：</p>
+<li><code>?</code>: &#x5982;&#x679C;&#x5728;&#x5F53;&#x524D;&#x6307;&#x4EE4;&#x4E2D;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x6240;&#x9700;&#x8981;&#x7684;&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x4F1A;&#x5C06;null&#x4F5C;&#x4E3A;&#x4F20;&#x7ED9;link&#x51FD;&#x6570;&#x7684;&#x7B2C;&#x56DB;&#x4E2A;&#x53C2;&#x6570;</li>
+<li><code>^</code>: &#x5982;&#x679C;&#x6DFB;&#x52A0;&#x4E86;^&#x524D;&#x7F00;&#xFF0C;&#x6307;&#x4EE4;&#x4F1A;&#x5728;&#x4E0A;&#x6E38;&#x7684;&#x6307;&#x4EE4;&#x94FE;&#x4E2D;&#x67E5;&#x627E;require&#x53C2;&#x6570;&#x6240;&#x6307;&#x5B9A;&#x7684;&#x63A7;&#x5236;&#x5668;</li>
+<li><code>?^</code>: &#x5C06;&#x524D;&#x9762;&#x4E24;&#x4E2A;&#x9009;&#x9879;&#x7684;&#x884C;&#x4E3A;&#x7EC4;&#x5408;&#x8D77;&#x6765;&#xFF0C;&#x53EF;&#x9009;&#x62E9;&#x5730;&#x52A0;&#x8F7D;&#x9700;&#x8981;&#x7684;&#x6307;&#x4EE4;&#x5E76;&#x5728;&#x7236;&#x6307;&#x4EE4;&#x94FE;&#x4E2D;&#x8FDB;&#x884C;&#x67E5;&#x627E;</li>
+<li>&#x6CA1;&#x6709;&#x524D;&#x7F00;: &#xFF0C;&#x6307;&#x4EE4;&#x5C06;&#x4F1A;&#x5728;&#x81EA;&#x8EAB;&#x6240;&#x63D0;&#x4F9B;&#x7684;&#x63A7;&#x5236;&#x5668;&#x4E2D;&#x8FDB;&#x884C;&#x67E5;&#x627E;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x4EFB;&#x4F55;&#x63A7;&#x5236;&#x5668;&#xFF08;&#x6216;&#x5177;&#x6709;&#x6307;&#x5B9A;&#x540D;&#x5B57;&#x7684;&#x6307;&#x4EE4;&#xFF09;&#x5C31;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;</li>
+</ul>
+<h3 id="compile%EF%BC%88object-function%EF%BC%89"><a name="compile%EF%BC%88object-function%EF%BC%89" class="plugin-anchor" href="#compile%EF%BC%88object-function%EF%BC%89"><span class="fa fa-link"></span></a>compile&#xFF08;Object | Function&#xFF09;</h3>
+<p>&#x5728;compile&#x51FD;&#x6570;&#x5185;&#x90E8;&#xFF0C;&#x53EA;&#x5BF9;DOM&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x8FD4;&#x56DE;&#x51FD;&#x6570;&#x7B49;&#x6548;&#x4E8E;&#x4F7F;&#x7528;link&#x914D;&#x7F6E;&#xFF0C;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x7684;&#x8BDD;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x51FD;&#x6570;&#xFF1A;</p>
 <ol>
-<li>preLink会在编译阶段之后、指令连接到子元素之前运行</li><li>postLink会在所有子元素指令都链接之后才运行</li></ol>
-<pre><code class="lang-javascript">compile: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(tElement, tAttrs, transclude)</span> {</span>
-    <span class="hljs-comment">// 一些DOM操作</span>
+<li>preLink&#x4F1A;&#x5728;&#x7F16;&#x8BD1;&#x9636;&#x6BB5;&#x4E4B;&#x540E;&#x3001;&#x6307;&#x4EE4;&#x8FDE;&#x63A5;&#x5230;&#x5B50;&#x5143;&#x7D20;&#x4E4B;&#x524D;&#x8FD0;&#x884C;</li>
+<li>postLink&#x4F1A;&#x5728;&#x6240;&#x6709;&#x5B50;&#x5143;&#x7D20;&#x6307;&#x4EE4;&#x90FD;&#x94FE;&#x63A5;&#x4E4B;&#x540E;&#x624D;&#x8FD0;&#x884C;</li>
+</ol>
+<pre><code class="lang-javascript">compile: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(tElement, tAttrs, transclude)</span> </span>{
+    <span class="hljs-comment">// &#x4E00;&#x4E9B;DOM&#x64CD;&#x4F5C;</span>
     <span class="hljs-keyword">return</span> {
-        pre: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">preLink</span><span class="hljs-params">(scope, iElement, iAttrs, controller)</span> {</span>},
-        post: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">postLink</span><span class="hljs-params">(scope, iElement, iAttrs, controller)</span> {</span>}
+        pre: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">preLink</span><span class="hljs-params">(scope, iElement, iAttrs, controller)</span> </span>{},
+        post: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">postLink</span><span class="hljs-params">(scope, iElement, iAttrs, controller)</span> </span>{}
     };
 }
 </code></pre>
-<h3 id="link-function-">link（Function）</h3>
-<p>link函数会访问scope对象，其返回一个postLink函数。如果在compile中返回了post，那么link选项就会被忽略</p>
-<pre><code class="lang-javascript">link: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">postLink</span><span class="hljs-params">(scope, iElement, iAttrs)</span>{</span>}
+<h3 id="link%EF%BC%88function%EF%BC%89"><a name="link%EF%BC%88function%EF%BC%89" class="plugin-anchor" href="#link%EF%BC%88function%EF%BC%89"><span class="fa fa-link"></span></a>link&#xFF08;Function&#xFF09;</h3>
+<p>link&#x51FD;&#x6570;&#x4F1A;&#x8BBF;&#x95EE;scope&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;postLink&#x51FD;&#x6570;&#x3002;&#x5982;&#x679C;&#x5728;compile&#x4E2D;&#x8FD4;&#x56DE;&#x4E86;post&#xFF0C;&#x90A3;&#x4E48;link&#x9009;&#x9879;&#x5C31;&#x4F1A;&#x88AB;&#x5FFD;&#x7565;</p>
+<pre><code class="lang-javascript">link: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">postLink</span><span class="hljs-params">(scope, iElement, iAttrs)</span></span>{}
 </code></pre>
-<h3 id="compile-link">compile和link</h3>
-<p>compile和link有许多异同：</p>
+<h3 id="compile%E5%92%8Clink"><a name="compile%E5%92%8Clink" class="plugin-anchor" href="#compile%E5%92%8Clink"><span class="fa fa-link"></span></a>compile&#x548C;link</h3>
+<p>compile&#x548C;link&#x6709;&#x8BB8;&#x591A;&#x5F02;&#x540C;&#xFF1A;</p>
 <ul>
-<li>compile函数只会被调用一次，而link函数的调用次数可能会很多。</li><li>compile用于对模板自身的转换，而link负责模型和视图之间进行动态关联</li><li>link函数能够访问scope作用域对象，而compile不会，因为在编译阶段，scope对象还不存在。</li><li>link和compile都会接收指令声明的DOM元素以及属性列表</li><li>compile可以返回preLink和postLink函数，而link只能返回postLink函数</li></ul>
-<h2 id="angularjs-">AngularJS的生命周期</h2>
-<p>AngularJS应用启动后会进行编译和链接，作用域会同HTML进行绑定，应用可以对用户在HTML中进行的操作进行实时响应。</p>
-<h3 id="-">编译三个阶段</h3>
+<li>compile&#x51FD;&#x6570;&#x53EA;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x4E00;&#x6B21;&#xFF0C;&#x800C;link&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;&#x6B21;&#x6570;&#x53EF;&#x80FD;&#x4F1A;&#x5F88;&#x591A;&#x3002;</li>
+<li>compile&#x7528;&#x4E8E;&#x5BF9;&#x6A21;&#x677F;&#x81EA;&#x8EAB;&#x7684;&#x8F6C;&#x6362;&#xFF0C;&#x800C;link&#x8D1F;&#x8D23;&#x6A21;&#x578B;&#x548C;&#x89C6;&#x56FE;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x52A8;&#x6001;&#x5173;&#x8054;</li>
+<li>link&#x51FD;&#x6570;&#x80FD;&#x591F;&#x8BBF;&#x95EE;scope&#x4F5C;&#x7528;&#x57DF;&#x5BF9;&#x8C61;&#xFF0C;&#x800C;compile&#x4E0D;&#x4F1A;&#xFF0C;&#x56E0;&#x4E3A;&#x5728;&#x7F16;&#x8BD1;&#x9636;&#x6BB5;&#xFF0C;scope&#x5BF9;&#x8C61;&#x8FD8;&#x4E0D;&#x5B58;&#x5728;&#x3002;</li>
+<li>link&#x548C;compile&#x90FD;&#x4F1A;&#x63A5;&#x6536;&#x6307;&#x4EE4;&#x58F0;&#x660E;&#x7684;DOM&#x5143;&#x7D20;&#x4EE5;&#x53CA;&#x5C5E;&#x6027;&#x5217;&#x8868;</li>
+<li>compile&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;preLink&#x548C;postLink&#x51FD;&#x6570;&#xFF0C;&#x800C;link&#x53EA;&#x80FD;&#x8FD4;&#x56DE;postLink&#x51FD;&#x6570;</li>
+</ul>
+<h2 id="angularjs%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><a name="angularjs%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F" class="plugin-anchor" href="#angularjs%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="fa fa-link"></span></a>AngularJS&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</h2>
+<p>AngularJS&#x5E94;&#x7528;&#x542F;&#x52A8;&#x540E;&#x4F1A;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#x548C;&#x94FE;&#x63A5;&#xFF0C;&#x4F5C;&#x7528;&#x57DF;&#x4F1A;&#x540C;HTML&#x8FDB;&#x884C;&#x7ED1;&#x5B9A;&#xFF0C;&#x5E94;&#x7528;&#x53EF;&#x4EE5;&#x5BF9;&#x7528;&#x6237;&#x5728;HTML&#x4E2D;&#x8FDB;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x8FDB;&#x884C;&#x5B9E;&#x65F6;&#x54CD;&#x5E94;&#x3002;</p>
+<h3 id="%E7%BC%96%E8%AF%91%E4%B8%89%E4%B8%AA%E9%98%B6%E6%AE%B5"><a name="%E7%BC%96%E8%AF%91%E4%B8%89%E4%B8%AA%E9%98%B6%E6%AE%B5" class="plugin-anchor" href="#%E7%BC%96%E8%AF%91%E4%B8%89%E4%B8%AA%E9%98%B6%E6%AE%B5"><span class="fa fa-link"></span></a>&#x7F16;&#x8BD1;&#x4E09;&#x4E2A;&#x9636;&#x6BB5;</h3>
 <ol>
-<li>首先浏览器会用它的标准API将HTML解析成DOM。模板必须是可被解析的HTML。这是AngularJS和那些“以字符串为基础而非以DOM元素为基础的”模板系统的区别之处。</li><li>DOM的编译是有<code>$compile</code>方法来执行的。这个方法会遍历DOM并找到匹配的指令。一旦找到一个，它就会被加入一个指令列表中，这个列表是用来记录所有和当前DOM相关的指令的。 一旦所有的指令都被确定了，会按照优先级被排序，并且他们的compile方法会被调用。指令的<code>$compile()</code>函数能修改DOM结构，并且要负责生成一个link函数（后面会提到）。<code>$compile</code>方法最后返回一个合并起来的链接函数，这是链接函数是每一个指令的compile函数返回的链接函数的集合。</li><li>通过调用一步所说的链接函数来将模板与作用域链接起来。这会轮流调用每一个指令的链接函数，让每一个指令都能对DOM注册监听事件，和建立对作用域的的监听。这样最后就形成了作用域的DOM的动态绑定。任何一个作用域的改变都会在DOM上体现出来。</li></ol>
-<p>大致过程如下：</p>
+<li>&#x9996;&#x5148;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x7528;&#x5B83;&#x7684;&#x6807;&#x51C6;API&#x5C06;HTML&#x89E3;&#x6790;&#x6210;DOM&#x3002;&#x6A21;&#x677F;&#x5FC5;&#x987B;&#x662F;&#x53EF;&#x88AB;&#x89E3;&#x6790;&#x7684;HTML&#x3002;&#x8FD9;&#x662F;AngularJS&#x548C;&#x90A3;&#x4E9B;&#x201C;&#x4EE5;&#x5B57;&#x7B26;&#x4E32;&#x4E3A;&#x57FA;&#x7840;&#x800C;&#x975E;&#x4EE5;DOM&#x5143;&#x7D20;&#x4E3A;&#x57FA;&#x7840;&#x7684;&#x201D;&#x6A21;&#x677F;&#x7CFB;&#x7EDF;&#x7684;&#x533A;&#x522B;&#x4E4B;&#x5904;&#x3002;</li>
+<li>DOM&#x7684;&#x7F16;&#x8BD1;&#x662F;&#x6709;<code>$compile</code>&#x65B9;&#x6CD5;&#x6765;&#x6267;&#x884C;&#x7684;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x904D;&#x5386;DOM&#x5E76;&#x627E;&#x5230;&#x5339;&#x914D;&#x7684;&#x6307;&#x4EE4;&#x3002;&#x4E00;&#x65E6;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#xFF0C;&#x5B83;&#x5C31;&#x4F1A;&#x88AB;&#x52A0;&#x5165;&#x4E00;&#x4E2A;&#x6307;&#x4EE4;&#x5217;&#x8868;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x5217;&#x8868;&#x662F;&#x7528;&#x6765;&#x8BB0;&#x5F55;&#x6240;&#x6709;&#x548C;&#x5F53;&#x524D;DOM&#x76F8;&#x5173;&#x7684;&#x6307;&#x4EE4;&#x7684;&#x3002; &#x4E00;&#x65E6;&#x6240;&#x6709;&#x7684;&#x6307;&#x4EE4;&#x90FD;&#x88AB;&#x786E;&#x5B9A;&#x4E86;&#xFF0C;&#x4F1A;&#x6309;&#x7167;&#x4F18;&#x5148;&#x7EA7;&#x88AB;&#x6392;&#x5E8F;&#xFF0C;&#x5E76;&#x4E14;&#x4ED6;&#x4EEC;&#x7684;compile&#x65B9;&#x6CD5;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;&#x6307;&#x4EE4;&#x7684;<code>$compile()</code>&#x51FD;&#x6570;&#x80FD;&#x4FEE;&#x6539;DOM&#x7ED3;&#x6784;&#xFF0C;&#x5E76;&#x4E14;&#x8981;&#x8D1F;&#x8D23;&#x751F;&#x6210;&#x4E00;&#x4E2A;link&#x51FD;&#x6570;&#xFF08;&#x540E;&#x9762;&#x4F1A;&#x63D0;&#x5230;&#xFF09;&#x3002;<code>$compile</code>&#x65B9;&#x6CD5;&#x6700;&#x540E;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5408;&#x5E76;&#x8D77;&#x6765;&#x7684;&#x94FE;&#x63A5;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x662F;&#x94FE;&#x63A5;&#x51FD;&#x6570;&#x662F;&#x6BCF;&#x4E00;&#x4E2A;&#x6307;&#x4EE4;&#x7684;compile&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x94FE;&#x63A5;&#x51FD;&#x6570;&#x7684;&#x96C6;&#x5408;&#x3002;</li>
+<li>&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x4E00;&#x6B65;&#x6240;&#x8BF4;&#x7684;&#x94FE;&#x63A5;&#x51FD;&#x6570;&#x6765;&#x5C06;&#x6A21;&#x677F;&#x4E0E;&#x4F5C;&#x7528;&#x57DF;&#x94FE;&#x63A5;&#x8D77;&#x6765;&#x3002;&#x8FD9;&#x4F1A;&#x8F6E;&#x6D41;&#x8C03;&#x7528;&#x6BCF;&#x4E00;&#x4E2A;&#x6307;&#x4EE4;&#x7684;&#x94FE;&#x63A5;&#x51FD;&#x6570;&#xFF0C;&#x8BA9;&#x6BCF;&#x4E00;&#x4E2A;&#x6307;&#x4EE4;&#x90FD;&#x80FD;&#x5BF9;DOM&#x6CE8;&#x518C;&#x76D1;&#x542C;&#x4E8B;&#x4EF6;&#xFF0C;&#x548C;&#x5EFA;&#x7ACB;&#x5BF9;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x7684;&#x76D1;&#x542C;&#x3002;&#x8FD9;&#x6837;&#x6700;&#x540E;&#x5C31;&#x5F62;&#x6210;&#x4E86;&#x4F5C;&#x7528;&#x57DF;&#x7684;DOM&#x7684;&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#x3002;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x6539;&#x53D8;&#x90FD;&#x4F1A;&#x5728;DOM&#x4E0A;&#x4F53;&#x73B0;&#x51FA;&#x6765;&#x3002;</li>
+</ol>
+<p>&#x5927;&#x81F4;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> $compile = ...; <span class="hljs-comment">// injected into your code</span>
 <span class="hljs-keyword">var</span> scope = ...;
 
-<span class="hljs-keyword">var</span> html = <span class="hljs-string">'&lt;div ng-bind='</span>exp<span class="hljs-string">'&gt;&lt;/div&gt;'</span>;
+<span class="hljs-keyword">var</span> html = <span class="hljs-string">&apos;&lt;div ng-bind=&apos;</span>exp<span class="hljs-string">&apos;&gt;&lt;/div&gt;&apos;</span>;
 
 <span class="hljs-comment">// Step 1: parse HTML into DOM element</span>
 <span class="hljs-keyword">var</span> template = angular.element(html);
@@ -1397,42 +2005,71 @@
 linkFn(scope);
 </code></pre>
 <blockquote>
-<p>模板之中可能含有指令，指令之中可能又含有模板，模板之中又含有指令，由此形成一棵模板树。只有具有最高优先级的指令中的模板会被编译。如果一个元素已经有一个含有模板的指令了，永远不要对其用另一个指令进行修饰。一个指令会将内部子指令的模板合并在一起成为一个模板函数并返回，它无法查找父指令，只能通过模板函数访问内部子指令</p>
+<p>&#x6A21;&#x677F;&#x4E4B;&#x4E2D;&#x53EF;&#x80FD;&#x542B;&#x6709;&#x6307;&#x4EE4;&#xFF0C;&#x6307;&#x4EE4;&#x4E4B;&#x4E2D;&#x53EF;&#x80FD;&#x53C8;&#x542B;&#x6709;&#x6A21;&#x677F;&#xFF0C;&#x6A21;&#x677F;&#x4E4B;&#x4E2D;&#x53C8;&#x542B;&#x6709;&#x6307;&#x4EE4;&#xFF0C;&#x7531;&#x6B64;&#x5F62;&#x6210;&#x4E00;&#x68F5;&#x6A21;&#x677F;&#x6811;&#x3002;&#x53EA;&#x6709;&#x5177;&#x6709;&#x6700;&#x9AD8;&#x4F18;&#x5148;&#x7EA7;&#x7684;&#x6307;&#x4EE4;&#x4E2D;&#x7684;&#x6A21;&#x677F;&#x4F1A;&#x88AB;&#x7F16;&#x8BD1;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5DF2;&#x7ECF;&#x6709;&#x4E00;&#x4E2A;&#x542B;&#x6709;&#x6A21;&#x677F;&#x7684;&#x6307;&#x4EE4;&#x4E86;&#xFF0C;&#x6C38;&#x8FDC;&#x4E0D;&#x8981;&#x5BF9;&#x5176;&#x7528;&#x53E6;&#x4E00;&#x4E2A;&#x6307;&#x4EE4;&#x8FDB;&#x884C;&#x4FEE;&#x9970;&#x3002;&#x4E00;&#x4E2A;&#x6307;&#x4EE4;&#x4F1A;&#x5C06;&#x5185;&#x90E8;&#x5B50;&#x6307;&#x4EE4;&#x7684;&#x6A21;&#x677F;&#x5408;&#x5E76;&#x5728;&#x4E00;&#x8D77;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#x51FD;&#x6570;&#x5E76;&#x8FD4;&#x56DE;&#xFF0C;&#x5B83;&#x65E0;&#x6CD5;&#x67E5;&#x627E;&#x7236;&#x6307;&#x4EE4;&#xFF0C;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x6A21;&#x677F;&#x51FD;&#x6570;&#x8BBF;&#x95EE;&#x5185;&#x90E8;&#x5B50;&#x6307;&#x4EE4;</p>
 </blockquote>
-<h2 id="ngmodel">ngModel</h2>
-<p>ngModel提供更底层的API来处理控制器内的数据。</p>
+<h2 id="ngmodel"><a name="ngmodel" class="plugin-anchor" href="#ngmodel"><span class="fa fa-link"></span></a>ngModel</h2>
+<p>ngModel&#x63D0;&#x4F9B;&#x66F4;&#x5E95;&#x5C42;&#x7684;API&#x6765;&#x5904;&#x7406;&#x63A7;&#x5236;&#x5668;&#x5185;&#x7684;&#x6570;&#x636E;&#x3002;</p>
 <ol>
-<li>为了设置作用域中的视图值，需要调用<code>ngModel.$setViewValue()</code>函数，接受一个字符串参数value，表示想要赋予的实际值，然后：</li><li><code>ngModel.$setViewValue()</code>方法会更新控制器本地的<code>$viewValue</code>，然后将值传递给每一个<code>$parser</code>函数</li><li>值被解析且<code>$parser</code>所有函数都完成后，值会赋给<code>$modeValue</code>属性，并且传递给指令中<code>ng-model</code>属性提供的表达式</li><li>所有步骤都完成后，<code>$viewChangeListeners</code>中所有的监听器都会被调用</li></ol>
+<li>&#x4E3A;&#x4E86;&#x8BBE;&#x7F6E;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x7684;&#x89C6;&#x56FE;&#x503C;&#xFF0C;&#x9700;&#x8981;&#x8C03;&#x7528;<code>ngModel.$setViewValue()</code>&#x51FD;&#x6570;&#xFF0C;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x53C2;&#x6570;value&#xFF0C;&#x8868;&#x793A;&#x60F3;&#x8981;&#x8D4B;&#x4E88;&#x7684;&#x5B9E;&#x9645;&#x503C;&#xFF0C;&#x7136;&#x540E;&#xFF1A;</li>
+<li><code>ngModel.$setViewValue()</code>&#x65B9;&#x6CD5;&#x4F1A;&#x66F4;&#x65B0;&#x63A7;&#x5236;&#x5668;&#x672C;&#x5730;&#x7684;<code>$viewValue</code>&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x503C;&#x4F20;&#x9012;&#x7ED9;&#x6BCF;&#x4E00;&#x4E2A;<code>$parser</code>&#x51FD;&#x6570;</li>
+<li>&#x503C;&#x88AB;&#x89E3;&#x6790;&#x4E14;<code>$parser</code>&#x6240;&#x6709;&#x51FD;&#x6570;&#x90FD;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x503C;&#x4F1A;&#x8D4B;&#x7ED9;<code>$modeValue</code>&#x5C5E;&#x6027;&#xFF0C;&#x5E76;&#x4E14;&#x4F20;&#x9012;&#x7ED9;&#x6307;&#x4EE4;&#x4E2D;<code>ng-model</code>&#x5C5E;&#x6027;&#x63D0;&#x4F9B;&#x7684;&#x8868;&#x8FBE;&#x5F0F;</li>
+<li>&#x6240;&#x6709;&#x6B65;&#x9AA4;&#x90FD;&#x5B8C;&#x6210;&#x540E;&#xFF0C;<code>$viewChangeListeners</code>&#x4E2D;&#x6240;&#x6709;&#x7684;&#x76D1;&#x542C;&#x5668;&#x90FD;&#x4F1A;&#x88AB;&#x8C03;&#x7528;</li>
+</ol>
 <blockquote>
-<p>单独调用<code>$setViewValue()</code>不会唤起一个新的digest循环，因此如果想更新指令，需要在设置<code>$viewValue</code>后手动触发digest</p>
+<p>&#x5355;&#x72EC;&#x8C03;&#x7528;<code>$setViewValue()</code>&#x4E0D;&#x4F1A;&#x5524;&#x8D77;&#x4E00;&#x4E2A;&#x65B0;&#x7684;digest&#x5FAA;&#x73AF;&#xFF0C;&#x56E0;&#x6B64;&#x5982;&#x679C;&#x60F3;&#x66F4;&#x65B0;&#x6307;&#x4EE4;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x8BBE;&#x7F6E;<code>$viewValue</code>&#x540E;&#x624B;&#x52A8;&#x89E6;&#x53D1;digest</p>
 </blockquote>
-<p>ngModel的<code>$render</code>方法可以定义视图具体的渲染方式，它在<code>$parser</code>完成后被调用</p>
-<p>ngModelController中有几个属性可用来检查甚至修改视图：</p>
+<p>ngModel&#x7684;<code>$render</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x89C6;&#x56FE;&#x5177;&#x4F53;&#x7684;&#x6E32;&#x67D3;&#x65B9;&#x5F0F;&#xFF0C;&#x5B83;&#x5728;<code>$parser</code>&#x5B8C;&#x6210;&#x540E;&#x88AB;&#x8C03;&#x7528;</p>
+<p>ngModelController&#x4E2D;&#x6709;&#x51E0;&#x4E2A;&#x5C5E;&#x6027;&#x53EF;&#x7528;&#x6765;&#x68C0;&#x67E5;&#x751A;&#x81F3;&#x4FEE;&#x6539;&#x89C6;&#x56FE;&#xFF1A;</p>
 <ol>
-<li>$viewValue： 保存着更新视图所需的实际字符串。</li><li>$modelValue：由数据模型持有。$modelValue和$viewValue可能是不同的，取决于$parser流水线是否对其进行了操作。</li><li>$parsers：$parsers的值是一个由函数组成的数组，其中的函数会以流水线的形式被逐一调用。ngModel从DOM中读取的值会被传入$parsers中的函数，并依次被其中的解析器处理。</li><li>$formatters：$formatters的值是一个由函数组成的数组，其中的函数会以流水线的形式在数据模型的值
-发生变化时被逐一调用。它和$parser流水线互不影响，用来对值进行格式化和转换，以便在绑定了这个值的控件中显示。</li><li>$viewChangeListeners：$viewChangeListeners的值是一个由函数组成的数组，其中的函数会以流水线的形式在视图中的值发生变化时被逐一调用。通过$viewChangeListeners，可以在无需使用$watch的情况下实现类似的行为。由于返回值会被忽略，因此这些函数不需要返回值。</li></ol>
+<li>$viewValue&#xFF1A; &#x4FDD;&#x5B58;&#x7740;&#x66F4;&#x65B0;&#x89C6;&#x56FE;&#x6240;&#x9700;&#x7684;&#x5B9E;&#x9645;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li>$modelValue&#xFF1A;&#x7531;&#x6570;&#x636E;&#x6A21;&#x578B;&#x6301;&#x6709;&#x3002;$modelValue&#x548C;$viewValue&#x53EF;&#x80FD;&#x662F;&#x4E0D;&#x540C;&#x7684;&#xFF0C;&#x53D6;&#x51B3;&#x4E8E;$parser&#x6D41;&#x6C34;&#x7EBF;&#x662F;&#x5426;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x4E86;&#x64CD;&#x4F5C;&#x3002;</li>
+<li>$parsers&#xFF1A;$parsers&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x7531;&#x51FD;&#x6570;&#x7EC4;&#x6210;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x4F1A;&#x4EE5;&#x6D41;&#x6C34;&#x7EBF;&#x7684;&#x5F62;&#x5F0F;&#x88AB;&#x9010;&#x4E00;&#x8C03;&#x7528;&#x3002;ngModel&#x4ECE;DOM&#x4E2D;&#x8BFB;&#x53D6;&#x7684;&#x503C;&#x4F1A;&#x88AB;&#x4F20;&#x5165;$parsers&#x4E2D;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x4F9D;&#x6B21;&#x88AB;&#x5176;&#x4E2D;&#x7684;&#x89E3;&#x6790;&#x5668;&#x5904;&#x7406;&#x3002;</li>
+<li>$formatters&#xFF1A;$formatters&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x7531;&#x51FD;&#x6570;&#x7EC4;&#x6210;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x4F1A;&#x4EE5;&#x6D41;&#x6C34;&#x7EBF;&#x7684;&#x5F62;&#x5F0F;&#x5728;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7684;&#x503C;
+&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#x88AB;&#x9010;&#x4E00;&#x8C03;&#x7528;&#x3002;&#x5B83;&#x548C;$parser&#x6D41;&#x6C34;&#x7EBF;&#x4E92;&#x4E0D;&#x5F71;&#x54CD;&#xFF0C;&#x7528;&#x6765;&#x5BF9;&#x503C;&#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;&#x548C;&#x8F6C;&#x6362;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x7ED1;&#x5B9A;&#x4E86;&#x8FD9;&#x4E2A;&#x503C;&#x7684;&#x63A7;&#x4EF6;&#x4E2D;&#x663E;&#x793A;&#x3002;</li>
+<li>$viewChangeListeners&#xFF1A;$viewChangeListeners&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x7531;&#x51FD;&#x6570;&#x7EC4;&#x6210;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x4F1A;&#x4EE5;&#x6D41;&#x6C34;&#x7EBF;&#x7684;&#x5F62;&#x5F0F;&#x5728;&#x89C6;&#x56FE;&#x4E2D;&#x7684;&#x503C;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#x88AB;&#x9010;&#x4E00;&#x8C03;&#x7528;&#x3002;&#x901A;&#x8FC7;$viewChangeListeners&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x65E0;&#x9700;&#x4F7F;&#x7528;$watch&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5B9E;&#x73B0;&#x7C7B;&#x4F3C;&#x7684;&#x884C;&#x4E3A;&#x3002;&#x7531;&#x4E8E;&#x8FD4;&#x56DE;&#x503C;&#x4F1A;&#x88AB;&#x5FFD;&#x7565;&#xFF0C;&#x56E0;&#x6B64;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x4E0D;&#x9700;&#x8981;&#x8FD4;&#x56DE;&#x503C;&#x3002;</li>
+</ol>
 
                     
                     </section>
+                
                 
                 </div>
             </div>
         </div>
 
         
-        <a href="../the-complete-book-on-angularjs/build-in-directive.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../the-complete-book-on-angularjs/build-in-directive.html" class="navigation navigation-prev " aria-label="Previous page: 内置指令"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../the-complete-book-on-angularjs/load-module.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../the-complete-book-on-angularjs/load-module.html" class="navigation navigation-next " aria-label="Next page: 模块加载"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
-        <script src="..\gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
-        <script src="..\gitbook/app.js"></script>
-        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-duoshuo/duoshuo.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-baidu/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"duoshuo":{"short_name":"skyinlayer","theme":"default"},"baidu":{"token":"a5aa4945a04cc5a5a4cd6835ccb7d419"},"codepen":{"height":400,"theme":14038,"defaultTab":"result","description":""}};
+    gitbook.start(config);
+});
+</script>
+
+        <script>var _hmt = _hmt || [];(function() {var hm = document.createElement('script');hm.src = '//hm.baidu.com/hm.js?a5aa4945a04cc5a5a4cd6835ccb7d419';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(hm, s);})();</script>
+<script src="//assets.codepen.io/assets/embed/ei.js"></script>
     </body>
+    
 </html>

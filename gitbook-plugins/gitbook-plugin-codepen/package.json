@@ -1,0 +1,41 @@
+{
+  "name": "gitbook-plugin-codepen",
+  "version": "0.1.0",
+  "description": "A plugin to embed codepen in your Gitbook",
+  "main": "index.js",
+  "keywords": [
+    "gitbook",
+    "plugin",
+    "codepen"
+  ],
+  "engines": {
+    "gitbook": "*"
+  },
+  "author": {
+    "name": "LingyuCoder"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "underscore": "^1.8.3",
+    "url-parse": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LingyuCoder/gitbook-plugin-codepen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LingyuCoder/gitbook-plugin-codepen/issues"
+  },
+  "homepage": "https://github.com/LingyuCoder/gitbook-plugin-codepen",
+  "readme": "gitbook-plugin-codepen\n===\n\n**Embed Codepen preview into your Gitbook**\n\n##Install\n\n```shell\n$npm install --save gitbook-plugin-codepen\n```\n\n##Usage\n\nAdd the plugin to your `book.json` like this: \n\n```javascript\n{\n    \"plugins\": [\"codepen\"]\n}\n```\n\nthen in your markdown file, you can embed codepen panel like this:\n\n\n```markdown\n[](codepen://Lingyucoder/AsFJh?height=800&theme=0)\n```\n\n##Options\nYou can set the options of your Gitbook in `book.json` like this: \n\n```javascript\n\"pluginsConfig\": {\n    \"codepen\": {\n      \"height\": 400,\n      \"theme\": 14038,\n      \"description\": \"somepen\",\n      \"defaultTab\": 'html'\n    }\n}\n```\n\nYou can also set options of a specific Codepen panel use URL querystring like `?height=400&theme=14038&description=somepen&defaultTab=html`\n\n###height\ndefault: `300`\n\n###theme\ndefault: `0`\n\n###description\ndefault: `''`\n\n###defaultTab\ndefault: `'result'`\n\n##License\nThe MIT License (MIT)\n\nCopyright (c) 2015 Lingyu Wang\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n\n",
+  "readmeFilename": "README.md",
+  "gitHead": "2f15b3af09013971f60e0ab6124fe80a962ef120",
+  "_id": "gitbook-plugin-codepen@0.1.0",
+  "_shasum": "124a99efb53a783bc32f05e09a761be0853e1b55",
+  "_from": "gitbook-plugin-codepen@*"
+}
