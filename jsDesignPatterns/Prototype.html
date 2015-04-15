@@ -33,14 +33,10 @@
         
     <link rel="stylesheet" href="../gitbook/style.css">
     
-        
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
-        
-    
     
 
         
-    <div class="book" data-level="15.8" data-basepath=".." data-revision="Mon Apr 13 2015 10:01:38 GMT+0800 (CST)">
+    <div class="book" data-level="15.8" data-basepath=".." data-revision="Thu Apr 16 2015 00:13:45 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -1854,7 +1850,7 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="prototype%E2%80%94%E2%80%94%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F"><a name="prototype%E2%80%94%E2%80%94%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F" class="plugin-anchor" href="#prototype%E2%80%94%E2%80%94%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F"><span class="fa fa-link"></span></a>Prototype&#x2014;&#x2014;&#x539F;&#x578B;&#x6A21;&#x5F0F;</h1>
+                        <h1 id="prototype%E2%80%94%E2%80%94%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F">Prototype&#x2014;&#x2014;&#x539F;&#x578B;&#x6A21;&#x5F0F;</h1>
 <p>&#x56DB;&#x4EBA;&#x5E2E;&#x79F0;Prototype&#x6A21;&#x5F0F;&#x662F;&#x4E00;&#x79CD;&#x57FA;&#x4E8E;&#x73B0;&#x6709;&#x5BF9;&#x8C61;&#x6A21;&#x677F;&#xFF0C;&#x901A;&#x8FC7;&#x514B;&#x9686;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x6A21;&#x5F0F;&#x3002;&#x800C;JS&#x4E2D;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#xFF0C;Prototype&#x6A21;&#x5F0F;&#x662F;&#x57FA;&#x4E8E;&#x539F;&#x578B;&#x7EE7;&#x627F;&#x7684;&#x6A21;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x5176;&#x4E2D;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x4F5C;&#x4E3A;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x578B;&#x3002;</p>
 <p>ECMASript5&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;<code>Object.create(prototype, optionalDescriptorObjects)</code>&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x4F7F;&#x5176;&#x62E5;&#x6709;&#x6307;&#x5B9A;&#x7684;&#x539F;&#x578B;&#x548C;&#x53EF;&#x9009;&#x5C5E;&#x6027;&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> parent = {
@@ -1884,7 +1880,7 @@
 <p>&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x5230;&#x5BF9;&#x8C61;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
 <p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/7.png" alt="prototype&#x7684;child&#x5BF9;&#x8C61;&#x7ED3;&#x6784;"></p>
 <p>&#x8FD9;&#x91CC;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x5DEE;&#x5F02;&#x7EE7;&#x627F;&#xFF0C;&#x5177;&#x4F53;&#x7528;&#x6CD5;&#x548C;Object.defineProperties&#x548C;Object.defineProperty&#x76F8;&#x4F3C;</p>
-<h2 id="polyfill"><a name="polyfill" class="plugin-anchor" href="#polyfill"><span class="fa fa-link"></span></a>Polyfill</h2>
+<h2 id="polyfill">Polyfill</h2>
 <p>&#x7531;&#x4E8E;<code>Object.create</code>&#x65B9;&#x6CD5;&#x5728;ES5&#x4E2D;&#x5B9A;&#x4E49;&#xFF0C;&#x5728;&#x4E0D;&#x652F;&#x6301;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x9700;&#x8981;polyfill&#xFF0C;&#x7B80;&#x5355;&#x7684;&#x4E0D;&#x652F;&#x6301;<code>optionalDescriptorObjects</code>&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-built_in">Object</span>.prototype.create = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(parent)</span></span>{
     <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">F</span><span class="hljs-params">()</span></span>{}

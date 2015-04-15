@@ -33,14 +33,10 @@
         
     <link rel="stylesheet" href="../gitbook/style.css">
     
-        
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
-        
-    
     
 
         
-    <div class="book" data-level="15.4" data-basepath=".." data-revision="Mon Apr 13 2015 10:01:38 GMT+0800 (CST)">
+    <div class="book" data-level="15.4" data-basepath=".." data-revision="Thu Apr 16 2015 00:13:45 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -1854,7 +1850,7 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="singleton%E2%80%94%E2%80%94%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F"><a name="singleton%E2%80%94%E2%80%94%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F" class="plugin-anchor" href="#singleton%E2%80%94%E2%80%94%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F"><span class="fa fa-link"></span></a>Singleton&#x2014;&#x2014;&#x5355;&#x4F8B;&#x6A21;&#x5F0F;</h1>
+                        <h1 id="singleton%E2%80%94%E2%80%94%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F">Singleton&#x2014;&#x2014;&#x5355;&#x4F8B;&#x6A21;&#x5F0F;</h1>
 <p>Singleton&#x662F;&#x4E00;&#x79CD;&#x76F8;&#x5F53;&#x51FA;&#x540D;&#x7684;&#x6A21;&#x5F0F;&#xFF0C;&#x7B14;&#x8BD5;&#x9762;&#x8BD5;&#x65F6;&#x9762;&#x8BD5;&#x5B98;&#x7279;&#x522B;&#x559C;&#x6B22;&#x8BA9;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x5355;&#x4F8B;&#x6A21;&#x5F0F;&#x3002;Singleton&#x9650;&#x5236;&#x4E86;&#x7C7B;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;&#x7ECF;&#x5178;Singleton&#x6A21;&#x5F0F;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x5B9E;&#x4F8B;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x5B9E;&#x4F8B;&#x7684;&#x5F15;&#x7528;&#x3002;Singleton&#x4E0E;&#x9759;&#x6001;&#x7C7B;&#xFF08;&#x5BF9;&#x8C61;&#xFF09;&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x88AB;&#x5EF6;&#x8FDF;&#x751F;&#x6210;&#xFF0C;&#x53EA;&#x6709;&#x5728;&#x9700;&#x8981;&#x7684;&#x65F6;&#x5019;&#x624D;&#x4F1A;&#x751F;&#x6210;&#x5B9E;&#x4F8B;&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> singleton = (<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
     <span class="hljs-keyword">var</span> instance;

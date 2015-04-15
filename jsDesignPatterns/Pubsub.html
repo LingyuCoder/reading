@@ -33,14 +33,10 @@
         
     <link rel="stylesheet" href="../gitbook/style.css">
     
-        
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
-        
-    
     
 
         
-    <div class="book" data-level="15.6" data-basepath=".." data-revision="Mon Apr 13 2015 10:01:38 GMT+0800 (CST)">
+    <div class="book" data-level="15.6" data-basepath=".." data-revision="Thu Apr 16 2015 00:13:45 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -1854,7 +1850,7 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="publish-subscribe%EF%BC%88%E5%8F%91%E5%B8%83-%E8%AE%A2%E9%98%85%EF%BC%89%E6%A8%A1%E5%BC%8F"><a name="publish-subscribe%EF%BC%88%E5%8F%91%E5%B8%83-%E8%AE%A2%E9%98%85%EF%BC%89%E6%A8%A1%E5%BC%8F" class="plugin-anchor" href="#publish-subscribe%EF%BC%88%E5%8F%91%E5%B8%83-%E8%AE%A2%E9%98%85%EF%BC%89%E6%A8%A1%E5%BC%8F"><span class="fa fa-link"></span></a>Publish/Subscribe&#xFF08;&#x53D1;&#x5E03;/&#x8BA2;&#x9605;&#xFF09;&#x6A21;&#x5F0F;</h1>
+                        <h1 id="publish-subscribe%EF%BC%88%E5%8F%91%E5%B8%83-%E8%AE%A2%E9%98%85%EF%BC%89%E6%A8%A1%E5%BC%8F">Publish/Subscribe&#xFF08;&#x53D1;&#x5E03;/&#x8BA2;&#x9605;&#xFF09;&#x6A21;&#x5F0F;</h1>
 <p>&#x4E00;&#x79CD;&#x6BD4;&#x8F83;&#x5E38;&#x89C1;&#x7684;&#x5B9E;&#x73B0;Observer&#x6A21;&#x5F0F;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x5C06;ObserverList&#x548C;Subject&#x76F8;&#x5206;&#x79BB;&#xFF0C;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;Event Channel&#x6765;&#x7BA1;&#x7406;ObserverList&#xFF0C;Subject&#x5C06;&#x9700;&#x8981;&#x53D1;&#x5E03;&#x7684;&#x6570;&#x636E;&#x4EA4;&#x7ED9;Event Channel&#xFF0C;&#x800C;&#x89C2;&#x5BDF;&#x8005;&#x4E5F;&#x53EA;&#x9700;&#x8981;&#x89C2;&#x5BDF;Event Channel&#x5C31;&#x884C;&#x4E86;</p>
 <p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/3.png" alt="pubsub&#x67B6;&#x6784;&#x56FE;"></p>
 <p>&#x53D1;&#x5E03;/&#x8BA2;&#x9605;&#x65B9;&#x5F0F;&#x5F88;&#x9002;&#x5408;JavaScript&#xFF0C;&#x56E0;&#x4E3A;ECMAScript&#x672C;&#x8EAB;&#x662F;&#x57FA;&#x4E8E;&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x7684;&#x3002;&#x5F88;&#x591A;&#x6D41;&#x884C;&#x7684;JavaScript&#x5E93;&#x90FD;&#x6709;&#x4E00;&#x5957;&#x53D1;&#x5E03;/&#x8BA2;&#x9605;&#x5B9E;&#x73B0;&#xFF0C;&#x6BD4;&#x5982;jQuery&#xFF1A;</p>
@@ -1865,7 +1861,7 @@ $(dom).trigger(<span class="hljs-string">&quot;channel&quot;</span>, [arg1, arg2
 <span class="hljs-comment">//&#x53D6;&#x6D88;&#x8BA2;&#x9605;</span>
 $(dom).off(<span class="hljs-string">&quot;channel&quot;</span>, callback);
 </code></pre>
-<h2 id="observer%E6%A8%A1%E5%BC%8F%E5%92%8Cpublish-subscribe%EF%BC%88%E5%8F%91%E5%B8%83-%E8%AE%A2%E9%98%85%EF%BC%89%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><a name="observer%E6%A8%A1%E5%BC%8F%E5%92%8Cpublish-subscribe%EF%BC%88%E5%8F%91%E5%B8%83-%E8%AE%A2%E9%98%85%EF%BC%89%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A" class="plugin-anchor" href="#observer%E6%A8%A1%E5%BC%8F%E5%92%8Cpublish-subscribe%EF%BC%88%E5%8F%91%E5%B8%83-%E8%AE%A2%E9%98%85%EF%BC%89%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="fa fa-link"></span></a>Observer&#x6A21;&#x5F0F;&#x548C;Publish/Subscribe&#xFF08;&#x53D1;&#x5E03;/&#x8BA2;&#x9605;&#xFF09;&#x6A21;&#x5F0F;&#x7684;&#x533A;&#x522B;&#xFF1A;</h2>
+<h2 id="observer%E6%A8%A1%E5%BC%8F%E5%92%8Cpublish-subscribe%EF%BC%88%E5%8F%91%E5%B8%83-%E8%AE%A2%E9%98%85%EF%BC%89%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A">Observer&#x6A21;&#x5F0F;&#x548C;Publish/Subscribe&#xFF08;&#x53D1;&#x5E03;/&#x8BA2;&#x9605;&#xFF09;&#x6A21;&#x5F0F;&#x7684;&#x533A;&#x522B;&#xFF1A;</h2>
 <p>Observer&#x6A21;&#x5F0F;&#x8981;&#x6C42;&#x5E0C;&#x671B;&#x63A5;&#x5230;&#x4E3B;&#x9898;&#x901A;&#x77E5;&#x7684;&#x89C2;&#x5BDF;&#x8005;&#xFF08;&#x6216;&#x5BF9;&#x8C61;&#xFF09;&#x5FC5;&#x987B;&#x8BA2;&#x9605;&#x5185;&#x5BB9;&#x6539;&#x53D8;&#x7684;&#x4E8B;&#x4EF6;&#xFF0C;&#x800C;Publish/Subscribe&#x6A21;&#x5F0F;&#x4F7F;&#x7528;&#x4E86;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x901A;&#x9053;&#xFF0C;&#x8FD9;&#x4E2A;&#x901A;&#x9053;&#x4ECB;&#x4E8E;&#x5E0C;&#x671B;&#x6536;&#x5230;&#x901A;&#x77E5;&#x7684;&#x5BF9;&#x8C61;&#xFF08;&#x8BA2;&#x9605;&#x8005;&#xFF09;&#x548C;&#x6FC0;&#x6D3B;&#x4E8B;&#x4EF6;&#x7684;&#x5BF9;&#x8C61;&#xFF08;&#x53D1;&#x5E03;&#x8005;&#xFF09;&#x4E4B;&#x95F4;&#x3002;&#x4E0E;Observer&#x6A21;&#x5F0F;&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;&#x5B83;&#x5141;&#x8BB8;&#x4EFB;&#x4F55;&#x8BA2;&#x9605;&#x8005;&#x6267;&#x884C;&#x9002;&#x5F53;&#x7684;&#x65F6;&#x95F4;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x6765;&#x6CE8;&#x518C;&#x548C;&#x63A5;&#x53D7;&#x53D1;&#x5E03;&#x8005;&#x53D1;&#x51FA;&#x7684;&#x901A;&#x77E5;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> pubsub = (<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-comment">//&#x8BA2;&#x9605;&#x8005;&#x5217;&#x8868;</span>
@@ -1935,7 +1931,7 @@ pubsub.publish(<span class="hljs-string">&quot;hello&quot;</span>, [<span class=
 </code></pre>
 <p>&#x7ED3;&#x679C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x53D6;&#x6D88;&#x4E4B;&#x540E;&#xFF0C;&#x8BA2;&#x9605;&#x8005;&#x4E0D;&#x4F1A;&#x518D;&#x6536;&#x5230;&#x6D88;&#x606F;&#x4E86;&#xFF1A;</p>
 <p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/4.png" alt="pubsub&#x8F93;&#x51FA;&#x7ED3;&#x679C;"></p>
-<h2 id="%E4%BC%98%E7%82%B9%E5%92%8C%E7%BC%BA%E7%82%B9"><a name="%E4%BC%98%E7%82%B9%E5%92%8C%E7%BC%BA%E7%82%B9" class="plugin-anchor" href="#%E4%BC%98%E7%82%B9%E5%92%8C%E7%BC%BA%E7%82%B9"><span class="fa fa-link"></span></a>&#x4F18;&#x70B9;&#x548C;&#x7F3A;&#x70B9;</h2>
+<h2 id="%E4%BC%98%E7%82%B9%E5%92%8C%E7%BC%BA%E7%82%B9">&#x4F18;&#x70B9;&#x548C;&#x7F3A;&#x70B9;</h2>
 <p>Observer&#x6A21;&#x5F0F;&#x548C;Publish/Subscribe&#x6A21;&#x5F0F;&#x90FD;&#x80FD;&#x5C06;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5206;&#x89E3;&#x6210;&#x66F4;&#x5C0F;&#x3001;&#x66F4;&#x677E;&#x6563;&#x8026;&#x5408;&#x7684;&#x5757;&#xFF0C;&#x4EE5;&#x6539;&#x8FDB;&#x4EE3;&#x7801;&#x7BA1;&#x7406;&#x548C;&#x6F5C;&#x5728;&#x7684;&#x590D;&#x7528;&#x3002;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x52A8;&#x6001;&#x7684;&#x53BB;&#x66F4;&#x6539;&#x4E0D;&#x540C;&#x90E8;&#x5206;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x6709;&#x5F88;&#x5927;&#x7684;&#x7075;&#x6D3B;&#x6027;</p>
 <p>&#x5728;Observer&#x548C;Publish/Subscribe&#x4E2D;&#xFF0C;&#x53D1;&#x5E03;&#x8005;&#x6216;Subject&#x4E0D;&#x4F1A;&#x770B;&#x5230;&#x8BA2;&#x9605;&#x8005;&#x6216;&#x89C2;&#x5BDF;&#x8005;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x4E14;&#x8BA2;&#x9605;&#x8005;&#x548C;&#x89C2;&#x5BDF;&#x8005;&#x76F8;&#x4E92;&#x4E4B;&#x95F4;&#x65E0;&#x89C6;&#x5F7C;&#x6B64;&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x5BF9;&#x53D8;&#x5316;&#x53D1;&#x5E03;&#x8005;&#x4EA7;&#x751F;&#x7684;&#x6210;&#x672C;&#x4E5F;&#x89C6;&#x800C;&#x4E0D;&#x89C1;</p>
 

@@ -33,14 +33,10 @@
         
     <link rel="stylesheet" href="../gitbook/style.css">
     
-        
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
-        
-    
     
 
         
-    <div class="book" data-level="15.7" data-basepath=".." data-revision="Mon Apr 13 2015 10:01:38 GMT+0800 (CST)">
+    <div class="book" data-level="15.7" data-basepath=".." data-revision="Thu Apr 16 2015 00:13:45 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -1854,11 +1850,11 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="mediator%E2%80%94%E2%80%94%E4%B8%AD%E4%BB%8B%E8%80%85%E6%A8%A1%E5%BC%8F"><a name="mediator%E2%80%94%E2%80%94%E4%B8%AD%E4%BB%8B%E8%80%85%E6%A8%A1%E5%BC%8F" class="plugin-anchor" href="#mediator%E2%80%94%E2%80%94%E4%B8%AD%E4%BB%8B%E8%80%85%E6%A8%A1%E5%BC%8F"><span class="fa fa-link"></span></a>Mediator&#x2014;&#x2014;&#x4E2D;&#x4ECB;&#x8005;&#x6A21;&#x5F0F;</h1>
+                        <h1 id="mediator%E2%80%94%E2%80%94%E4%B8%AD%E4%BB%8B%E8%80%85%E6%A8%A1%E5%BC%8F">Mediator&#x2014;&#x2014;&#x4E2D;&#x4ECB;&#x8005;&#x6A21;&#x5F0F;</h1>
 <p>&#x4E2D;&#x4ECB;&#x8005;&#x662F;&#x4E00;&#x79CD;&#x884C;&#x4E3A;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF0C;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x516C;&#x5F00;&#x7EDF;&#x4E00;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x7CFB;&#x7EDF;&#x7684;&#x4E0D;&#x540C;&#x90E8;&#x5206;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#x8FDB;&#x884C;&#x901A;&#x4FE1;</p>
 <p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7CFB;&#x7EDF;&#x5404;&#x4E2A;&#x7EC4;&#x4EF6;&#x4E4B;&#x95F4;&#x6709;&#x592A;&#x591A;&#x7684;&#x76F4;&#x63A5;&#x5173;&#x7CFB;&#xFF0C;&#x4E24;&#x4E24;&#x4E4B;&#x95F4;&#x82E5;&#x6709;&#x4E00;&#x6761;&#x8FB9;&#xFF0C;&#x89E3;&#x8026;&#x5C06;&#x4F1A;&#x975E;&#x5E38;&#x56F0;&#x96BE;&#x3002;&#x4F46;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5728;&#x5176;&#x4E2D;&#x52A0;&#x5165;&#x4E00;&#x4E2A;&#x4E2D;&#x5FC3;&#x63A7;&#x5236;&#x70B9;&#xFF0C;&#x5404;&#x4E2A;&#x7EC4;&#x4EF6;&#x90FD;&#x7ECF;&#x8FC7;&#x8FD9;&#x4E2A;&#x4E2D;&#x5FC3;&#x63A7;&#x5236;&#x70B9;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#xFF0C;&#x90A3;&#x4E48;&#x6BCF;&#x4E2A;&#x6A21;&#x5757;&#x53EA;&#x8981;&#x5173;&#x6CE8;&#x81EA;&#x5DF1;&#x548C;&#x4E2D;&#x5FC3;&#x63A7;&#x5236;&#x70B9;&#x7684;&#x901A;&#x4FE1;&#x5C31;&#x884C;&#x4E86;&#x3002;Mediator&#x5C31;&#x662F;&#x8FD9;&#x4E2A;&#x610F;&#x601D;&#x3002;</p>
 <p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/5.png" alt="mediator&#x67B6;&#x6784;&#x56FE;"></p>
-<h2 id="%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F"><a name="%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F" class="plugin-anchor" href="#%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F"><span class="fa fa-link"></span></a>&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;</h2>
+<h2 id="%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F">&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;</h2>
 <p>Mediator&#x6A21;&#x5F0F;&#x672C;&#x8D28;&#x4E0A;&#x662F;Oberver&#x6A21;&#x5F0F;&#x7684;&#x5171;&#x4EAB;&#x76EE;&#x6807;&#xFF0C;&#x628A;&#x4E2D;&#x5FC3;&#x63A7;&#x5236;&#x70B9;&#x5F53;&#x505A;Subject&#xFF0C;&#x800C;&#x6BCF;&#x4E2A;&#x7EC4;&#x4EF6;&#x5F53;&#x505A;Observer&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> mediator = (<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-comment">//&#x4FDD;&#x5B58;&#x4E8B;&#x4EF6;&#x548C;&#x8BA2;&#x9605;&#x8005;&#x5217;&#x8868;</span>
@@ -1899,7 +1895,7 @@
 }());
 </code></pre>
 <p>&#x57FA;&#x672C;&#x4E0A;&#x548C;Observer&#x6A21;&#x5F0F;&#x7684;&#x601D;&#x8DEF;&#x6CA1;&#x6709;&#x592A;&#x5927;&#x533A;&#x522B;</p>
-<h2 id="%E5%AE%9E%E4%BE%8B"><a name="%E5%AE%9E%E4%BE%8B" class="plugin-anchor" href="#%E5%AE%9E%E4%BE%8B"><span class="fa fa-link"></span></a>&#x5B9E;&#x4F8B;</h2>
+<h2 id="%E5%AE%9E%E4%BE%8B">&#x5B9E;&#x4F8B;</h2>
 <p>&#x4E0A;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;,&#x53EF;&#x4EE5;&#x5199;&#x4E2A;&#x4F8B;&#x5B50;&#x611F;&#x53D7;&#x4E00;&#x4E0B;,&#x6BD4;&#x5982;&#x6709;&#x4E09;&#x4E2A;&#x6A21;&#x5757;,&#x5206;&#x522B;&#x662F;colleague1,colleague2,colleague3&#xFF0C;&#x800C;1&#x548C;2&#x9700;&#x8981;&#x76D1;&#x542C;3&#x7684;&#x53D1;&#x9001;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x800C;1&#x548C;3&#x9700;&#x8981;&#x76D1;&#x542C;2&#x53D1;&#x9001;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x5B9E;&#x73B0;&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">//&#x6A21;&#x5757;&#x6784;&#x9020;&#x51FD;&#x6570;</span>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Colleague</span><span class="hljs-params">(name)</span> </span>{
@@ -1927,16 +1923,16 @@ colleague2.publish(<span class="hljs-string">&quot;pub2&quot;</span>, <span clas
 <p>&#x8F93;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
 <p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/6.png" alt="mediator&#x8F93;&#x51FA;"></p>
 <p>&#x4FE1;&#x606F;&#x4F20;&#x9012;&#x90FD;&#x6210;&#x529F;&#x4E86;</p>
-<h2 id="mediator%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9"><a name="mediator%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9" class="plugin-anchor" href="#mediator%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="fa fa-link"></span></a>Mediator&#x7684;&#x4F18;&#x7F3A;&#x70B9;</h2>
+<h2 id="mediator%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9">Mediator&#x7684;&#x4F18;&#x7F3A;&#x70B9;</h2>
 <p>Mediator&#x6700;&#x5927;&#x7684;&#x597D;&#x5904;&#x5C31;&#x662F;&#x5C06;&#x7CFB;&#x7EDF;&#x7EC4;&#x4EF6;&#x95F4;&#x7684;&#x590D;&#x6742;&#x7684;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#x7B80;&#x5316;&#x5230;&#x4E86;&#x4E00;&#x5BF9;&#x591A;&#x3002;&#x8FD9;&#x6837;&#x89E3;&#x8026;&#x7A0B;&#x5EA6;&#x8F83;&#x9AD8;&#xFF0C;&#x6DFB;&#x52A0;&#x53D1;&#x5E03;&#x8005;&#x548C;&#x8BA2;&#x9605;&#x8005;&#x4E5F;&#x8F83;&#x4E3A;&#x7B80;&#x5355;&#x3002;&#x800C;&#x7F3A;&#x70B9;&#x5219;&#x662F;&#xFF0C;Mediator&#x672C;&#x8EAB;&#x5728;&#x901A;&#x4FE1;&#x7684;&#x4E2D;&#x5FC3;&#xFF0C;&#x5176;&#x6545;&#x969C;&#x5C06;&#x5BFC;&#x81F4;&#x6240;&#x6709;&#x7EC4;&#x4EF6;&#x762B;&#x75EA;&#x3002;&#x540C;&#x65F6;&#x6A21;&#x5757;&#x95F4;&#x95F4;&#x63A5;&#x7684;&#x901A;&#x4FE1;&#xFF0C;&#x4E5F;&#x4F1A;&#x5BFC;&#x81F4;&#x6027;&#x80FD;&#x4E0B;&#x964D;&#x3002;&#x800C;&#x7531;&#x4E8E;&#x677E;&#x8026;&#x5408;&#x7684;&#x6027;&#x8D28;&#xFF0C;&#x5F88;&#x96BE;&#x901A;&#x8FC7;&#x4EC5;&#x5173;&#x6CE8;&#x5B98;&#x5175;&#x5171;&#x6765;&#x786E;&#x5B9A;&#x7CFB;&#x7EDF;&#x5982;&#x4F55;&#x505A;&#x51FA;&#x53CD;&#x5E94;</p>
-<h2 id="mediator%E4%B8%8E%E5%85%B6%E4%BB%96%E6%A8%A1%E5%BC%8F"><a name="mediator%E4%B8%8E%E5%85%B6%E4%BB%96%E6%A8%A1%E5%BC%8F" class="plugin-anchor" href="#mediator%E4%B8%8E%E5%85%B6%E4%BB%96%E6%A8%A1%E5%BC%8F"><span class="fa fa-link"></span></a>Mediator&#x4E0E;&#x5176;&#x4ED6;&#x6A21;&#x5F0F;</h2>
-<h3 id="mediator%E4%B8%8Eobserver"><a name="mediator%E4%B8%8Eobserver" class="plugin-anchor" href="#mediator%E4%B8%8Eobserver"><span class="fa fa-link"></span></a>Mediator&#x4E0E;Observer</h3>
+<h2 id="mediator%E4%B8%8E%E5%85%B6%E4%BB%96%E6%A8%A1%E5%BC%8F">Mediator&#x4E0E;&#x5176;&#x4ED6;&#x6A21;&#x5F0F;</h2>
+<h3 id="mediator%E4%B8%8Eobserver">Mediator&#x4E0E;Observer</h3>
 <p>&#x56DB;&#x4EBA;&#x5E2E;&#x5BF9;&#x4E24;&#x8005;&#x533A;&#x522B;&#x7684;&#x89E3;&#x91CA;&#xFF1A;</p>
 <blockquote>
 <p>&#x5728;Observer&#x4E2D;&#xFF0C;&#x4E0D;&#x5B58;&#x5728;&#x5C01;&#x88C5;&#x7EA6;&#x675F;&#x7684;&#x5355;&#x4E00;&#x5BF9;&#x8C61;&#x3002;Observer&#x548C;Subject&#x5FC5;&#x987B;&#x5408;&#x4F5C;&#x624D;&#x80FD;&#x7EF4;&#x6301;&#x7389;&#x6811;&#x3002;&#x901A;&#x4FE1;&#x7531;&#x89C2;&#x5BDF;&#x8005;&#x548C;&#x76EE;&#x6807;&#x4E92;&#x8054;&#x7684;&#x65B9;&#x5F0F;&#x6240;&#x51B3;&#x5B9A;&#xFF1A;&#x5355;&#x4E00;&#x76EE;&#x6807;&#x901A;&#x5E38;&#x6709;&#x5F88;&#x591A;&#x89C2;&#x5BDF;&#x8005;&#xFF0C;&#x53C8;&#x662F;&#x4E00;&#x4E2A;&#x76EE;&#x6807;&#x7684;&#x89C2;&#x5BDF;&#x8005;&#x662F;&#x53E6;&#x4E00;&#x4E2A;&#x89C2;&#x5BDF;&#x8005;&#x7684;&#x76EE;&#x6807;</p>
 </blockquote>
 <p>Mediator&#x548C;Observer&#x90FD;&#x80FD;&#x4FC3;&#x8FDB;&#x677E;&#x8026;&#x5408;&#xFF0C;&#x4F46;Mediator&#x4E25;&#x683C;&#x9650;&#x5B9A;&#x5FC5;&#x987B;&#x901A;&#x8FC7;Mediator&#x8FDB;&#x884C;&#x901A;&#x4FE1;</p>
-<h3 id="mediator%E4%B8%8Efacade%EF%BC%88%E5%A4%96%E8%A7%82%E6%A8%A1%E5%BC%8F%EF%BC%89"><a name="mediator%E4%B8%8Efacade%EF%BC%88%E5%A4%96%E8%A7%82%E6%A8%A1%E5%BC%8F%EF%BC%89" class="plugin-anchor" href="#mediator%E4%B8%8Efacade%EF%BC%88%E5%A4%96%E8%A7%82%E6%A8%A1%E5%BC%8F%EF%BC%89"><span class="fa fa-link"></span></a>Mediator&#x4E0E;Facade&#xFF08;&#x5916;&#x89C2;&#x6A21;&#x5F0F;&#xFF09;</h3>
+<h3 id="mediator%E4%B8%8Efacade%EF%BC%88%E5%A4%96%E8%A7%82%E6%A8%A1%E5%BC%8F%EF%BC%89">Mediator&#x4E0E;Facade&#xFF08;&#x5916;&#x89C2;&#x6A21;&#x5F0F;&#xFF09;</h3>
 <p>Facade&#x6A21;&#x5F0F;&#x4E3B;&#x8981;&#x662F;&#x4E3A;&#x6A21;&#x5757;&#x6216;&#x7CFB;&#x7EDF;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x8F83;&#x4E3A;&#x7B80;&#x5355;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x800C;&#x4E0D;&#x4F1A;&#x6DFB;&#x52A0;&#x4EFB;&#x4F55;&#x989D;&#x5916;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x5355;&#x5411;&#x7684;&#x3002;&#x800C;Mediator&#x5219;&#x662F;&#x4E00;&#x4E2A;&#x591A;&#x5411;&#x7684;&#x901A;&#x4FE1;</p>
 
                     
