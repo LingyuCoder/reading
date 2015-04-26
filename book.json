@@ -3,7 +3,7 @@
   "description": "学海无涯，回头是岸",
   "language": "zh-CN",
   "gitbook": "2.x.x",
-  "plugins": ["duoshuo", "baidu", "codepen"],
+  "plugins": ["duoshuo", "baidu", "codepen", "todo"],
   "links": {
     "sidebar": {
       "天镶博客": "http://lingyu.wang"
