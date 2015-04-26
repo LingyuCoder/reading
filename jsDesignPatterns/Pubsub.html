@@ -33,10 +33,18 @@
         
     <link rel="stylesheet" href="../gitbook/style.css">
     
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+        
+    
     
 
         
-    <div class="book" data-level="16.6" data-basepath=".." data-revision="Sun Apr 26 2015 21:09:24 GMT+0800 (CST)">
+    <div class="book" data-level="16.6" data-basepath=".." data-revision="Sun Apr 26 2015 23:10:20 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -1948,7 +1956,9 @@
                     
                         <h1 id="publish-subscribe%EF%BC%88%E5%8F%91%E5%B8%83-%E8%AE%A2%E9%98%85%EF%BC%89%E6%A8%A1%E5%BC%8F">Publish/Subscribe&#xFF08;&#x53D1;&#x5E03;/&#x8BA2;&#x9605;&#xFF09;&#x6A21;&#x5F0F;</h1>
 <p>&#x4E00;&#x79CD;&#x6BD4;&#x8F83;&#x5E38;&#x89C1;&#x7684;&#x5B9E;&#x73B0;Observer&#x6A21;&#x5F0F;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x5C06;ObserverList&#x548C;Subject&#x76F8;&#x5206;&#x79BB;&#xFF0C;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;Event Channel&#x6765;&#x7BA1;&#x7406;ObserverList&#xFF0C;Subject&#x5C06;&#x9700;&#x8981;&#x53D1;&#x5E03;&#x7684;&#x6570;&#x636E;&#x4EA4;&#x7ED9;Event Channel&#xFF0C;&#x800C;&#x89C2;&#x5BDF;&#x8005;&#x4E5F;&#x53EA;&#x9700;&#x8981;&#x89C2;&#x5BDF;Event Channel&#x5C31;&#x884C;&#x4E86;</p>
-<p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/3.png" alt="pubsub&#x67B6;&#x6784;&#x56FE;"></p>
+<p>     <a href="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/3.png" title="pubsub&#x67B6;&#x6784;&#x56FE;" class="fancybox">
+       <img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/3.png" alt="pubsub&#x67B6;&#x6784;&#x56FE;">
+     </a></p>
 <p>&#x53D1;&#x5E03;/&#x8BA2;&#x9605;&#x65B9;&#x5F0F;&#x5F88;&#x9002;&#x5408;JavaScript&#xFF0C;&#x56E0;&#x4E3A;ECMAScript&#x672C;&#x8EAB;&#x662F;&#x57FA;&#x4E8E;&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x7684;&#x3002;&#x5F88;&#x591A;&#x6D41;&#x884C;&#x7684;JavaScript&#x5E93;&#x90FD;&#x6709;&#x4E00;&#x5957;&#x53D1;&#x5E03;/&#x8BA2;&#x9605;&#x5B9E;&#x73B0;&#xFF0C;&#x6BD4;&#x5982;jQuery&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">//&#x8BA2;&#x9605;</span>
 $(dom).on(<span class="hljs-string">&quot;channel&quot;</span>, callback);
@@ -2026,7 +2036,9 @@ pubsub.unsubscribe(subscription);
 pubsub.publish(<span class="hljs-string">&quot;hello&quot;</span>, [<span class="hljs-string">&quot;&#x5929;&#x9576;&quot;</span>, <span class="hljs-string">&quot;&#x518D;&#x6C42;&quot;</span>, <span class="hljs-string">&quot;offer&quot;</span>]);
 </code></pre>
 <p>&#x7ED3;&#x679C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x53D6;&#x6D88;&#x4E4B;&#x540E;&#xFF0C;&#x8BA2;&#x9605;&#x8005;&#x4E0D;&#x4F1A;&#x518D;&#x6536;&#x5230;&#x6D88;&#x606F;&#x4E86;&#xFF1A;</p>
-<p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/4.png" alt="pubsub&#x8F93;&#x51FA;&#x7ED3;&#x679C;"></p>
+<p>     <a href="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/4.png" title="pubsub&#x8F93;&#x51FA;&#x7ED3;&#x679C;" class="fancybox">
+       <img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/4.png" alt="pubsub&#x8F93;&#x51FA;&#x7ED3;&#x679C;">
+     </a></p>
 <h2 id="%E4%BC%98%E7%82%B9%E5%92%8C%E7%BC%BA%E7%82%B9">&#x4F18;&#x70B9;&#x548C;&#x7F3A;&#x70B9;</h2>
 <p>Observer&#x6A21;&#x5F0F;&#x548C;Publish/Subscribe&#x6A21;&#x5F0F;&#x90FD;&#x80FD;&#x5C06;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5206;&#x89E3;&#x6210;&#x66F4;&#x5C0F;&#x3001;&#x66F4;&#x677E;&#x6563;&#x8026;&#x5408;&#x7684;&#x5757;&#xFF0C;&#x4EE5;&#x6539;&#x8FDB;&#x4EE3;&#x7801;&#x7BA1;&#x7406;&#x548C;&#x6F5C;&#x5728;&#x7684;&#x590D;&#x7528;&#x3002;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x52A8;&#x6001;&#x7684;&#x53BB;&#x66F4;&#x6539;&#x4E0D;&#x540C;&#x90E8;&#x5206;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x6709;&#x5F88;&#x5927;&#x7684;&#x7075;&#x6D3B;&#x6027;</p>
 <p>&#x5728;Observer&#x548C;Publish/Subscribe&#x4E2D;&#xFF0C;&#x53D1;&#x5E03;&#x8005;&#x6216;Subject&#x4E0D;&#x4F1A;&#x770B;&#x5230;&#x8BA2;&#x9605;&#x8005;&#x6216;&#x89C2;&#x5BDF;&#x8005;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x4E14;&#x8BA2;&#x9605;&#x8005;&#x548C;&#x89C2;&#x5BDF;&#x8005;&#x76F8;&#x4E92;&#x4E4B;&#x95F4;&#x65E0;&#x89C6;&#x5F7C;&#x6B64;&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x5BF9;&#x53D8;&#x5316;&#x53D1;&#x5E03;&#x8005;&#x4EA7;&#x751F;&#x7684;&#x6210;&#x672C;&#x4E5F;&#x89C6;&#x800C;&#x4E0D;&#x89C1;</p>
@@ -2060,18 +2072,31 @@ pubsub.publish(<span class="hljs-string">&quot;hello&quot;</span>, [<span class=
     
 
     
+    <script src="../gitbook/plugins/gitbook-plugin-fancybox/jquery.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+    
+
+    
     <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
     
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"duoshuo":{"short_name":"skyinlayer","theme":"default"},"baidu":{"token":"a5aa4945a04cc5a5a4cd6835ccb7d419"},"codepen":{"height":400,"theme":14038,"defaultTab":"result","description":""}};
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"duoshuo":{"short_name":"skyinlayer","theme":"default"},"baidu":{"token":"a5aa4945a04cc5a5a4cd6835ccb7d419"},"codepen":{"height":400,"theme":14038,"defaultTab":"result","description":""},"fancybox":{"helpers":{"buttons":{}}}};
     gitbook.start(config);
 });
 </script>
 
         <script>var _hmt = _hmt || [];(function() {var hm = document.createElement('script');hm.src = '//hm.baidu.com/hm.js?a5aa4945a04cc5a5a4cd6835ccb7d419';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(hm, s);})();</script>
 <script src="//assets.codepen.io/assets/embed/ei.js"></script>
+<script>$(".fancybox").fancybox(JSON.parse('{"helpers":{"buttons":{}}}'));</script>
     </body>
     
 </html>

@@ -33,10 +33,18 @@
         
     <link rel="stylesheet" href="../gitbook/style.css">
     
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+        
+    
     
 
         
-    <div class="book" data-level="16.15" data-basepath=".." data-revision="Sun Apr 26 2015 21:09:24 GMT+0800 (CST)">
+    <div class="book" data-level="16.15" data-basepath=".." data-revision="Sun Apr 26 2015 23:10:20 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -2029,9 +2037,13 @@ student = <span class="hljs-keyword">new</span> BooksDecorator(student);
 <span class="hljs-built_in">console</span>.log(student.getCost());
 </code></pre>
 <p>&#x67E5;&#x770B;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF1A;</p>
-<p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/11.png" alt="&#x8F93;&#x51FA;&#x5929;&#x9576;&#x9700;&#x8981;5500,6050&#xFF0C;16049,16449"></p>
+<p>     <a href="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/11.png" title="&#x8F93;&#x51FA;&#x5929;&#x9576;&#x9700;&#x8981;5500,6050&#xFF0C;16049,16449" class="fancybox">
+       <img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/11.png" alt="&#x8F93;&#x51FA;&#x5929;&#x9576;&#x9700;&#x8981;5500,6050&#xFF0C;16049,16449">
+     </a></p>
 <p>&#x5982;&#x679C;&#x67E5;&#x770B;student&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5B83;&#x662F;&#x5982;&#x4E0B;&#x7ED3;&#x6784;&#x7684;&#xFF1A;</p>
-<p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/12.png" alt="student&#x5BF9;&#x8C61;&#x7ED3;&#x6784;"></p>
+<p>     <a href="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/12.png" title="student&#x5BF9;&#x8C61;&#x7ED3;&#x6784;" class="fancybox">
+       <img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/12.png" alt="student&#x5BF9;&#x8C61;&#x7ED3;&#x6784;">
+     </a></p>
 <p>&#x8FD9;&#x5C31;&#x662F;&#x62BD;&#x8C61;&#x88C5;&#x9970;&#x5668;&#x6A21;&#x5F0F;&#x4E86;&#x3002;&#x62BD;&#x8C61;&#x88C5;&#x9970;&#x8005;&#x6A21;&#x5F0F;&#x53EF;&#x4EE5;&#x52A8;&#x6001;&#x7684;&#x4FEE;&#x6539;&#x5BF9;&#x8C61;&#xFF0C;&#x56E0;&#x6B64;&#x66F4;&#x52A0;&#x5B8C;&#x7F8E;&#xFF0C;&#x4F46;&#x5185;&#x5B58;&#x6D88;&#x8017;&#x4E5F;&#x8981;&#x5927;&#x5F97;&#x591A;</p>
 
                     
@@ -2063,18 +2075,31 @@ student = <span class="hljs-keyword">new</span> BooksDecorator(student);
     
 
     
+    <script src="../gitbook/plugins/gitbook-plugin-fancybox/jquery.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+    
+
+    
     <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
     
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"duoshuo":{"short_name":"skyinlayer","theme":"default"},"baidu":{"token":"a5aa4945a04cc5a5a4cd6835ccb7d419"},"codepen":{"height":400,"theme":14038,"defaultTab":"result","description":""}};
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"duoshuo":{"short_name":"skyinlayer","theme":"default"},"baidu":{"token":"a5aa4945a04cc5a5a4cd6835ccb7d419"},"codepen":{"height":400,"theme":14038,"defaultTab":"result","description":""},"fancybox":{"helpers":{"buttons":{}}}};
     gitbook.start(config);
 });
 </script>
 
         <script>var _hmt = _hmt || [];(function() {var hm = document.createElement('script');hm.src = '//hm.baidu.com/hm.js?a5aa4945a04cc5a5a4cd6835ccb7d419';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(hm, s);})();</script>
 <script src="//assets.codepen.io/assets/embed/ei.js"></script>
+<script>$(".fancybox").fancybox(JSON.parse('{"helpers":{"buttons":{}}}'));</script>
     </body>
     
 </html>

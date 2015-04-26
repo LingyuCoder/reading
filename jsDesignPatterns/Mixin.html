@@ -33,10 +33,18 @@
         
     <link rel="stylesheet" href="../gitbook/style.css">
     
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+        
+    
     
 
         
-    <div class="book" data-level="16.13" data-basepath=".." data-revision="Sun Apr 26 2015 21:09:24 GMT+0800 (CST)">
+    <div class="book" data-level="16.13" data-basepath=".." data-revision="Sun Apr 26 2015 23:10:20 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -1967,7 +1975,9 @@ Student.prototype = <span class="hljs-built_in">Object</span>.create(Person.prot
 <span class="hljs-built_in">console</span>.log(student);
 </code></pre>
 <p>&#x8FD9;&#x91CC;&#x8D85;&#x7C7B;&#x4E3A;Person&#x7C7B;&#xFF0C;&#x5B50;&#x7C7B;&#x4E3A;Student&#x7C7B;&#xFF0C;&#x5728;Student&#x7C7B;&#x5B9E;&#x4F8B;&#x5316;&#x65F6;&#xFF0C;&#x9996;&#x5148;&#x4F1A;&#x8C03;&#x7528;&#x8D85;&#x7C7B;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5C06;&#x8D85;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x5199;&#x5165;&#x5230;&#x5B50;&#x7C7B;&#x4E2D;&#xFF0C;&#x800C;&#x8D85;&#x7C7B;&#x7684;&#x539F;&#x578B;&#x4E5F;&#x5B58;&#x5728;&#x4E8E;&#x5B50;&#x7C7B;&#x7684;&#x539F;&#x578B;&#x94FE;&#x4E0A;&#xFF0C;&#x8D85;&#x7C7B;&#x539F;&#x578B;&#x4E0A;&#x7684;&#x65B9;&#x6CD5;&#x4E5F;&#x5C06;&#x88AB;&#x5B50;&#x7C7B;&#x7EE7;&#x627F;&#x3002;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8F93;&#x5165;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/9.png" alt="&#x6DF7;&#x5165;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x6210;&#x529F;"></p>
+<p>     <a href="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/9.png" title="&#x6DF7;&#x5165;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x6210;&#x529F;" class="fancybox">
+       <img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/9.png" alt="&#x6DF7;&#x5165;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x6210;&#x529F;">
+     </a></p>
 <h2 id="mixin%E2%80%94%E2%80%94%E6%B7%B7%E5%85%A5">Mixin&#x2014;&#x2014;&#x6DF7;&#x5165;</h2>
 <p>&#x5728;JavaScript&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x7EE7;&#x627F;Mixin&#x770B;&#x505A;&#x4E00;&#x79CD;&#x901A;&#x8FC7;&#x6269;&#x5C55;&#x6536;&#x96C6;&#x529F;&#x80FD;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5411;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;prototype&#x4E2D;&#x6269;&#x5C55;mixin&#x5BF9;&#x8C61;&#x6765;&#x5B9E;&#x73B0;&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">//&#x5B9E;&#x73B0;&#x6269;&#x5C55;&#x65B9;&#x6CD5;</span>
@@ -2025,18 +2035,31 @@ student.sayBye();<span class="hljs-comment">//&#x5929;&#x9576; says: Bye bye!</s
     
 
     
+    <script src="../gitbook/plugins/gitbook-plugin-fancybox/jquery.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+    
+
+    
     <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
     
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"duoshuo":{"short_name":"skyinlayer","theme":"default"},"baidu":{"token":"a5aa4945a04cc5a5a4cd6835ccb7d419"},"codepen":{"height":400,"theme":14038,"defaultTab":"result","description":""}};
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"duoshuo":{"short_name":"skyinlayer","theme":"default"},"baidu":{"token":"a5aa4945a04cc5a5a4cd6835ccb7d419"},"codepen":{"height":400,"theme":14038,"defaultTab":"result","description":""},"fancybox":{"helpers":{"buttons":{}}}};
     gitbook.start(config);
 });
 </script>
 
         <script>var _hmt = _hmt || [];(function() {var hm = document.createElement('script');hm.src = '//hm.baidu.com/hm.js?a5aa4945a04cc5a5a4cd6835ccb7d419';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(hm, s);})();</script>
 <script src="//assets.codepen.io/assets/embed/ei.js"></script>
+<script>$(".fancybox").fancybox(JSON.parse('{"helpers":{"buttons":{}}}'));</script>
     </body>
     
 </html>

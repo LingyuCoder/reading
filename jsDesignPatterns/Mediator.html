@@ -33,10 +33,18 @@
         
     <link rel="stylesheet" href="../gitbook/style.css">
     
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+        
+    
     
 
         
-    <div class="book" data-level="16.7" data-basepath=".." data-revision="Sun Apr 26 2015 21:09:24 GMT+0800 (CST)">
+    <div class="book" data-level="16.7" data-basepath=".." data-revision="Sun Apr 26 2015 23:10:20 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -1949,7 +1957,9 @@
                         <h1 id="mediator%E2%80%94%E2%80%94%E4%B8%AD%E4%BB%8B%E8%80%85%E6%A8%A1%E5%BC%8F">Mediator&#x2014;&#x2014;&#x4E2D;&#x4ECB;&#x8005;&#x6A21;&#x5F0F;</h1>
 <p>&#x4E2D;&#x4ECB;&#x8005;&#x662F;&#x4E00;&#x79CD;&#x884C;&#x4E3A;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF0C;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x516C;&#x5F00;&#x7EDF;&#x4E00;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x7CFB;&#x7EDF;&#x7684;&#x4E0D;&#x540C;&#x90E8;&#x5206;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#x8FDB;&#x884C;&#x901A;&#x4FE1;</p>
 <p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7CFB;&#x7EDF;&#x5404;&#x4E2A;&#x7EC4;&#x4EF6;&#x4E4B;&#x95F4;&#x6709;&#x592A;&#x591A;&#x7684;&#x76F4;&#x63A5;&#x5173;&#x7CFB;&#xFF0C;&#x4E24;&#x4E24;&#x4E4B;&#x95F4;&#x82E5;&#x6709;&#x4E00;&#x6761;&#x8FB9;&#xFF0C;&#x89E3;&#x8026;&#x5C06;&#x4F1A;&#x975E;&#x5E38;&#x56F0;&#x96BE;&#x3002;&#x4F46;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5728;&#x5176;&#x4E2D;&#x52A0;&#x5165;&#x4E00;&#x4E2A;&#x4E2D;&#x5FC3;&#x63A7;&#x5236;&#x70B9;&#xFF0C;&#x5404;&#x4E2A;&#x7EC4;&#x4EF6;&#x90FD;&#x7ECF;&#x8FC7;&#x8FD9;&#x4E2A;&#x4E2D;&#x5FC3;&#x63A7;&#x5236;&#x70B9;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#xFF0C;&#x90A3;&#x4E48;&#x6BCF;&#x4E2A;&#x6A21;&#x5757;&#x53EA;&#x8981;&#x5173;&#x6CE8;&#x81EA;&#x5DF1;&#x548C;&#x4E2D;&#x5FC3;&#x63A7;&#x5236;&#x70B9;&#x7684;&#x901A;&#x4FE1;&#x5C31;&#x884C;&#x4E86;&#x3002;Mediator&#x5C31;&#x662F;&#x8FD9;&#x4E2A;&#x610F;&#x601D;&#x3002;</p>
-<p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/5.png" alt="mediator&#x67B6;&#x6784;&#x56FE;"></p>
+<p>     <a href="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/5.png" title="mediator&#x67B6;&#x6784;&#x56FE;" class="fancybox">
+       <img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/5.png" alt="mediator&#x67B6;&#x6784;&#x56FE;">
+     </a></p>
 <h2 id="%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F">&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;</h2>
 <p>Mediator&#x6A21;&#x5F0F;&#x672C;&#x8D28;&#x4E0A;&#x662F;Oberver&#x6A21;&#x5F0F;&#x7684;&#x5171;&#x4EAB;&#x76EE;&#x6807;&#xFF0C;&#x628A;&#x4E2D;&#x5FC3;&#x63A7;&#x5236;&#x70B9;&#x5F53;&#x505A;Subject&#xFF0C;&#x800C;&#x6BCF;&#x4E2A;&#x7EC4;&#x4EF6;&#x5F53;&#x505A;Observer&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> mediator = (<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
@@ -2017,7 +2027,9 @@ colleague3.subscribe(<span class="hljs-string">&quot;pub2&quot;</span>, callback
 colleague2.publish(<span class="hljs-string">&quot;pub2&quot;</span>, <span class="hljs-string">&quot;&#x5929;&#x9576;&quot;</span>, <span class="hljs-string">&quot;&#x60F3;&quot;</span>, <span class="hljs-string">&quot;&#x5403;&#x4E32;&quot;</span>);
 </code></pre>
 <p>&#x8F93;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/6.png" alt="mediator&#x8F93;&#x51FA;"></p>
+<p>     <a href="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/6.png" title="mediator&#x8F93;&#x51FA;" class="fancybox">
+       <img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/6.png" alt="mediator&#x8F93;&#x51FA;">
+     </a></p>
 <p>&#x4FE1;&#x606F;&#x4F20;&#x9012;&#x90FD;&#x6210;&#x529F;&#x4E86;</p>
 <h2 id="mediator%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9">Mediator&#x7684;&#x4F18;&#x7F3A;&#x70B9;</h2>
 <p>Mediator&#x6700;&#x5927;&#x7684;&#x597D;&#x5904;&#x5C31;&#x662F;&#x5C06;&#x7CFB;&#x7EDF;&#x7EC4;&#x4EF6;&#x95F4;&#x7684;&#x590D;&#x6742;&#x7684;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#x7B80;&#x5316;&#x5230;&#x4E86;&#x4E00;&#x5BF9;&#x591A;&#x3002;&#x8FD9;&#x6837;&#x89E3;&#x8026;&#x7A0B;&#x5EA6;&#x8F83;&#x9AD8;&#xFF0C;&#x6DFB;&#x52A0;&#x53D1;&#x5E03;&#x8005;&#x548C;&#x8BA2;&#x9605;&#x8005;&#x4E5F;&#x8F83;&#x4E3A;&#x7B80;&#x5355;&#x3002;&#x800C;&#x7F3A;&#x70B9;&#x5219;&#x662F;&#xFF0C;Mediator&#x672C;&#x8EAB;&#x5728;&#x901A;&#x4FE1;&#x7684;&#x4E2D;&#x5FC3;&#xFF0C;&#x5176;&#x6545;&#x969C;&#x5C06;&#x5BFC;&#x81F4;&#x6240;&#x6709;&#x7EC4;&#x4EF6;&#x762B;&#x75EA;&#x3002;&#x540C;&#x65F6;&#x6A21;&#x5757;&#x95F4;&#x95F4;&#x63A5;&#x7684;&#x901A;&#x4FE1;&#xFF0C;&#x4E5F;&#x4F1A;&#x5BFC;&#x81F4;&#x6027;&#x80FD;&#x4E0B;&#x964D;&#x3002;&#x800C;&#x7531;&#x4E8E;&#x677E;&#x8026;&#x5408;&#x7684;&#x6027;&#x8D28;&#xFF0C;&#x5F88;&#x96BE;&#x901A;&#x8FC7;&#x4EC5;&#x5173;&#x6CE8;&#x5B98;&#x5175;&#x5171;&#x6765;&#x786E;&#x5B9A;&#x7CFB;&#x7EDF;&#x5982;&#x4F55;&#x505A;&#x51FA;&#x53CD;&#x5E94;</p>
@@ -2060,18 +2072,31 @@ colleague2.publish(<span class="hljs-string">&quot;pub2&quot;</span>, <span clas
     
 
     
+    <script src="../gitbook/plugins/gitbook-plugin-fancybox/jquery.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+    
+
+    
     <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
     
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"duoshuo":{"short_name":"skyinlayer","theme":"default"},"baidu":{"token":"a5aa4945a04cc5a5a4cd6835ccb7d419"},"codepen":{"height":400,"theme":14038,"defaultTab":"result","description":""}};
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"duoshuo":{"short_name":"skyinlayer","theme":"default"},"baidu":{"token":"a5aa4945a04cc5a5a4cd6835ccb7d419"},"codepen":{"height":400,"theme":14038,"defaultTab":"result","description":""},"fancybox":{}};
     gitbook.start(config);
 });
 </script>
 
         <script>var _hmt = _hmt || [];(function() {var hm = document.createElement('script');hm.src = '//hm.baidu.com/hm.js?a5aa4945a04cc5a5a4cd6835ccb7d419';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(hm, s);})();</script>
 <script src="//assets.codepen.io/assets/embed/ei.js"></script>
+<script>$(".fancybox").fancybox(JSON.parse('{"helpers":{"buttons":{}}}'));</script>
     </body>
     
 </html>

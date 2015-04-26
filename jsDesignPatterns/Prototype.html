@@ -33,10 +33,18 @@
         
     <link rel="stylesheet" href="../gitbook/style.css">
     
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+        
+    
     
 
         
-    <div class="book" data-level="16.8" data-basepath=".." data-revision="Sun Apr 26 2015 21:09:24 GMT+0800 (CST)">
+    <div class="book" data-level="16.8" data-basepath=".." data-revision="Sun Apr 26 2015 23:10:20 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -1974,7 +1982,9 @@
 <span class="hljs-built_in">console</span>.log(child);
 </code></pre>
 <p>&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x5230;&#x5BF9;&#x8C61;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/7.png" alt="prototype&#x7684;child&#x5BF9;&#x8C61;&#x7ED3;&#x6784;"></p>
+<p>     <a href="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/7.png" title="prototype&#x7684;child&#x5BF9;&#x8C61;&#x7ED3;&#x6784;" class="fancybox">
+       <img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/7.png" alt="prototype&#x7684;child&#x5BF9;&#x8C61;&#x7ED3;&#x6784;">
+     </a></p>
 <p>&#x8FD9;&#x91CC;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x5DEE;&#x5F02;&#x7EE7;&#x627F;&#xFF0C;&#x5177;&#x4F53;&#x7528;&#x6CD5;&#x548C;Object.defineProperties&#x548C;Object.defineProperty&#x76F8;&#x4F3C;</p>
 <h2 id="polyfill">Polyfill</h2>
 <p>&#x7531;&#x4E8E;<code>Object.create</code>&#x65B9;&#x6CD5;&#x5728;ES5&#x4E2D;&#x5B9A;&#x4E49;&#xFF0C;&#x5728;&#x4E0D;&#x652F;&#x6301;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x9700;&#x8981;polyfill&#xFF0C;&#x7B80;&#x5355;&#x7684;&#x4E0D;&#x652F;&#x6301;<code>optionalDescriptorObjects</code>&#x5982;&#x4E0B;&#xFF1A;</p>
@@ -2014,18 +2024,31 @@
     
 
     
+    <script src="../gitbook/plugins/gitbook-plugin-fancybox/jquery.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+    
+
+    
     <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
     
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"duoshuo":{"short_name":"skyinlayer","theme":"default"},"baidu":{"token":"a5aa4945a04cc5a5a4cd6835ccb7d419"},"codepen":{"height":400,"theme":14038,"defaultTab":"result","description":""}};
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"duoshuo":{"short_name":"skyinlayer","theme":"default"},"baidu":{"token":"a5aa4945a04cc5a5a4cd6835ccb7d419"},"codepen":{"height":400,"theme":14038,"defaultTab":"result","description":""},"fancybox":{"helpers":{"buttons":{}}}};
     gitbook.start(config);
 });
 </script>
 
         <script>var _hmt = _hmt || [];(function() {var hm = document.createElement('script');hm.src = '//hm.baidu.com/hm.js?a5aa4945a04cc5a5a4cd6835ccb7d419';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(hm, s);})();</script>
 <script src="//assets.codepen.io/assets/embed/ei.js"></script>
+<script>$(".fancybox").fancybox(JSON.parse('{"helpers":{"buttons":{}}}'));</script>
     </body>
     
 </html>
