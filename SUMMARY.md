@@ -5,6 +5,8 @@
 	-	[Webkit架构和模块](webkit-core/webkit-arch-and-module.md)
 	-	[资源加载和网络栈](webkit-core/resource-loader-and-scheme-stack.md)
 	-	[HTML解释器和DOM模型](webkit-core/html-parser-and-dom-modal.md)
+	- [CSS解释器和样式布局](webkit-core/css-parser-and-layout.md)
+	- [渲染基础](webkit-core/render-basis.md)
 -	[程序员跳槽全攻略](programer-job-changing/README.md)
 -	[程序员的思维修炼-开发认知潜能的九堂课](pragmatic-thinking-and-learning/README.md)
 	-	[绪论](pragmatic-thinking-and-learning/introduction.md)
